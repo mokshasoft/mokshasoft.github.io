@@ -15,6 +15,7 @@ import Browser
 import Html exposing (..)
 import Html.Attributes exposing (..)
 import Html.Events exposing (keyCode, onClick, onFocus, onInput, preventDefaultOn)
+import Html.Events.Extra as Extra
 import Lines as Lines
 import List as L
 import Maybe as M
@@ -69,6 +70,7 @@ init _ =
 
 type Msg
     = Change String
+    | SetCountry String
 
 
 update : Msg -> Model -> ( Model, Cmd Msg )
@@ -77,6 +79,13 @@ update msg model =
         Change txt ->
             ( { model
                 | text = txt
+              }
+            , Cmd.none
+            )
+
+        SetCountry c ->
+            ( { model
+                | selection = Selection c
               }
             , Cmd.none
             )
@@ -102,7 +111,7 @@ viewCountrySelection model =
             L.map (\t -> option [ value t ] [ text t ]) model.countries
     in
     div []
-        [ select [] optList
+        [ select [ Extra.onChange SetCountry ] optList
         ]
 
 
