@@ -15,7 +15,9 @@ import Browser
 import Html exposing (..)
 import Html.Attributes exposing (..)
 import Html.Events exposing (keyCode, onClick, onFocus, onInput, preventDefaultOn)
-import Lines as L
+import Lines as Lines
+import List as L
+import Maybe as M
 
 
 
@@ -35,14 +37,27 @@ main =
 -- MODEL
 
 
+type alias Selection =
+    { country : String
+    }
+
+
 type alias Model =
-    { text : String
+    { countries : List String
+    , selection : Selection
+    , text : String
     }
 
 
 init : () -> ( Model, Cmd Msg )
 init _ =
+    let
+        countries =
+            Lines.getCountries
+    in
     ( { text = ""
+      , countries = countries
+      , selection = Selection <| M.withDefault "Sweden" (L.head countries)
       }
     , Cmd.none
     )
@@ -86,7 +101,7 @@ view model =
         [ CDN.stylesheet -- creates an inline style node with the Bootstrap CSS
         , Grid.row []
             [ Grid.col []
-                [ div [ class "container" ] [ L.chart ]
+                [ div [ class "container" ] [ Lines.chart model.selection.country ]
                 , input [ placeholder "Dummy", value model.text, onInput Change ] []
                 ]
             ]

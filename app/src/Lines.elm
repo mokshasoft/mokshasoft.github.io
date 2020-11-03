@@ -7,7 +7,7 @@
 -}
 
 
-module Lines exposing (chart)
+module Lines exposing (Country, chart, getCountries)
 
 import Color
 import Dict as D
@@ -15,6 +15,7 @@ import Html
 import LineChart
 import LineChart.Dots as Dots
 import List as L
+import Maybe as M
 
 
 selectYear : Int -> Country -> List ChartInfo
@@ -34,23 +35,23 @@ selectYear year country =
     L.map (\d -> ChartInfo (toFloat d) (toFloat (d * d))) data
 
 
-chart : Html.Html msg
-chart =
+chart : String -> Html.Html msg
+chart country =
     let
-        ctry =
-            seCountry
+        c =
+            getCountry country
 
         data =
-            selectYear 2000 ctry
+            selectYear 2000 c
     in
     LineChart.view .x
         .y
-        [ LineChart.line Color.red Dots.diamond ctry.name data
+        [ LineChart.line Color.red Dots.diamond c.name data
         ]
 
 
 
--- DATA
+-- DATA TYPES
 
 
 type alias YearData =
@@ -76,6 +77,34 @@ type alias ChartInfo =
     }
 
 
+
+-- DATA
+
+
+getCountries : List String
+getCountries =
+    D.keys countryDict
+
+
+countryDict : D.Dict String Country
+countryDict =
+    D.fromList
+        (L.map (\c -> ( c.name, c ))
+            [ seCountry
+            , dkCountry
+            ]
+        )
+
+
+getCountry : String -> Country
+getCountry country =
+    M.withDefault seCountry (D.get country countryDict)
+
+
+
+-- TEST DATA
+
+
 seYD : YearData
 seYD =
     YearData (L.range 1 53)
@@ -94,3 +123,8 @@ seY =
 seCountry : Country
 seCountry =
     Country "Sweden" seY
+
+
+dkCountry : Country
+dkCountry =
+    Country "Denmark" seY
