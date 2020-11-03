@@ -95,13 +95,25 @@ subscriptions model =
 -- VIEW
 
 
+viewCountrySelection : Model -> Html Msg
+viewCountrySelection model =
+    let
+        optList =
+            L.map (\t -> option [ value t ] [ text t ]) model.countries
+    in
+    div []
+        [ select [] optList
+        ]
+
+
 view : Model -> Html Msg
 view model =
     Grid.container []
         [ CDN.stylesheet -- creates an inline style node with the Bootstrap CSS
         , Grid.row []
             [ Grid.col []
-                [ div [ class "container" ] [ Lines.chart model.selection.country ]
+                [ viewCountrySelection model
+                , div [ class "container" ] [ Lines.chart model.selection.country ]
                 , input [ placeholder "Dummy", value model.text, onInput Change ] []
                 ]
             ]
