@@ -58,7 +58,7 @@ init _ =
     in
     ( { text = ""
       , countries = countries
-      , selection = Selection <| M.withDefault "Sweden" (L.head countries)
+      , selection = Selection "Sweden"
       }
     , Cmd.none
     )
@@ -108,7 +108,7 @@ viewCountrySelection : Model -> Html Msg
 viewCountrySelection model =
     let
         optList =
-            L.map (\t -> option [ value t ] [ text t ]) model.countries
+            L.map (\t -> option [ selected (t == model.selection.country), value t ] [ text t ]) model.countries
     in
     div []
         [ select [ Extra.onChange SetCountry ] optList
