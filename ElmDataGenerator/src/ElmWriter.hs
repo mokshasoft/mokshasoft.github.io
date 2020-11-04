@@ -11,14 +11,18 @@ module ElmWriter
     ( record2ElmData
     ) where
 
-import Data.Array as A
+import Data.Foldable as F
 import Data.HashMap.Strict as Map
 import Data.List as L
 import Parser as R
 
+defaultCountry :: String
+defaultCountry =
+  "Sweden"
+
 data YearData = YearData
   { total :: Int
-  , week  :: Array Int Int
+  , week  :: Map.HashMap Int Int
   }
 
 data Country = Country
@@ -32,23 +36,13 @@ instance Show YearData where
 instance Show Country where
   show (Country c y) = c ++ " " ++ show y
 
-{-
-type alias YearData =
-    { nbr : List Int
-    }
+initYearData :: YearData
+initYearData =
+  YearData 0 Map.empty
 
-
-type alias Year =
-    { total : Int
-    , data : YearData
-    }
-
-
-type alias Country =
-    { name : String
-    , data : D.Dict Int Year
-    }
--}
+initCountry :: String -> Country
+initCountry name =
+  Country name Map.empty
 
 genHeader :: String
 genHeader =
@@ -80,17 +74,40 @@ genCountriesFunctions def countries =
   "countries : List Country\n\
   \countries =\n" ++ genCountryList countries
 
+countYear :: YearData -> YearData
+countYear yd =
+  let
+    m = (ElmWriter.week yd)
+    count = F.sum m
+  in YearData count m
+
 -- Sweden 2000 1 111
 -- Sweden 2000 2 112
 -- Sweden 2000 3 113
+toSwedishData' :: [R.Record] -> Country -> Country
+toSwedishData' [] c = c
+toSwedishData' (r:rs) c =
+  let
+    y = R.year r
+    w = R.week r
+    n = R.nbr r
+    mNewW = Map.lookup y (ElmWriter.year c)
+  in case mNewW of
+        Nothing -> Country (ElmWriter.country c) (Map.insert y initYearData Map.empty)
+        Just newW ->
+          let
+            yearData = YearData 0 (Map.insert w n (ElmWriter.week newW))
+          in Country (ElmWriter.country c) (Map.insert y yearData (ElmWriter.year c))
+
 toSwedishData :: [R.Record] -> Country
-toSwedishData rs = undefined
+toSwedishData rs =
+  toSwedishData' rs (initCountry defaultCountry)
 
 -- Extract only Swedish data for now
 records2Countries :: [R.Record] -> [Country]
 records2Countries rs =
   let
-    se = L.filter (\r -> R.country r == "Sweden") rs
+    se = L.filter (\r -> R.country r == defaultCountry) rs
   in [toSwedishData se]
 
 record2ElmData :: [R.Record] -> IO ()

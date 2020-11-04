@@ -33,7 +33,6 @@ library
       src
   build-depends:
       MissingH
-    , array
     , base >=4.7 && <5
     , parsec
     , unordered-containers
@@ -49,7 +48,6 @@ executable ElmDataGenerator-exe
   build-depends:
       ElmDataGenerator
     , MissingH
-    , array
     , base >=4.7 && <5
     , parsec
     , unordered-containers
@@ -66,7 +64,6 @@ test-suite ElmDataGenerator-test
   build-depends:
       ElmDataGenerator
     , MissingH
-    , array
     , base >=4.7 && <5
     , parsec
     , unordered-containers
