@@ -14,7 +14,7 @@ module ElmWriter
 import Data.Array as A
 import Data.HashMap.Strict as Map
 import Data.List as L
-import Parser (Record)
+import Parser as R
 
 data YearData = YearData
   { total :: Int
@@ -83,17 +83,17 @@ genCountriesFunctions def countries =
 -- Sweden 2000 1 111
 -- Sweden 2000 2 112
 -- Sweden 2000 3 113
-toSwedishData :: [Record] -> Country
+toSwedishData :: [R.Record] -> Country
 toSwedishData rs = undefined
 
 -- Extract only Swedish data for now
-records2Countries :: [Record] -> [Country]
-records2Countries rs = undefined
---  let
---    se = L.filter (\r -> country r == "Sweden") rs
---  in [toSwedishData se]
+records2Countries :: [R.Record] -> [Country]
+records2Countries rs =
+  let
+    se = L.filter (\r -> R.country r == "Sweden") rs
+  in [toSwedishData se]
 
-record2ElmData :: [Record] -> IO ()
+record2ElmData :: [R.Record] -> IO ()
 record2ElmData rs = do
   putStrLn genHeader
   putStrLn $ genCountriesFunctions "seCountry" ["seContry", "dkCountry"]

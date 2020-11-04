@@ -9,7 +9,7 @@
 
 module Parser
     ( lines2Records
-    , Record
+    , Record(..)
     ) where
 
 import Text.ParserCombinators.Parsec
