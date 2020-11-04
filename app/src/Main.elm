@@ -96,9 +96,9 @@ subscriptions model =
 
 viewHeader : Html Msg
 viewHeader =
-    div [ class "jumbotron jumbotron-fluid" ]
+    div [ class "jumbotron jumbotron-fluid text-center" ]
         [ div [ class "cointainer" ]
-            [ h1 [] [ text "Interactive Graph of EU Mortality" ] ]
+            [ h1 [] [ text "Interactive Graph of EU Mortality 2000-2020" ] ]
         ]
 
 
@@ -111,6 +111,7 @@ viewFooter =
                     [ text " GitHub" ]
                 , a [ href "https://https://appsso.eurostat.ec.europa.eu/nui/show.do?dataset=demo_r_mweek3&lang=en" ]
                     [ text " Eurostat" ]
+
                 -- https://package.elm-lang.org/packages/rundis/elm-bootstrap/latest/Bootstrap-Popover
                 ]
             ]
