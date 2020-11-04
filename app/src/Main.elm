@@ -111,6 +111,7 @@ viewFooter =
                     [ text " GitHub" ]
                 , a [ href "https://https://appsso.eurostat.ec.europa.eu/nui/show.do?dataset=demo_r_mweek3&lang=en" ]
                     [ text " Eurostat" ]
+                -- https://package.elm-lang.org/packages/rundis/elm-bootstrap/latest/Bootstrap-Popover
                 ]
             ]
         ]
