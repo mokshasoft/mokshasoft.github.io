@@ -11,11 +11,15 @@ module Lib
     ( elmDataGenerator
     ) where
 
+import ElmWriter
 import Parser
 
 elmDataGenerator :: IO ()
 elmDataGenerator = do
-  putStrLn "Start parsing"
+  putStrLn "Start parsing..."
   csvData <- readFile "demo_r_mweek3_1_Data.csv"
   let recs = lines2Records (drop 1 $ lines csvData)
-  putStrLn $ "parsing done.\n" ++ show recs
+  putStrLn "Parsing done."
+  putStrLn "Write elm dat file..."
+  record2ElmData recs
+  putStrLn "Writing done."
