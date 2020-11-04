@@ -58,8 +58,21 @@ genHeader =
   \import Dict as D\n\
   \import List as L\n"
 
+genCountryList :: [String] -> String
+genCountryList countries = 
+  "[ seCountry\n\
+   \, dkCountry\n\
+   \]\n\n\n"
+
+genCountriesFunctions :: String -> [String] -> String
+genCountriesFunctions def countries =
+  "defaultCountry : Country\n\
+  \defaultCountry =\n" ++ def ++ "\n\n\n" ++
+  "countries : List Country\n\
+  \countries =\n" ++ genCountryList countries
 
 record2ElmData :: [Record] -> IO ()
 record2ElmData rs = do
   putStrLn genHeader
+  putStrLn $ genCountriesFunctions "seCountry" ["seContry", "dkCountry"]
   putStrLn $ show rs
