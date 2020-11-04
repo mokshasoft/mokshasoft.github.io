@@ -46,7 +46,6 @@ type alias Selection =
 type alias Model =
     { countries : List String
     , selection : Selection
-    , text : String
     }
 
 
@@ -56,8 +55,7 @@ init _ =
         countries =
             Lines.getCountries
     in
-    ( { text = ""
-      , countries = countries
+    ( { countries = countries
       , selection = Selection "Sweden"
       }
     , Cmd.none
@@ -69,20 +67,12 @@ init _ =
 
 
 type Msg
-    = Change String
-    | SetCountry String
+    = SetCountry String
 
 
 update : Msg -> Model -> ( Model, Cmd Msg )
 update msg model =
     case msg of
-        Change txt ->
-            ( { model
-                | text = txt
-              }
-            , Cmd.none
-            )
-
         SetCountry c ->
             ( { model
                 | selection = Selection c
@@ -104,6 +94,28 @@ subscriptions model =
 -- VIEW
 
 
+viewHeader : Html Msg
+viewHeader =
+    div [ class "jumbotron jumbotron-fluid" ]
+        [ div [ class "cointainer" ]
+            [ h1 [] [ text "Interactive Graph of EU Mortality" ] ]
+        ]
+
+
+viewFooter : Html Msg
+viewFooter =
+    div [ class "jumbotron jumbotron-fluid" ]
+        [ div [ class "cointainer" ]
+            [ p []
+                [ a [ href "https://github.com/mokshasoft/mr" ]
+                    [ text " GitHub" ]
+                , a [ href "https://https://appsso.eurostat.ec.europa.eu/nui/show.do?dataset=demo_r_mweek3&lang=en" ]
+                    [ text " Eurostat" ]
+                ]
+            ]
+        ]
+
+
 viewCountrySelection : Model -> Html Msg
 viewCountrySelection model =
     let
@@ -121,9 +133,10 @@ view model =
         [ CDN.stylesheet -- creates an inline style node with the Bootstrap CSS
         , Grid.row []
             [ Grid.col []
-                [ viewCountrySelection model
+                [ viewHeader
+                , viewCountrySelection model
                 , div [ class "container" ] [ Lines.chart model.selection.country ]
-                , input [ placeholder "Dummy", value model.text, onInput Change ] []
+                , viewFooter
                 ]
             ]
         ]
