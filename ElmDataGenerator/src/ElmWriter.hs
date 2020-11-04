@@ -11,6 +11,7 @@ module ElmWriter
     ( record2ElmData
     ) where
 
+import Data.HashMap.Strict as Map
 import Parser (Record)
 
 data YearData = YearData
@@ -20,7 +21,7 @@ data YearData = YearData
 
 data Country = Country
   { country :: String
-  , year    :: [YearData]
+  , year    :: Map.HashMap Int YearData
   } deriving Show
 
 {-
