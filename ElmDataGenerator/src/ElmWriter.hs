@@ -11,12 +11,13 @@ module ElmWriter
     ( record2ElmData
     ) where
 
+import Data.Array as A
 import Data.HashMap.Strict as Map
 import Parser (Record)
 
 data YearData = YearData
   { total :: Int
-  , week  :: [Int]
+  , week  :: Array Int Int
   } deriving Show
 
 data Country = Country
