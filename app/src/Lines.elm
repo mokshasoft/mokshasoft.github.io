@@ -48,7 +48,7 @@ selectYear year country =
                 Just d ->
                     d.data
     in
-    L.map (\d -> ChartInfo (toFloat d) (toFloat (d * d))) data
+    L.map2 (\i d -> ChartInfo (toFloat i) (toFloat d)) (L.range 1 (L.length data)) data
 
 
 chart : String -> Html.Html msg
@@ -58,7 +58,7 @@ chart country =
             getCountry country
 
         data =
-            selectYear 2000 c
+            selectYear 2020 c
     in
     LineChart.view .x
         .y
