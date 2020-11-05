@@ -28,8 +28,10 @@ type Countries = Map.HashMap String Years
 year2String :: (Int, Weeks) -> String
 year2String (y, w) =
   let
-    nbrs = L.concat $ L.intersperse ", " $ L.map show $ Map.elems w
-  in "( " ++ show y ++ ", Year " ++ show w ++ "(YearData [" ++ nbrs ++ "] )"
+    nbrs = Map.elems w
+    nbrsStr = L.concat $ L.intersperse ", " $ L.map show nbrs
+    total = L.sum nbrs
+  in "( " ++ show y ++ ", Year " ++ show total ++ " [" ++ nbrsStr ++ "] )"
 
 country2String :: (String, Years) -> String
 country2String (name, y) =
@@ -40,7 +42,7 @@ country2String (name, y) =
   funcName ++ " : D.Dict Int Year\n" ++
   funcName ++ " =\n" ++
   "    D.fromList\n" ++
-  "        [" ++ list ++
+  "        [ " ++ list ++ "\n" ++
   "        ]"
 
 countries2String :: Countries -> String
