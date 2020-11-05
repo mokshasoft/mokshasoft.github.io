@@ -90,7 +90,7 @@ record2ElmData rs = do
 testData :: [R.Record]
 testData =
   [ R.Record "Sweden" 2000 1 100 ""
-  , R.Record "Sweden" 2000 1 101 ""
-  , R.Record "Sweden" 2000 1 102 ""
-  , R.Record "Sweden" 2000 1 103 ""
+  , R.Record "Sweden" 2000 2 101 ""
+  , R.Record "Sweden" 2000 3 102 ""
+  , R.Record "Sweden" 2000 4 103 ""
   ]
