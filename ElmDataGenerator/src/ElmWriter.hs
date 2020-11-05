@@ -104,14 +104,17 @@ records2Countries rs =
     years = records2Years se
   in Map.insert defaultCountry years Map.empty
 
-record2ElmData :: [R.Record] -> IO ()
-record2ElmData rs =
+record2String :: [R.Record] -> String
+record2String rs =
   let
     countries = records2Countries rs
-  in do
-    putStrLn genHeader
-    putStrLn $ genCountriesFunctions "dataSweden" $ L.map ("data"++) $ Map.keys countries
-    putStrLn $ countries2String countries
+  in genHeader ++
+     (genCountriesFunctions "dataSweden" $ L.map ("data"++) $ Map.keys countries) ++
+     countries2String countries
+
+record2ElmData :: FilePath -> [R.Record] -> IO ()
+record2ElmData file rs =
+  writeFile file $ record2String rs
 
 -- Test data
 testData :: [R.Record]

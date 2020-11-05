@@ -21,5 +21,5 @@ elmDataGenerator = do
   let recs = lines2Records (drop 1 $ lines csvData)
   putStrLn "Parsing done."
   putStrLn "Write elm dat file..."
-  record2ElmData recs
+  record2ElmData "../app/src/Gen/Data.elm" recs
   putStrLn "Writing done."
