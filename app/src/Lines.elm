@@ -57,12 +57,20 @@ chart country =
         c =
             getCountry country
 
-        data =
+        data2020 =
             selectYear 2020 c
+
+        minYear =
+            selectYear 2019 c
+
+        maxYear =
+            selectYear 2002 c
     in
     LineChart.view .x
         .y
-        [ LineChart.line Color.red Dots.diamond c.name data
+        [ LineChart.line Color.black Dots.diamond "2020" data2020
+        , LineChart.line Color.blue Dots.diamond "2019" minYear
+        , LineChart.line Color.red Dots.diamond "2002" maxYear
         ]
 
 
