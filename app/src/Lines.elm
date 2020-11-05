@@ -46,7 +46,7 @@ selectYear year country =
                     []
 
                 Just d ->
-                    d.data.nbr
+                    d.data
     in
     L.map (\d -> ChartInfo (toFloat d) (toFloat (d * d))) data
 

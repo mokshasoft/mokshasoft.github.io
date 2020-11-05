@@ -12,14 +12,9 @@ module DataTypes exposing (..)
 import Dict as D
 
 
-type alias YearData =
-    { nbr : List Int
-    }
-
-
 type alias Year =
     { total : Int
-    , data : YearData
+    , data : List Int
     }
 
 

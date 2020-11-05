@@ -26,18 +26,13 @@ countries =
     ]
 
 
-seYD : YearData
-seYD =
-    YearData (L.range 1 53)
-
-
 seY : D.Dict Int Year
 seY =
     D.fromList
-        [ ( 2000, Year 1234 seYD )
-        , ( 2000, Year 2234 seYD )
-        , ( 2000, Year 3234 seYD )
-        , ( 2000, Year 4234 seYD )
+        [ ( 2000, Year 1234 (L.range 1 53) )
+        , ( 2000, Year 2234 (L.range 1 53) )
+        , ( 2000, Year 3234 (L.range 1 53) )
+        , ( 2000, Year 4234 (L.range 1 53) )
         ]
 
 
@@ -46,9 +41,9 @@ seCountry =
     Country "Sweden" seY
 
 
-dkYD : YearData
+dkYD : List Int
 dkYD =
-    YearData <| L.map (\v -> 100 + v) (L.range 1 53)
+    L.map (\v -> 100 + v) (L.range 1 53)
 
 
 dkY : D.Dict Int Year
