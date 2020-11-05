@@ -37,13 +37,14 @@ country2String :: (String, Years) -> String
 country2String (name, y) =
   let
     funcName = "data" ++ name
-    list = L.concat $ L.intersperse "\n        , " $ L.map year2String $ Map.toList y
+    list = L.concat $ L.intersperse "\n            , " $ L.map year2String $ Map.toList y
   in
-  funcName ++ " : D.Dict Int Year\n" ++
+  funcName ++ " : Country\n" ++
   funcName ++ " =\n" ++
-  "    D.fromList\n" ++
-  "        [ " ++ list ++ "\n" ++
-  "        ]"
+  "    Country \"" ++ name ++ "\" <|\n" ++
+  "        D.fromList\n" ++
+  "            [ " ++ list ++ "\n" ++
+  "            ]"
 
 countries2String :: Countries -> String
 countries2String c =
