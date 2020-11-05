@@ -20,6 +20,6 @@ elmDataGenerator = do
   csvData <- readFile "demo_r_mweek3_1_Data.csv"
   let recs = lines2Records (drop 1 $ lines csvData)
   putStrLn "Parsing done."
-  putStrLn "Write elm dat file..."
+  putStrLn "Writing Data.elm file..."
   record2ElmData "../app/src/Gen/Data.elm" recs
   putStrLn "Writing done."
