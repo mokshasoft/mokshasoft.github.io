@@ -25,6 +25,28 @@ type Weeks = Map.HashMap Int Int
 type Years = Map.HashMap Int Weeks
 type Countries = Map.HashMap String Years
 
+year2String :: (Int, Weeks) -> String
+year2String (y, w) =
+  let
+    nbrs = L.concat $ L.intersperse ", " $ L.map show $ Map.elems w
+  in "( " ++ show y ++ ", Year " ++ show w ++ "(YearData [" ++ nbrs ++ "] )"
+
+country2String :: (String, Years) -> String
+country2String (name, y) =
+  let
+    funcName = "data" ++ name
+    list = L.concat $ L.intersperse "\n        , " $ L.map year2String $ Map.toList y
+  in
+  funcName ++ " : D.Dict Int Year\n" ++
+  funcName ++ " =\n" ++
+  "    D.fromList\n" ++
+  "        [" ++ list ++
+  "        ]"
+
+countries2String :: Countries -> String
+countries2String c =
+  L.concat $ L.intersperse "" $ L.map country2String $ Map.toList c
+
 genHeader :: String
 genHeader =
   "{-\n\
