@@ -65,18 +65,18 @@ genHeader =
   \\n\
   \import DataTypes exposing (..)\n\
   \import Dict as D\n\
-  \import List as L\n"
+  \import List as L\n\n"
 
 genCountryList :: [String] -> String
 genCountryList countries = 
-  "[ seCountry\n\
-   \, dkCountry\n\
-   \]\n\n\n"
+  "    [ seCountry\n\
+  \    , dkCountry\n\
+  \    ]\n\n"
 
 genCountriesFunctions :: String -> [String] -> String
 genCountriesFunctions def countries =
   "defaultCountry : Country\n\
-  \defaultCountry =\n" ++ def ++ "\n\n\n" ++
+  \defaultCountry =\n    " ++ def ++ "\n\n\n" ++
   "countries : List Country\n\
   \countries =\n" ++ genCountryList countries
 
@@ -106,10 +106,13 @@ records2Countries rs =
   in Map.insert defaultCountry years Map.empty
 
 record2ElmData :: [R.Record] -> IO ()
-record2ElmData rs = do
-  putStrLn genHeader
-  putStrLn $ genCountriesFunctions "seCountry" ["seContry", "dkCountry"]
-  putStrLn $ show $ records2Countries rs
+record2ElmData rs =
+  let
+    countries = records2Countries rs
+  in do
+    putStrLn genHeader
+    putStrLn $ genCountriesFunctions "dataSweden" $ L.map ("data"++) $ Map.keys countries
+    putStrLn $ countries2String countries
 
 -- Test data
 testData :: [R.Record]
