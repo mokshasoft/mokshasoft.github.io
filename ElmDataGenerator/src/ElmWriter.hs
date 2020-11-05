@@ -28,7 +28,7 @@ type Countries = Map.HashMap String Years
 year2String :: (Int, Weeks) -> String
 year2String (y, w) =
   let
-    nbrs = Map.elems w
+    nbrs = L.map snd $ L.sortOn fst $ Map.toList w
     nbrsStr = L.concat $ L.intersperse ", " $ L.map show nbrs
     total = L.sum nbrs
   in "( " ++ show y ++ ", Year " ++ show total ++ " [ " ++ nbrsStr ++ " ] )"
