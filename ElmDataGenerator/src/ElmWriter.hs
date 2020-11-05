@@ -31,7 +31,7 @@ year2String (y, w) =
     nbrs = Map.elems w
     nbrsStr = L.concat $ L.intersperse ", " $ L.map show nbrs
     total = L.sum nbrs
-  in "( " ++ show y ++ ", Year " ++ show total ++ " [" ++ nbrsStr ++ "] )"
+  in "( " ++ show y ++ ", Year " ++ show total ++ " [ " ++ nbrsStr ++ " ] )"
 
 country2String :: (String, Years) -> String
 country2String (name, y) =
@@ -53,11 +53,11 @@ countries2String c =
 genHeader :: String
 genHeader =
   "{-\n\
-  \    Copyright 2020, Mokshasoft AB (mokshasoft.com)\n\
+  \   Copyright 2020, Mokshasoft AB (mokshasoft.com)\n\
   \\n\
-  \    This software may be distributed and modified according to the terms of\n\
-  \    the GNU General Public License v3.0. Note that NO WARRANTY is provided.\n\
-  \    See \"LICENSE\" for details.\n\
+  \   This software may be distributed and modified according to the terms of\n\
+  \   the GNU General Public License v3.0. Note that NO WARRANTY is provided.\n\
+  \   See \"LICENSE\" for details.\n\
   \-}\n\
   \\n\
   \\n\
@@ -69,9 +69,8 @@ genHeader =
 
 genCountryList :: [String] -> String
 genCountryList countries = 
-  "    [ seCountry\n\
-  \    , dkCountry\n\
-  \    ]\n\n"
+  "    [ " ++  (L.concat $ L.intersperse ", " countries) ++ "\n" ++
+  "    ]\n\n"
 
 genCountriesFunctions :: String -> [String] -> String
 genCountriesFunctions def countries =
