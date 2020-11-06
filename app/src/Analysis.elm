@@ -81,6 +81,5 @@ maxAnalysis s =
     in
     Analysis
         [ LineChart.line Color.black Dots.diamond "2020" trimYear
-        , LineChart.line Color.blue Dots.diamond "2019" minYear
         , LineChart.line Color.red Dots.diamond "2002" maxYear
         ]
