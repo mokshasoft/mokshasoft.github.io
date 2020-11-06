@@ -12,6 +12,7 @@ module Main exposing (..)
 import Bootstrap.CDN as CDN
 import Bootstrap.Grid as Grid
 import Browser
+import Country as C
 import Html exposing (..)
 import Html.Attributes exposing (..)
 import Html.Events exposing (keyCode, onClick, onFocus, onInput, preventDefaultOn)
@@ -53,7 +54,7 @@ init : () -> ( Model, Cmd Msg )
 init _ =
     let
         countries =
-            Lines.getCountries
+            C.getCountries
     in
     ( { countries = countries
       , selection = Selection "Sweden"

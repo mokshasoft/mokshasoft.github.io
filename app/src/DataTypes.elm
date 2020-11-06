@@ -22,3 +22,9 @@ type alias Country =
     { name : String
     , data : D.Dict Int Year
     }
+
+
+type alias Selection =
+    { country : String
+    , year : Int
+    }

@@ -7,9 +7,11 @@
 -}
 
 
-module Lines exposing (chart)
+module Country exposing
+    ( getCountries
+    , getCountry
+    )
 
-import Analysis as A
 import Color
 import DataTypes exposing (..)
 import Dict as D
@@ -22,23 +24,20 @@ import Maybe as M
 
 
 
--- DATA TYPES
-
-
-type alias Selection =
-    { country : String
-    , year : Int
-    }
-
-
-
 -- FUNCTIONS
 
 
-chart : String -> Html.Html msg
-chart country =
-    let
-        analysis =
-            A.maxAnalysis (Selection country 2020)
-    in
-    LineChart.view .x .y analysis.lines
+getCountries : List String
+getCountries =
+    D.keys countryDict
+
+
+countryDict : D.Dict String Country
+countryDict =
+    D.fromList
+        (L.map (\c -> ( c.name, c )) Data.countries)
+
+
+getCountry : String -> Country
+getCountry country =
+    M.withDefault Data.defaultCountry (D.get country countryDict)
