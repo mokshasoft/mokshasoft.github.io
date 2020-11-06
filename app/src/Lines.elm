@@ -24,9 +24,20 @@ import Maybe as M
 -- DATA TYPES
 
 
+type alias Analysis =
+    { lines : List (LineChart.Series ChartInfo)
+    }
+
+
 type alias ChartInfo =
     { x : Float
     , y : Float
+    }
+
+
+type alias Selection =
+    { country : String
+    , year : Int
     }
 
 
@@ -51,14 +62,17 @@ selectYear year country =
     L.map2 (\i d -> ChartInfo (toFloat i) (toFloat d)) (L.range 1 (L.length data)) data
 
 
-chart : String -> Html.Html msg
-chart country =
+maxAnalysis : Selection -> Analysis
+maxAnalysis s =
     let
         c =
-            getCountry country
+            getCountry s.country
 
-        data2020 =
-            selectYear 2020 c
+        year =
+            selectYear s.year c
+
+        trimYear =
+            L.take (L.length year - 4) year
 
         minYear =
             selectYear 2019 c
@@ -66,12 +80,20 @@ chart country =
         maxYear =
             selectYear 2002 c
     in
-    LineChart.view .x
-        .y
-        [ LineChart.line Color.black Dots.diamond "2020" data2020
+    Analysis
+        [ LineChart.line Color.black Dots.diamond "2020" trimYear
         , LineChart.line Color.blue Dots.diamond "2019" minYear
         , LineChart.line Color.red Dots.diamond "2002" maxYear
         ]
+
+
+chart : String -> Html.Html msg
+chart country =
+    let
+        analysis =
+            maxAnalysis (Selection country 2020)
+    in
+    LineChart.view .x .y analysis.lines
 
 
 getCountries : List String
