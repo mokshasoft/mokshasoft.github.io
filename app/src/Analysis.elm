@@ -103,6 +103,27 @@ trimData i ls =
     L.take (L.length ls - i) ls
 
 
+{-| Take elements from a list until the predicate is true.
+-}
+takeWhile : (a -> Bool) -> List a -> List a
+takeWhile p ls =
+    case ls of
+        h :: rest ->
+            if p h then
+                h :: takeWhile p rest
+
+            else
+                []
+
+        [] ->
+            []
+
+
+dropTrailingZeros : List ChartInfo -> List ChartInfo
+dropTrailingZeros ls =
+    takeWhile (\p -> p.y /= 0) ls
+
+
 
 -- ANALYSIS
 
@@ -129,6 +150,6 @@ maxAnalysis s =
             getYearData deadliestYear c
     in
     Analysis
-        [ LineChart.line Color.black Dots.diamond "2020" <| trimData 4 year
-        , LineChart.line Color.red Dots.diamond (S.fromInt deadliestYear) deadliestYearData
+        [ LineChart.line Color.black Dots.diamond "2020" <| trimData 4 <| dropTrailingZeros year
+        , LineChart.line Color.red Dots.diamond (S.fromInt deadliestYear) <| dropTrailingZeros deadliestYearData
         ]
