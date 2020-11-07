@@ -13,7 +13,6 @@ module Analysis exposing
     , maxAnalysis
     )
 
-import Basics as B
 import Color
 import Country as C
 import DataTypes exposing (..)
@@ -22,7 +21,6 @@ import Gen.Population as Pop
 import LineChart
 import LineChart.Dots as Dots
 import List as L
-import Maybe as M
 import String as S
 import Tuple as T
 
