@@ -42,6 +42,7 @@ type alias Selection =
 chart : String -> Html.Html msg
 chart country =
     let
+        analysis : A.Analysis
         analysis =
             A.maxAnalysis (Selection country 2020)
     in

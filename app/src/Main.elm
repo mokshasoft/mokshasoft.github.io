@@ -26,6 +26,7 @@ import Maybe as M
 -- MAIN
 
 
+main : Program () Model Msg
 main =
     Browser.element
         { init = init
@@ -53,6 +54,7 @@ type alias Model =
 init : () -> ( Model, Cmd Msg )
 init _ =
     let
+        countries : List String
         countries =
             C.getCountries
     in
@@ -122,6 +124,7 @@ viewFooter =
 viewCountrySelection : Model -> Html Msg
 viewCountrySelection model =
     let
+        optList : List (Html Msg)
         optList =
             L.map (\t -> option [ selected (t == model.selection.country), value t ] [ text t ]) model.countries
     in

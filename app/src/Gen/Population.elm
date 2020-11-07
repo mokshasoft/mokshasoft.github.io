@@ -16,6 +16,7 @@ import Maybe as M
 getPopulation : Int -> String -> Int
 getPopulation year country =
     let
+        countryData : D.Dict Int Int
         countryData =
             case country of
                 "Sweden" ->

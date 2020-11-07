@@ -64,6 +64,7 @@ toChartInfo ls =
 getYearData : Int -> Country -> List ChartInfo
 getYearData year country =
     let
+        data : List Int
         data =
             case D.get year country.data of
                 Nothing ->
@@ -72,6 +73,7 @@ getYearData year country =
                 Just d ->
                     d.data
 
+        pop : Int
         pop =
             Pop.getPopulation year country.name
     in
@@ -94,12 +96,15 @@ trimData i ls =
 maxAnalysis : Selection -> Analysis
 maxAnalysis s =
     let
+        c : Country
         c =
             C.getCountry s.country
 
+        year : List ChartInfo
         year =
             getYearData s.year c
 
+        maxYear : List ChartInfo
         maxYear =
             getYearData 2002 c
     in
