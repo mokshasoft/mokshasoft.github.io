@@ -45,9 +45,9 @@ type alias ChartInfo =
 -- FUNCTIONS
 
 
-mortality : Year -> Int -> List Float
-mortality y population =
-    L.map (\i -> toFloat 52 * toFloat i / toFloat population) y.data
+mortality : List ChartInfo -> Int -> List ChartInfo
+mortality cs population =
+    L.map (\ct -> { ct | y = toFloat 52 * ct.y / toFloat population }) cs
 
 
 selectYear : Int -> Country -> List ChartInfo
@@ -86,6 +86,6 @@ maxAnalysis s =
             selectYear 2002 c
     in
     Analysis
-        [ LineChart.line Color.black Dots.diamond "2020" (L.map (\ct -> { ct | y = toFloat 52 * ct.y / toFloat 10327589 }) trimYear)
-        , LineChart.line Color.red Dots.diamond "2002" (L.map (\ct -> { ct | y = toFloat 52 * ct.y / toFloat 8940788 }) maxYear)
+        [ LineChart.line Color.black Dots.diamond "2020" <| mortality trimYear 10327589
+        , LineChart.line Color.red Dots.diamond "2002" <| mortality maxYear 8940788
         ]
