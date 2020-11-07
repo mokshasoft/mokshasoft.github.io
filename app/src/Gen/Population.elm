@@ -7,9 +7,24 @@
 -}
 
 
-module Gen.Population exposing (popSweden)
+module Gen.Population exposing (getPopulation)
 
 import Dict as D
+import Maybe as M
+
+
+getPopulation : Int -> String -> Int
+getPopulation year country =
+    let
+        countryData =
+            case country of
+                "Sweden" ->
+                    popSweden
+
+                _ ->
+                    D.empty
+    in
+    M.withDefault 0 <| D.get year countryData
 
 
 popSweden : D.Dict Int Int
@@ -35,4 +50,5 @@ popSweden =
         , ( 2017, 10120242 )
         , ( 2018, 10230185 )
         , ( 2019, 10327589 )
+        , ( 2020, 10327589 ) -- from 2019, but probably a bit higher
         ]

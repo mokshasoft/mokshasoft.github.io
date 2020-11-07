@@ -76,7 +76,7 @@ getYearData year country =
                     d.data
 
         pop =
-            1
+            Pop.getPopulation year country.name
     in
     mortality pop (toChartInfo data)
 
