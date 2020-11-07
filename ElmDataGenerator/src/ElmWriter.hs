@@ -11,11 +11,11 @@ module ElmWriter
     ( record2ElmData
     ) where
 
-import Data.Foldable as F
-import Data.HashMap.Strict as Map
-import Data.List as L
-import Data.Maybe as M
-import Parser as R
+import           Data.Foldable       as F
+import           Data.HashMap.Strict as Map
+import           Data.List           as L
+import           Data.Maybe          as M
+import           Parser              as R
 
 defaultCountry :: String
 defaultCountry =
@@ -68,7 +68,7 @@ genHeader =
   \import List as L\n\n"
 
 genCountryList :: [String] -> String
-genCountryList countries = 
+genCountryList countries =
   "    [ " ++  (L.concat $ L.intersperse ", " countries) ++ "\n" ++
   "    ]\n\n"
 

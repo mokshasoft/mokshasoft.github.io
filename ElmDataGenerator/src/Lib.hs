@@ -11,8 +11,8 @@ module Lib
     ( elmDataGenerator
     ) where
 
-import ElmWriter
-import Parser
+import           ElmWriter
+import           Parser
 
 elmDataGenerator :: IO ()
 elmDataGenerator = do

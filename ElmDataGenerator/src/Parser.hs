@@ -12,16 +12,16 @@ module Parser
     , Record(..)
     ) where
 
-import Text.ParserCombinators.Parsec
-import Data.Maybe
-import Data.String.Utils
+import           Data.Maybe
+import           Data.String.Utils
+import           Text.ParserCombinators.Parsec
 
 data Record = Record
   { country :: String
-  , year :: Int
-  , week :: Int
-  , nbr :: Int
-  , dbg :: String
+  , year    :: Int
+  , week    :: Int
+  , nbr     :: Int
+  , dbg     :: String
   } deriving Show
 
 wordsWhen :: (Char -> Bool) -> String -> [String]
@@ -35,7 +35,7 @@ acc :: [a] -> Maybe a -> [a]
 acc b a =
     case a of
         Nothing -> b
-        Just r -> b ++ [r]
+        Just r  -> b ++ [r]
 
 lines2Records :: [String] -> [Record]
 lines2Records strs = foldl acc [] (map line2Record strs)
