@@ -16,7 +16,18 @@ import Dict as D
 import Gen.Data as Data
 import Html
 import LineChart
+import LineChart.Area as Area
+import LineChart.Axis as Axis
+import LineChart.Axis.Intersection as Intersection
+import LineChart.Colors as Colors
+import LineChart.Container as Container
 import LineChart.Dots as Dots
+import LineChart.Events as Events
+import LineChart.Grid as Grid
+import LineChart.Interpolation as Interpolation
+import LineChart.Junk as Junk
+import LineChart.Legends as Legends
+import LineChart.Line as Line
 import List as L
 import Maybe as M
 
@@ -41,4 +52,18 @@ chart country =
         analysis =
             A.maxAnalysis (Selection country 2020)
     in
-    LineChart.view .x .y analysis.lines
+    LineChart.viewCustom
+        { x = Axis.full 1000 "Week" .x
+        , y = Axis.full 500 "Mortality" .y
+        , container = Container.default "line-chart-1"
+        , interpolation = Interpolation.default
+        , intersection = Intersection.default
+        , legends = Legends.default
+        , events = Events.default
+        , junk = Junk.default
+        , grid = Grid.default
+        , area = Area.default
+        , line = Line.default
+        , dots = Dots.default
+        }
+        analysis.lines
