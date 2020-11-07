@@ -2,7 +2,7 @@
 # Targets for building the website
 #
 
-web: gen/elm.min.js
+web: app/elm.min.js
 
 APP_FILES=\
   ./app/src/Lines.elm\
@@ -13,10 +13,10 @@ APP_FILES=\
   ./app/src/DataTypes.elm\
   ./app/src/Analysis.elm
 
-gen/elm.min.js: $(APP_FILES)
+app/elm.min.js: $(APP_FILES)
 	(cd app && \
 	./optimize.sh src/Main.elm && \
-	cp elm.min.js ../gen)
+	cat ../index.html.begin elm.min.js ../index.html.end > ../index.html)
 
 
 #
