@@ -105,15 +105,26 @@ viewHeader =
         ]
 
 
+footerButton : String -> String -> String -> Html Msg
+footerButton txt tooltip link =
+    a
+        [ class "btn btn-secondary"
+        , href link
+        , attribute "data-toggle" "tooltip"
+        , attribute "data-placement" "top"
+        , attribute "title" tooltip
+        ]
+        [ text txt ]
+
+
 viewFooter : Html Msg
 viewFooter =
     div [ class "jumbotron jumbotron-fluid" ]
         [ div [ class "cointainer" ]
             [ p []
-                [ a [ href "https://github.com/mokshasoft/mr" ]
-                    [ text " GitHub" ]
-                , a [ href "https://appsso.eurostat.ec.europa.eu/nui/show.do?dataset=demo_r_mweek3&lang=en" ]
-                    [ text " Eurostat" ]
+                [ footerButton "GitHub" "Link to Source Code" "https://github.com/mokshasoft/mokshasoft.github.io"
+                , footerButton "Eurostat" "Eurostat total deaths" "https://appsso.eurostat.ec.europa.eu/nui/show.do?dataset=demo_r_mweek3&lang=en"
+                , footerButton "UN" "UN Population Data" "https://population.un.org/wpp/DataQuery/"
 
                 -- https://package.elm-lang.org/packages/rundis/elm-bootstrap/latest/Bootstrap-Popover
                 ]
