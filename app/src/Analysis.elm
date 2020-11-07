@@ -150,6 +150,6 @@ maxAnalysis s =
             getYearData deadliestYear c
     in
     Analysis
-        [ LineChart.line Color.black Dots.diamond "2020" <| trimData 4 <| dropTrailingZeros year
-        , LineChart.line Color.red Dots.diamond (S.fromInt deadliestYear) <| dropTrailingZeros deadliestYearData
+        [ LineChart.line Color.black Dots.diamond "2020" <| trimData 4 <| L.take 52 year
+        , LineChart.line Color.red Dots.diamond (S.fromInt deadliestYear) <| L.take 52 deadliestYearData
         ]
