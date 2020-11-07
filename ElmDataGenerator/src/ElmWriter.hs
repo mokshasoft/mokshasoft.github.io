@@ -65,7 +65,7 @@ genHeader =
   \\n\
   \import DataTypes exposing (..)\n\
   \import Dict as D\n\
-  \import List as L\n\n"
+  \import List as L\n\n\n"
 
 genCountryList :: [String] -> String
 genCountryList countries =
