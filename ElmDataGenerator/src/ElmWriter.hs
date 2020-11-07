@@ -92,17 +92,18 @@ insertRecordYear y r =
     newWeek = M.fromMaybe Map.empty $ Map.lookup rYear y
   in Map.insert rYear (Map.insert rWeek nbr newWeek) y
 
-records2Years :: [R.Record] -> Years
-records2Years rs =
-  L.foldl insertRecordYear Map.empty rs
+insertRecordCountry :: Countries -> R.Record -> Countries
+insertRecordCountry c r =
+  let
+    rCountry = R.country r
+    rYear = R.year r
+    year = M.fromMaybe Map.empty $ Map.lookup rCountry c
+    newYear = insertRecordYear year r
+  in Map.insert rCountry newYear c
 
 records2Countries :: [R.Record] -> Countries
 records2Countries rs =
-  let
-    -- Extract only Swedish data for now
-    se = L.filter (\r -> R.country r == defaultCountry) rs
-    years = records2Years se
-  in Map.insert defaultCountry years Map.empty
+  L.foldl insertRecordCountry Map.empty rs
 
 record2String :: [R.Record] -> String
 record2String rs =
