@@ -64,8 +64,7 @@ genHeader =
   \module Gen.Data exposing (countries, defaultCountry)\n\
   \\n\
   \import DataTypes exposing (..)\n\
-  \import Dict as D\n\
-  \import List as L\n\n\n"
+  \import Dict as D\n\n\n"
 
 genCountryList :: [String] -> String
 genCountryList countries =
