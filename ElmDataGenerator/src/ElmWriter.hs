@@ -48,7 +48,7 @@ country2String (name, y) =
 
 countries2String :: Countries -> String
 countries2String c =
-  L.concat $ L.intersperse "" $ L.map country2String $ Map.toList c
+  L.concat $ L.intersperse "\n\n\n" $ L.map country2String $ Map.toList c
 
 genHeader :: String
 genHeader =
@@ -69,8 +69,8 @@ genHeader =
 
 genCountryList :: [String] -> String
 genCountryList countries =
-  "    [ " ++  (L.concat $ L.intersperse ", " countries) ++ "\n" ++
-  "    ]\n\n"
+  "    [ " ++  (L.concat $ L.intersperse "\n    , " countries) ++ "\n" ++
+  "    ]\n\n\n"
 
 genCountriesFunctions :: String -> [String] -> String
 genCountriesFunctions def countries =
