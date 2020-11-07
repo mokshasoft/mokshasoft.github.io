@@ -18,6 +18,7 @@ import Country as C
 import DataTypes exposing (..)
 import Dict as D
 import Gen.Data as Data
+import Gen.Population as Pop
 import Html
 import LineChart
 import LineChart.Dots as Dots
@@ -42,6 +43,11 @@ type alias ChartInfo =
 
 
 -- FUNCTIONS
+
+
+mortality : Year -> Int -> List Float
+mortality y population =
+    L.map (\i -> toFloat 52 * toFloat i / toFloat population) y.data
 
 
 selectYear : Int -> Country -> List ChartInfo
@@ -80,6 +86,6 @@ maxAnalysis s =
             selectYear 2002 c
     in
     Analysis
-        [ LineChart.line Color.black Dots.diamond "2020" trimYear
-        , LineChart.line Color.red Dots.diamond "2002" maxYear
+        [ LineChart.line Color.black Dots.diamond "2020" (L.map (\ct -> { ct | y = toFloat 52 * ct.y / toFloat 10327589 }) trimYear)
+        , LineChart.line Color.red Dots.diamond "2002" (L.map (\ct -> { ct | y = toFloat 52 * ct.y / toFloat 8940788 }) maxYear)
         ]
