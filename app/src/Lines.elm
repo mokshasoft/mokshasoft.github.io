@@ -10,10 +10,6 @@
 module Lines exposing (chart)
 
 import Analysis as A
-import Color
-import DataTypes exposing (..)
-import Dict as D
-import Gen.Data as Data
 import Html
 import LineChart
 import LineChart.Area as Area
@@ -28,8 +24,6 @@ import LineChart.Interpolation as Interpolation
 import LineChart.Junk as Junk
 import LineChart.Legends as Legends
 import LineChart.Line as Line
-import List as L
-import Maybe as M
 
 
 
