@@ -25,7 +25,7 @@ getPopulation year country =
                 _ ->
                     D.empty
     in
-    M.withDefault 1 <| D.get year countryData
+    M.withDefault 1000000 <| D.get year countryData
 
 
 popSweden : D.Dict Int Int
