@@ -13,6 +13,7 @@ module Analysis exposing
     , maxAnalysis
     )
 
+import Basics as B
 import Color
 import Country as C
 import DataTypes exposing (..)
@@ -21,6 +22,9 @@ import Gen.Population as Pop
 import LineChart
 import LineChart.Dots as Dots
 import List as L
+import Maybe as M
+import String as S
+import Tuple as T
 
 
 
@@ -80,6 +84,20 @@ getYearData year country =
     mortality pop (toChartInfo data)
 
 
+getDeadliestYear : Country -> Int
+getDeadliestYear country =
+    let
+        cmp : Int -> Year -> ( Int, Int ) -> ( Int, Int )
+        cmp year yearData ( y, maxTotal ) =
+            if yearData.total > maxTotal then
+                ( year, yearData.total )
+
+            else
+                ( y, maxTotal )
+    in
+    T.first <| D.foldl cmp ( 0, 0 ) country.data
+
+
 {-| Trim of i elements and the end of the ChartInfo.
 -}
 trimData : Int -> List ChartInfo -> List ChartInfo
@@ -104,11 +122,15 @@ maxAnalysis s =
         year =
             getYearData s.year c
 
-        maxYear : List ChartInfo
-        maxYear =
-            getYearData 2002 c
+        deadliestYear : Int
+        deadliestYear =
+            getDeadliestYear c
+
+        deadliestYearData : List ChartInfo
+        deadliestYearData =
+            getYearData deadliestYear c
     in
     Analysis
         [ LineChart.line Color.black Dots.diamond "2020" <| trimData 4 year
-        , LineChart.line Color.red Dots.diamond "2002" maxYear
+        , LineChart.line Color.red Dots.diamond (S.fromInt deadliestYear) deadliestYearData
         ]
