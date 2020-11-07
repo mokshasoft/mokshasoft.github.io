@@ -34,6 +34,6 @@ CONV_FILES=\
   ./ElmDataGenerator/src/ElmWriter.hs
 
 app/src/Gen/Data.elm: $(CONV_FILES)
-	(cd ElmWriter && \
+	(cd ElmDataGenerator && \
 	stack build && \
 	stack exec ElmDataGenerator-exe)
