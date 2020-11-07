@@ -11,7 +11,6 @@ module Gen.Data exposing (countries, defaultCountry)
 
 import DataTypes exposing (..)
 import Dict as D
-import List as L
 
 
 defaultCountry : Country
