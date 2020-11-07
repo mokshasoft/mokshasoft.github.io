@@ -47,7 +47,7 @@ type alias ChartInfo =
 
 mortality : List ChartInfo -> Int -> List ChartInfo
 mortality cs population =
-    L.map (\ct -> { ct | y = toFloat 52 * ct.y / toFloat population }) cs
+    L.map (\ct -> { ct | y = 1000 * toFloat 52 * ct.y / toFloat population }) cs
 
 
 selectYear : Int -> Country -> List ChartInfo
