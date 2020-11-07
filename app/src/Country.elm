@@ -12,13 +12,9 @@ module Country exposing
     , getCountry
     )
 
-import Color
 import DataTypes exposing (..)
 import Dict as D
 import Gen.Data as Data
-import Html
-import LineChart
-import LineChart.Dots as Dots
 import List as L
 import Maybe as M
 

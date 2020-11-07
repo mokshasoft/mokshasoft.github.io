@@ -17,13 +17,10 @@ import Color
 import Country as C
 import DataTypes exposing (..)
 import Dict as D
-import Gen.Data as Data
 import Gen.Population as Pop
-import Html
 import LineChart
 import LineChart.Dots as Dots
 import List as L
-import Maybe as M
 
 
 

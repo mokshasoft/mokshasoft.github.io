@@ -15,7 +15,6 @@ import LineChart
 import LineChart.Area as Area
 import LineChart.Axis as Axis
 import LineChart.Axis.Intersection as Intersection
-import LineChart.Colors as Colors
 import LineChart.Container as Container
 import LineChart.Dots as Dots
 import LineChart.Events as Events

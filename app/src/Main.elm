@@ -17,7 +17,7 @@ import Html exposing (..)
 import Html.Attributes exposing (..)
 import Html.Events exposing (keyCode, onClick, onFocus, onInput, preventDefaultOn)
 import Html.Events.Extra as Extra
-import Lines as Lines
+import Lines
 import List as L
 import Maybe as M
 
@@ -87,7 +87,7 @@ update msg model =
 
 
 subscriptions : Model -> Sub Msg
-subscriptions model =
+subscriptions _ =
     Sub.none
 
 
