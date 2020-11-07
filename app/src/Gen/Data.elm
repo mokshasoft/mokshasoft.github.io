@@ -13,6 +13,7 @@ import DataTypes exposing (..)
 import Dict as D
 import List as L
 
+
 defaultCountry : Country
 defaultCountry =
     dataSweden
@@ -38,7 +39,7 @@ countries =
     , dataAlbania
     , dataSlovenia
     , dataMalta
-    , dataUnited Kingdom
+    , dataUnitedKingdom
     , dataSpain
     , dataDenmark
     , dataIceland
@@ -52,7 +53,7 @@ countries =
     , dataLiechtenstein
     , dataRomania
     , dataBelgium
-    , dataGermany (until 1990 former territory of the FRG)
+    , dataGermany
     , dataNetherlands
     ]
 
@@ -561,8 +562,8 @@ dataMalta =
             ]
 
 
-dataUnited Kingdom : Country
-dataUnited Kingdom =
+dataUnitedKingdom : Country
+dataUnitedKingdom =
     Country "United Kingdom" <|
         D.fromList
             [ ( 2000, Year 0 [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ] )
@@ -953,8 +954,8 @@ dataBelgium =
             ]
 
 
-dataGermany (until 1990 former territory of the FRG) : Country
-dataGermany (until 1990 former territory of the FRG) =
+dataGermany : Country
+dataGermany =
     Country "Germany (until 1990 former territory of the FRG)" <|
         D.fromList
             [ ( 2000, Year 0 [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ] )
