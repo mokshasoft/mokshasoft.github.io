@@ -9,6 +9,7 @@
 
 module Main exposing (..)
 
+import Analysis as A
 import Bootstrap.CDN as CDN
 import Bootstrap.Grid as Grid
 import Browser
@@ -42,24 +43,23 @@ main =
 
 type alias Selection =
     { country : String
+    , analysis : A.Analysis
     }
 
 
+defaultSelection : Selection
+defaultSelection =
+    Selection "Sweden" A.MaxYear
+
+
 type alias Model =
-    { countries : List String
-    , selection : Selection
+    { selection : Selection
     }
 
 
 init : () -> ( Model, Cmd Msg )
 init _ =
-    let
-        countries : List String
-        countries =
-            C.getCountries
-    in
-    ( { countries = countries
-      , selection = Selection "Sweden"
+    ( { selection = defaultSelection
       }
     , Cmd.none
     )
@@ -78,7 +78,7 @@ update msg model =
     case msg of
         SetCountry c ->
             ( { model
-                | selection = Selection c
+                | selection = Selection c model.selection.analysis
               }
             , Cmd.none
             )
@@ -137,7 +137,7 @@ viewCountrySelection model =
     let
         optList : List (Html Msg)
         optList =
-            L.map (\t -> option [ selected (t == model.selection.country), value t ] [ text t ]) model.countries
+            L.map (\t -> option [ selected (t == model.selection.country), value t ] [ text t ]) C.getCountries
     in
     div []
         [ select [ Extra.onChange SetCountry ] optList
@@ -152,7 +152,7 @@ view model =
             [ Grid.col []
                 [ viewHeader
                 , viewCountrySelection model
-                , div [ class "container" ] [ Lines.chart model.selection.country ]
+                , div [ class "container" ] [ Lines.chart model.selection.country model.selection.analysis ]
                 , viewFooter
                 ]
             ]

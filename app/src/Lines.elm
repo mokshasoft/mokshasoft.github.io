@@ -26,25 +26,15 @@ import LineChart.Line as Line
 
 
 
--- DATA TYPES
-
-
-type alias Selection =
-    { country : String
-    , year : Int
-    }
-
-
-
 -- FUNCTIONS
 
 
-chart : String -> Html.Html msg
-chart country =
+chart : String -> A.Analysis -> Html.Html msg
+chart country analysisType =
     let
-        analysis : A.Analysis
+        analysis : A.GraphData
         analysis =
-            A.maxAnalysis (Selection country 2020)
+            A.analysis country analysisType
     in
     LineChart.viewCustom
         { x = Axis.full 1000 "Week" .x

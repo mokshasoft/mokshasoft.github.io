@@ -8,9 +8,10 @@
 
 
 module Analysis exposing
-    ( Analysis
+    ( Analysis(..)
     , ChartInfo
-    , maxAnalysis
+    , GraphData
+    , analysis
     )
 
 import Color
@@ -29,7 +30,13 @@ import Tuple as T
 -- DATA TYPES
 
 
-type alias Analysis =
+type Analysis
+    = MaxYear
+    | MaxWeekly
+    | Yearly
+
+
+type alias GraphData =
     { lines : List (LineChart.Series ChartInfo)
     }
 
@@ -42,6 +49,19 @@ type alias ChartInfo =
 
 
 -- HELPER FUNCTIONS
+
+
+analysis : String -> Analysis -> GraphData
+analysis country analysisType =
+    case analysisType of
+        MaxYear ->
+            maxAnalysis country
+
+        MaxWeekly ->
+            maxWeeklyAnalysis country
+
+        Yearly ->
+            yearlyAnalysis country
 
 
 {-| Mortality rate expressed in a population of 1000 individuals.
@@ -130,16 +150,16 @@ dropTrailingZeros ls =
 
 {-| Display mortality in 2020 with highest mortality of 2000-2019.
 -}
-maxAnalysis : Selection -> Analysis
-maxAnalysis s =
+maxAnalysis : String -> GraphData
+maxAnalysis country =
     let
         c : Country
         c =
-            C.getCountry s.country
+            C.getCountry country
 
         year : List ChartInfo
         year =
-            getYearData s.year c
+            getYearData 2020 c
 
         deadliestYear : Int
         deadliestYear =
@@ -149,7 +169,17 @@ maxAnalysis s =
         deadliestYearData =
             getYearData deadliestYear c
     in
-    Analysis
+    GraphData
         [ LineChart.line Color.black Dots.diamond "2020" <| trimData 4 <| L.take 52 year
         , LineChart.line Color.red Dots.diamond (S.fromInt deadliestYear) <| L.take 52 deadliestYearData
         ]
+
+
+maxWeeklyAnalysis : String -> GraphData
+maxWeeklyAnalysis country =
+    GraphData []
+
+
+yearlyAnalysis : String -> GraphData
+yearlyAnalysis country =
+    GraphData []
