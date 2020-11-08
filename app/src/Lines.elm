@@ -37,7 +37,7 @@ chart country analysisType =
             A.analysis country analysisType
     in
     LineChart.viewCustom
-        { x = Axis.full 1000 "Week" .x
+        { x = Axis.full 1000 analysis.captionX .x
         , y = Axis.full 500 "Mortality" .y
         , container = Container.default "line-chart-1"
         , interpolation = Interpolation.default

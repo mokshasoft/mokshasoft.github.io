@@ -40,7 +40,8 @@ type Analysis
 
 
 type alias GraphData =
-    { lines : List (LineChart.Series ChartInfo)
+    { captionX : String
+    , lines : List (LineChart.Series ChartInfo)
     }
 
 
@@ -242,7 +243,7 @@ maxAnalysis country =
         deadliestYearData =
             getYearData deadliestYear c
     in
-    GraphData
+    GraphData "Week number"
         [ LineChart.line Color.black Dots.diamond "2020" <| trimData 4 <| L.take 52 year
         , LineChart.line Color.red Dots.diamond (S.fromInt deadliestYear) <| L.take 52 deadliestYearData
         ]
@@ -250,7 +251,7 @@ maxAnalysis country =
 
 maxWeeklyAnalysis : String -> GraphData
 maxWeeklyAnalysis country =
-    GraphData []
+    GraphData "Week number" []
 
 
 yearlyAnalysis : String -> GraphData
@@ -264,6 +265,6 @@ yearlyAnalysis country =
         yearly =
             getYearlyData c
     in
-    GraphData
+    GraphData "Year"
         [ LineChart.line Color.black Dots.diamond "2020" yearly
         ]
