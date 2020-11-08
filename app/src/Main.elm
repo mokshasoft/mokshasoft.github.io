@@ -84,9 +84,9 @@ update msg model =
             , Cmd.none
             )
 
-        SetAnalysis a ->
+        SetAnalysis c ->
             ( { model
-                | selection = Selection model.selection.country <| A.getAnalysis a
+                | selection = Selection model.selection.country <| A.getAnalysis c
               }
             , Cmd.none
             )
@@ -130,9 +130,10 @@ viewFooter =
     div [ class "jumbotron jumbotron-fluid" ]
         [ div [ class "cointainer" ]
             [ p []
-                [ footerButton "GitHub" "Link to Source Code" "https://github.com/mokshasoft/mokshasoft.github.io"
+                [ footerButton "Open-Source" "Link to Source Code" "https://github.com/mokshasoft/mokshasoft.github.io"
                 , footerButton "Eurostat" "Eurostat total deaths" "https://appsso.eurostat.ec.europa.eu/nui/show.do?dataset=demo_r_mweek3&lang=en"
                 , footerButton "UN" "UN Population Data" "https://population.un.org/wpp/DataQuery/"
+                , footerButton "Mortality Rate?" "What is mortality rate?" "https://en.wikipedia.org/wiki/Mortality_rate"
 
                 -- https://package.elm-lang.org/packages/rundis/elm-bootstrap/latest/Bootstrap-Popover
                 ]
