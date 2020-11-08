@@ -40,6 +40,26 @@ countryDict =
         (L.map (\c -> ( c.name, c )) Data.countries)
 
 
+{-| Make yearly data max 52 weeks long and remove everything after a zero value
+-}
+filterCountryData : Country -> Country
+filterCountryData country =
+    let
+        transformer : Int -> Year -> D.Dict Int Year -> D.Dict Int Year
+        transformer year yearData dict =
+            let
+                d =
+                    L.take 52 <| dropTrailingZeros yearData.data
+            in
+            D.insert year (Year yearData.total d) dict
+
+        dataDict : D.Dict Int Year
+        dataDict =
+            D.foldl transformer D.empty country.data
+    in
+    Country country.name dataDict
+
+
 getCountry : String -> Country
 getCountry country =
-    M.withDefault Data.defaultCountry (D.get country countryDict)
+    filterCountryData <| M.withDefault Data.defaultCountry (D.get country countryDict)
