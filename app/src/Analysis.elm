@@ -96,9 +96,14 @@ analysis country analysisType =
 The input List should contain deaths/week.
 
 -}
-mortality : Int -> List ChartInfo -> List ChartInfo
-mortality population cs =
+mortalityWeekly : Int -> List ChartInfo -> List ChartInfo
+mortalityWeekly population cs =
     L.map (\ct -> { ct | y = 1000 * toFloat 52 * ct.y / toFloat population }) cs
+
+
+mortalityYearly : List Int -> List ChartInfo -> List ChartInfo
+mortalityYearly ps cs =
+    L.map2 (\p c -> { c | y = 1000 * c.y / toFloat p }) ps cs
 
 
 {-| Transform data to ChartInfo
@@ -126,7 +131,7 @@ getYearData year country =
         pop =
             Pop.getPopulation year country.name
     in
-    mortality pop (toChartInfo data)
+    mortalityWeekly pop (toChartInfo data)
 
 
 getDeadliestYear : Country -> Int
@@ -150,6 +155,10 @@ getYearlyData country =
         transform ( year, yearData ) =
             ChartInfo (toFloat year) (toFloat yearData.total)
 
+        pop : List Int
+        pop =
+            Pop.getPopulationList country.name
+
         year2020 =
             M.withDefault (Year 0 []) <| D.get 2020 country.data
 
@@ -159,7 +168,7 @@ getYearlyData country =
         last =
             M.withDefault (ChartInfo 0 0) <| L.head <| L.reverse chart
     in
-    L.append (L.take (L.length chart - 1) chart) [ ChartInfo last.x (estimate2020 year2020) ]
+    mortalityYearly pop <| L.append (L.take (L.length chart - 1) chart) [ ChartInfo last.x (estimate2020 year2020) ]
 
 
 {-| Trim of i elements and the end of the ChartInfo.

@@ -7,10 +7,39 @@
 -}
 
 
-module Gen.Population exposing (getPopulation)
+module Gen.Population exposing
+    ( getPopulation
+    , getPopulationList
+    )
 
 import Dict as D
+import List as L
 import Maybe as M
+import Tuple as T
+
+
+getCountryData : String -> D.Dict Int Int
+getCountryData country =
+    case country of
+        "Sweden" ->
+            popSweden
+
+        _ ->
+            D.empty
+
+
+getPopulationList : String -> List Int
+getPopulationList country =
+    let
+        countryData : List ( Int, Int )
+        countryData =
+            L.sortBy T.first <| D.toList <| getCountryData country
+    in
+    if L.isEmpty countryData then
+        L.repeat 21 1000000
+
+    else
+        L.map T.second countryData
 
 
 getPopulation : Int -> String -> Int
@@ -18,12 +47,7 @@ getPopulation year country =
     let
         countryData : D.Dict Int Int
         countryData =
-            case country of
-                "Sweden" ->
-                    popSweden
-
-                _ ->
-                    D.empty
+            getCountryData country
     in
     M.withDefault 1000000 <| D.get year countryData
 
