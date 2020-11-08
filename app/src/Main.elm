@@ -49,7 +49,7 @@ type alias Selection =
 
 defaultSelection : Selection
 defaultSelection =
-    Selection "Sweden" A.MaxYear
+    Selection "Sweden" A.Yearly
 
 
 type alias Model =

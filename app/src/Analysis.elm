@@ -116,6 +116,16 @@ getDeadliestYear country =
     T.first <| D.foldl cmp ( 0, 0 ) country.data
 
 
+getYearlyData : Country -> List ChartInfo
+getYearlyData country =
+    let
+        transform : ( Int, Year ) -> ChartInfo
+        transform ( year, yearData ) =
+            ChartInfo (toFloat year) (toFloat yearData.total)
+    in
+    L.map transform <| D.toList country.data
+
+
 {-| Trim of i elements and the end of the ChartInfo.
 -}
 trimData : Int -> List ChartInfo -> List ChartInfo
@@ -182,4 +192,15 @@ maxWeeklyAnalysis country =
 
 yearlyAnalysis : String -> GraphData
 yearlyAnalysis country =
-    GraphData []
+    let
+        c : Country
+        c =
+            C.getCountry country
+
+        yearly : List ChartInfo
+        yearly =
+            getYearlyData c
+    in
+    GraphData
+        [ LineChart.line Color.black Dots.diamond "2020" yearly
+        ]
