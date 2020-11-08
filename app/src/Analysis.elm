@@ -166,7 +166,7 @@ getDeadliestPeakYear country =
 
         list : List ( Int, Year )
         list =
-            D.toList country.data
+            D.toList <| D.remove 2020 country.data
 
         folded : ( Int, Int )
         folded =
