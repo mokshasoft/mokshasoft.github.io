@@ -24,6 +24,7 @@ import Gen.Population as Pop
 import LineChart
 import LineChart.Dots as Dots
 import List as L
+import ListExtra as LE
 import Maybe as M
 import String as S
 import Tuple as T
@@ -197,39 +198,11 @@ getYearlyData country =
     mortalityYearly pop <| L.append (L.take (L.length chart - 1) chart) [ ChartInfo last.x (estimate2020 year2020) ]
 
 
-{-| Trim of i elements and the end of the ChartInfo.
--}
-trimData : Int -> List ChartInfo -> List ChartInfo
-trimData i ls =
-    L.take (L.length ls - i) ls
-
-
-{-| Take elements from a list until the predicate is true.
--}
-takeWhile : (a -> Bool) -> List a -> List a
-takeWhile p ls =
-    case ls of
-        h :: rest ->
-            if p h then
-                h :: takeWhile p rest
-
-            else
-                []
-
-        [] ->
-            []
-
-
-dropTrailingZeros : List Int -> List Int
-dropTrailingZeros ls =
-    takeWhile (\p -> p /= 0) ls
-
-
 estimate2020 : Year -> Float
 estimate2020 year =
     let
         ls =
-            dropTrailingZeros year.data
+            LE.takeWhile (\p -> p /= 0) year.data
 
         len =
             L.length ls
@@ -269,7 +242,7 @@ maxAnalysis country =
             getYearData deadliestYear c
     in
     GraphData "Week number"
-        [ LineChart.line Color.black Dots.diamond "2020" <| trimData 4 <| L.take 52 year
+        [ LineChart.line Color.black Dots.diamond "2020" <| LE.dropRight 4 <| L.take 52 year
         , LineChart.line Color.red Dots.diamond (S.fromInt deadliestYear) <| L.take 52 deadliestYearData
         ]
 
@@ -294,7 +267,7 @@ maxWeeklyAnalysis country =
             getYearData deadliestPeakYear c
     in
     GraphData "Week number"
-        [ LineChart.line Color.black Dots.diamond "2020" <| trimData 4 <| L.take 52 year
+        [ LineChart.line Color.black Dots.diamond "2020" <| LE.dropRight 4 <| L.take 52 year
         , LineChart.line Color.red Dots.diamond (S.fromInt deadliestPeakYear) <| L.take 52 comparedYearData
         ]
 

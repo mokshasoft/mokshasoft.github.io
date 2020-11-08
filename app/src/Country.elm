@@ -16,11 +16,17 @@ import DataTypes exposing (..)
 import Dict as D
 import Gen.Data as Data
 import List as L
+import ListExtra as LE
 import Maybe as M
 
 
 
 -- FUNCTIONS
+
+
+dropTrailingZeros : List Int -> List Int
+dropTrailingZeros ls =
+    LE.takeWhile (\p -> p /= 0) ls
 
 
 getCountries : List String
