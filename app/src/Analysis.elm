@@ -24,6 +24,7 @@ import Gen.Population as Pop
 import LineChart
 import LineChart.Dots as Dots
 import List as L
+import Maybe as M
 import String as S
 import Tuple as T
 
@@ -148,8 +149,17 @@ getYearlyData country =
         transform : ( Int, Year ) -> ChartInfo
         transform ( year, yearData ) =
             ChartInfo (toFloat year) (toFloat yearData.total)
+
+        year2020 =
+            M.withDefault (Year 0 []) <| D.get 2020 country.data
+
+        chart =
+            L.map transform <| D.toList country.data
+
+        last =
+            M.withDefault (ChartInfo 0 0) <| L.head <| L.reverse chart
     in
-    L.map transform <| D.toList country.data
+    L.append (L.take (L.length chart - 1) chart) [ ChartInfo last.x (estimate2020 year2020) ]
 
 
 {-| Trim of i elements and the end of the ChartInfo.
@@ -175,9 +185,27 @@ takeWhile p ls =
             []
 
 
-dropTrailingZeros : List ChartInfo -> List ChartInfo
+dropTrailingZeros : List Int -> List Int
 dropTrailingZeros ls =
-    takeWhile (\p -> p.y /= 0) ls
+    takeWhile (\p -> p /= 0) ls
+
+
+estimate2020 : Year -> Float
+estimate2020 year =
+    let
+        ls =
+            dropTrailingZeros year.data
+
+        len =
+            L.length ls
+
+        l20 =
+            L.take (len - 20) ls
+
+        avg20 =
+            toFloat (L.sum l20) / toFloat (L.length l20)
+    in
+    toFloat year.total + toFloat (52 - len) * avg20
 
 
 
