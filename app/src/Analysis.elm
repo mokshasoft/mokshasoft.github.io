@@ -149,6 +149,31 @@ getDeadliestYear country =
     T.first <| D.foldl cmp ( 0, 0 ) country.data
 
 
+getDeadliestPeakYear : Country -> Int
+getDeadliestPeakYear country =
+    let
+        cmp : ( Int, Year ) -> ( Int, Int ) -> ( Int, Int )
+        cmp ( year, yearData ) ( y, diff ) =
+            let
+                min =
+                    M.withDefault 0 <| L.minimum yearData.data
+
+                max =
+                    M.withDefault 0 <| L.maximum yearData.data
+            in
+            ( year, max - min )
+
+        list : List ( Int, Year )
+        list =
+            D.toList country.data
+
+        folded : ( Int, Int )
+        folded =
+            L.foldl cmp ( 0, 0 ) list
+    in
+    T.first folded
+
+
 getYearlyData : Country -> List ChartInfo
 getYearlyData country =
     let
@@ -251,7 +276,27 @@ maxAnalysis country =
 
 maxWeeklyAnalysis : String -> GraphData
 maxWeeklyAnalysis country =
-    GraphData "Week number" []
+    let
+        c : Country
+        c =
+            C.getCountry country
+
+        year : List ChartInfo
+        year =
+            getYearData 2020 c
+
+        deadliestPeakYear : Int
+        deadliestPeakYear =
+            getDeadliestPeakYear c
+
+        comparedYearData : List ChartInfo
+        comparedYearData =
+            getYearData deadliestPeakYear c
+    in
+    GraphData "Week number"
+        [ LineChart.line Color.black Dots.diamond "2020" <| trimData 4 <| L.take 52 year
+        , LineChart.line Color.red Dots.diamond (S.fromInt deadliestPeakYear) <| L.take 52 comparedYearData
+        ]
 
 
 yearlyAnalysis : String -> GraphData
