@@ -50,8 +50,16 @@ filterCountryData country =
             let
                 d =
                     L.take 52 <| dropTrailingZeros yearData.data
+
+                dd =
+                    if L.length d < 52 then
+                        -- The last samples in 2020 is probably not correct enough, drop two
+                        LE.dropRight 2 d
+
+                    else
+                        d
             in
-            D.insert year (Year yearData.total d) dict
+            D.insert year (Year yearData.total dd) dict
 
         dataDict : D.Dict Int Year
         dataDict =
