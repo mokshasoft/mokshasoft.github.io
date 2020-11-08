@@ -195,20 +195,17 @@ getYearlyData country =
         last =
             M.withDefault (ChartInfo 0 0) <| L.head <| L.reverse chart
     in
-    mortalityYearly pop <| L.append (L.take (L.length chart - 1) chart) [ ChartInfo last.x (estimate2020 year2020) ]
+    mortalityYearly pop <| L.append (LE.dropRight 1 chart) [ ChartInfo last.x (estimate2020 year2020) ]
 
 
 estimate2020 : Year -> Float
 estimate2020 year =
     let
-        ls =
-            LE.takeWhile (\p -> p /= 0) year.data
-
         len =
-            L.length ls
+            L.length year.data
 
         l20 =
-            L.take (len - 20) ls
+            L.take (len - 20) year.data
 
         avg20 =
             toFloat (L.sum l20) / toFloat (L.length l20)
