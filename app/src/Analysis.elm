@@ -242,8 +242,8 @@ maxAnalysis country =
             getYearData deadliestYear c
     in
     GraphData "Week number"
-        [ LineChart.line Color.black Dots.diamond "2020" <| LE.dropRight 4 <| L.take 52 year
-        , LineChart.line Color.red Dots.diamond (S.fromInt deadliestYear) <| L.take 52 deadliestYearData
+        [ LineChart.line Color.black Dots.diamond "2020" year
+        , LineChart.line Color.red Dots.diamond (S.fromInt deadliestYear) deadliestYearData
         ]
 
 
@@ -267,8 +267,8 @@ maxWeeklyAnalysis country =
             getYearData deadliestPeakYear c
     in
     GraphData "Week number"
-        [ LineChart.line Color.black Dots.diamond "2020" <| LE.dropRight 4 <| L.take 52 year
-        , LineChart.line Color.red Dots.diamond (S.fromInt deadliestPeakYear) <| L.take 52 comparedYearData
+        [ LineChart.line Color.black Dots.diamond "2020" year
+        , LineChart.line Color.red Dots.diamond (S.fromInt deadliestPeakYear) comparedYearData
         ]
 
 
