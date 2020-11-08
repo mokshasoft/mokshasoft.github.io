@@ -49,7 +49,7 @@ type alias Selection =
 
 defaultSelection : Selection
 defaultSelection =
-    Selection "Sweden" A.Yearly
+    Selection "Sweden" A.MaxYear
 
 
 type alias Model =
@@ -71,6 +71,7 @@ init _ =
 
 type Msg
     = SetCountry String
+    | SetAnalysis String
 
 
 update : Msg -> Model -> ( Model, Cmd Msg )
@@ -79,6 +80,13 @@ update msg model =
         SetCountry c ->
             ( { model
                 | selection = Selection c model.selection.analysis
+              }
+            , Cmd.none
+            )
+
+        SetAnalysis a ->
+            ( { model
+                | selection = Selection model.selection.country <| A.getAnalysis a
               }
             , Cmd.none
             )
@@ -132,15 +140,20 @@ viewFooter =
         ]
 
 
-viewCountrySelection : Model -> Html Msg
-viewCountrySelection model =
+viewSelection : Model -> Html Msg
+viewSelection model =
     let
-        optList : List (Html Msg)
-        optList =
+        optListCountry : List (Html Msg)
+        optListCountry =
             L.map (\t -> option [ selected (t == model.selection.country), value t ] [ text t ]) C.getCountries
+
+        optListAnalysis : List (Html Msg)
+        optListAnalysis =
+            L.map (\t -> option [ selected (t == model.selection.country), value t ] [ text t ]) A.getAllAnalysis
     in
     div []
-        [ select [ Extra.onChange SetCountry ] optList
+        [ select [ Extra.onChange SetCountry ] optListCountry
+        , select [ Extra.onChange SetAnalysis ] optListAnalysis
         ]
 
 
@@ -151,9 +164,21 @@ view model =
         , Grid.row []
             [ Grid.col []
                 [ viewHeader
-                , viewCountrySelection model
-                , div [ class "container" ] [ Lines.chart model.selection.country model.selection.analysis ]
-                , viewFooter
+                ]
+            ]
+        , Grid.row []
+            [ Grid.col []
+                [ viewSelection model
+                ]
+            ]
+        , Grid.row []
+            [ Grid.col []
+                [ div [ class "container" ] [ Lines.chart model.selection.country model.selection.analysis ]
+                ]
+            ]
+        , Grid.row []
+            [ Grid.col []
+                [ viewFooter
                 ]
             ]
         ]

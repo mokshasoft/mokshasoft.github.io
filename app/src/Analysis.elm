@@ -12,6 +12,8 @@ module Analysis exposing
     , ChartInfo
     , GraphData
     , analysis
+    , getAllAnalysis
+    , getAnalysis
     )
 
 import Color
@@ -49,6 +51,30 @@ type alias ChartInfo =
 
 
 -- HELPER FUNCTIONS
+
+
+getAllAnalysis : List String
+getAllAnalysis =
+    [ "Max Year"
+    , "Max Weekly"
+    , "Yearly"
+    ]
+
+
+getAnalysis : String -> Analysis
+getAnalysis a =
+    case a of
+        "Max Year" ->
+            MaxYear
+
+        "Max Weekly" ->
+            MaxWeekly
+
+        "Yearly" ->
+            Yearly
+
+        _ ->
+            MaxYear
 
 
 analysis : String -> Analysis -> GraphData
