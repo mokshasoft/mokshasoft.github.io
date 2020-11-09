@@ -155,12 +155,12 @@ viewSelection model =
     div []
         [ select
             [ Extra.onChange SetCountry
-            , class "mx-2"
+            , class "custom-select"
             ]
             optListCountry
         , select
             [ Extra.onChange SetAnalysis
-            , class "mx-2"
+            , class "custom-select"
             ]
             optListAnalysis
         ]
