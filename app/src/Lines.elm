@@ -40,7 +40,7 @@ chart country analysisType =
         { x = Axis.full 1000 analysis.captionX .x
         , y = Axis.full 500 "Mortality" .y
         , container = Container.default "line-chart-1"
-        , interpolation = Interpolation.default
+        , interpolation = Interpolation.monotone
         , intersection = Intersection.default
         , legends = Legends.default
         , events = Events.default
@@ -48,6 +48,6 @@ chart country analysisType =
         , grid = Grid.default
         , area = Area.default
         , line = Line.default
-        , dots = Dots.default
+        , dots = Dots.custom (Dots.empty 5 1)
         }
         analysis.lines

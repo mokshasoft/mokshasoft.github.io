@@ -16,12 +16,12 @@ module Analysis exposing
     , getAnalysis
     )
 
-import Color
 import Country as C
 import DataTypes exposing (..)
 import Dict as D
 import Gen.Population as Pop
 import LineChart
+import LineChart.Colors as Colors
 import LineChart.Dots as Dots
 import List as L
 import ListExtra as LE
@@ -239,8 +239,8 @@ maxAnalysis country =
             getYearData deadliestYear c
     in
     GraphData "Week number"
-        [ LineChart.line Color.black Dots.diamond "2020" year
-        , LineChart.line Color.red Dots.diamond (S.fromInt deadliestYear) deadliestYearData
+        [ LineChart.line Colors.blue Dots.circle "2020" year
+        , LineChart.line Colors.green Dots.circle (S.fromInt deadliestYear) deadliestYearData
         ]
 
 
@@ -264,8 +264,8 @@ maxWeeklyAnalysis country =
             getYearData deadliestPeakYear c
     in
     GraphData "Week number"
-        [ LineChart.line Color.black Dots.diamond "2020" year
-        , LineChart.line Color.red Dots.diamond (S.fromInt deadliestPeakYear) comparedYearData
+        [ LineChart.line Colors.blue Dots.circle "2020" year
+        , LineChart.line Colors.gold Dots.circle (S.fromInt deadliestPeakYear) comparedYearData
         ]
 
 
@@ -281,5 +281,5 @@ yearlyAnalysis country =
             getYearlyData c
     in
     GraphData "Year"
-        [ LineChart.line Color.black Dots.diamond "2020" yearly
+        [ LineChart.line Colors.cyan Dots.circle "2020" yearly
         ]
