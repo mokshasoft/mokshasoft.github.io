@@ -39,7 +39,7 @@ chart country analysisType =
     LineChart.viewCustom
         { x = Axis.full 1000 analysis.captionX .x
         , y = Axis.full 500 "Mortality" .y
-        , container = Container.default "line-chart-1"
+        , container = Container.responsive "line-chart-1"
         , interpolation = Interpolation.monotone
         , intersection = Intersection.default
         , legends = Legends.default
