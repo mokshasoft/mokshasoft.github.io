@@ -116,7 +116,7 @@ viewHeader =
 footerButton : String -> String -> String -> Html Msg
 footerButton txt tooltip link =
     a
-        [ class "btn btn-secondary"
+        [ class "btn btn-secondary mx-1"
         , href link
         , attribute "data-toggle" "tooltip"
         , attribute "data-placement" "top"
@@ -153,8 +153,16 @@ viewSelection model =
             L.map (\t -> option [ selected (t == model.selection.country), value t ] [ text t ]) A.getAllAnalysis
     in
     div []
-        [ select [ Extra.onChange SetCountry ] optListCountry
-        , select [ Extra.onChange SetAnalysis ] optListAnalysis
+        [ select
+            [ Extra.onChange SetCountry
+            , class "mx-2"
+            ]
+            optListCountry
+        , select
+            [ Extra.onChange SetAnalysis
+            , class "mx-2"
+            ]
+            optListAnalysis
         ]
 
 
