@@ -222,7 +222,7 @@ viewFooter model =
                 [ footerButton "Open-Source" "Link to Source Code" "https://github.com/mokshasoft/mokshasoft.github.io"
                 , footerButton "Eurostat" "Eurostat total deaths" "https://appsso.eurostat.ec.europa.eu/nui/show.do?dataset=demo_r_mweek3&lang=en"
                 , footerButton "UN Data" "UN Population Data" "https://population.un.org/wpp/DataQuery/"
-                , footerButton "Mortality Rate?" "What is mortality rate?" "https://en.wikipedia.org/wiki/Mortality_rate"
+                , footerButton "Mortality Rate?" "The Mortality Rate shown in the graphs, is the number of people that die in a population of 1000 individual in a year." "https://en.wikipedia.org/wiki/Mortality_rate"
                 , span [ class "float-right" ] [ viewLikeIt model ]
                 ]
             ]
