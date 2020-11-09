@@ -10,8 +10,13 @@
 module Main exposing (..)
 
 import Analysis as A
+import Bootstrap.Accordion as Accordion
+import Bootstrap.Button as Button
 import Bootstrap.CDN as CDN
+import Bootstrap.Card.Block as Block
 import Bootstrap.Grid as Grid
+import Bootstrap.Grid.Col as Col
+import Bootstrap.Modal as Modal
 import Browser
 import Country as C
 import Html exposing (..)
@@ -54,12 +59,16 @@ defaultSelection =
 
 type alias Model =
     { selection : Selection
+    , likeItVisibility : Modal.Visibility
+    , likeItAccordionState : Accordion.State
     }
 
 
 init : () -> ( Model, Cmd Msg )
 init _ =
     ( { selection = defaultSelection
+      , likeItVisibility = Modal.hidden
+      , likeItAccordionState = Accordion.initialState
       }
     , Cmd.none
     )
@@ -72,6 +81,9 @@ init _ =
 type Msg
     = SetCountry String
     | SetAnalysis String
+    | CloseLikeIt
+    | ShowLikeIt
+    | LikeItAccordionMsg Accordion.State
 
 
 update : Msg -> Model -> ( Model, Cmd Msg )
@@ -91,14 +103,33 @@ update msg model =
             , Cmd.none
             )
 
+        CloseLikeIt ->
+            ( { model
+                | likeItVisibility = Modal.hidden
+              }
+            , Cmd.none
+            )
+
+        ShowLikeIt ->
+            ( { model
+                | likeItVisibility = Modal.shown
+              }
+            , Cmd.none
+            )
+
+        LikeItAccordionMsg state ->
+            ( { model | likeItAccordionState = state }
+            , Cmd.none
+            )
+
 
 
 -- SUBSCRIPTIONS
 
 
 subscriptions : Model -> Sub Msg
-subscriptions _ =
-    Sub.none
+subscriptions model =
+    Accordion.subscriptions model.likeItAccordionState LikeItAccordionMsg
 
 
 
@@ -110,6 +141,64 @@ viewHeader =
     div [ class "jumbotron jumbotron-fluid text-center" ]
         [ div [ class "cointainer" ]
             [ h1 [] [ text "Interactive Graph of EU Mortality 2000-2020" ] ]
+        ]
+
+
+viewLikeItOptions : Model -> Html Msg
+viewLikeItOptions model =
+    Accordion.config LikeItAccordionMsg
+        |> Accordion.withAnimation
+        |> Accordion.cards
+            [ Accordion.card
+                { id = "option1"
+                , options = []
+                , header =
+                    Accordion.header [] <| Accordion.toggle [] [ text "Option 1" ]
+                , blocks =
+                    [ Accordion.block []
+                        [ Block.text [] [ text "Lorem ipsum etc" ] ]
+                    ]
+                }
+            , Accordion.card
+                { id = "option2"
+                , options = []
+                , header =
+                    Accordion.header [] <| Accordion.toggle [] [ text "Option 2" ]
+                , blocks =
+                    [ Accordion.block []
+                        [ Block.text [] [ text "Lorem ipsum etc" ] ]
+                    ]
+                }
+            ]
+        |> Accordion.view model.likeItAccordionState
+
+
+viewLikeIt : Model -> Html Msg
+viewLikeIt model =
+    Grid.container []
+        [ Button.button
+            [ Button.attrs [ onClick ShowLikeIt ] ]
+            [ text "Like It?" ]
+        , Modal.config CloseLikeIt
+            |> Modal.large
+            |> Modal.h5 [] [ text "Did you like this?" ]
+            |> Modal.body []
+                [ Grid.containerFluid []
+                    [ Grid.row []
+                        [ Grid.col
+                            [ Col.xs12 ]
+                            [ viewLikeItOptions model ]
+                        ]
+                    ]
+                ]
+            |> Modal.footer []
+                [ Button.button
+                    [ Button.outlinePrimary
+                    , Button.attrs [ onClick CloseLikeIt ]
+                    ]
+                    [ text "Close" ]
+                ]
+            |> Modal.view model.likeItVisibility
         ]
 
 
@@ -125,8 +214,8 @@ footerButton txt tooltip link =
         [ text txt ]
 
 
-viewFooter : Html Msg
-viewFooter =
+viewFooter : Model -> Html Msg
+viewFooter model =
     div [ class "jumbotron jumbotron-fluid px-3" ]
         [ div [ class "cointainer" ]
             [ p []
@@ -134,9 +223,7 @@ viewFooter =
                 , footerButton "Eurostat" "Eurostat total deaths" "https://appsso.eurostat.ec.europa.eu/nui/show.do?dataset=demo_r_mweek3&lang=en"
                 , footerButton "UN Data" "UN Population Data" "https://population.un.org/wpp/DataQuery/"
                 , footerButton "Mortality Rate?" "What is mortality rate?" "https://en.wikipedia.org/wiki/Mortality_rate"
-                , span [ class "float-right" ] [ footerButton "Like It?" "Do you like this webpage?" "https://en.wikipedia.org/wiki/Mortality_rate" ]
-
-                -- https://package.elm-lang.org/packages/rundis/elm-bootstrap/latest/Bootstrap-Popover
+                , span [ class "float-right" ] [ viewLikeIt model ]
                 ]
             ]
         ]
@@ -188,7 +275,7 @@ view model =
             ]
         , Grid.row []
             [ Grid.col []
-                [ viewFooter
+                [ viewFooter model
                 ]
             ]
         ]
