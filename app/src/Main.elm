@@ -127,13 +127,14 @@ footerButton txt tooltip link =
 
 viewFooter : Html Msg
 viewFooter =
-    div [ class "jumbotron jumbotron-fluid" ]
+    div [ class "jumbotron jumbotron-fluid px-3" ]
         [ div [ class "cointainer" ]
             [ p []
                 [ footerButton "Open-Source" "Link to Source Code" "https://github.com/mokshasoft/mokshasoft.github.io"
                 , footerButton "Eurostat" "Eurostat total deaths" "https://appsso.eurostat.ec.europa.eu/nui/show.do?dataset=demo_r_mweek3&lang=en"
                 , footerButton "UN Data" "UN Population Data" "https://population.un.org/wpp/DataQuery/"
                 , footerButton "Mortality Rate?" "What is mortality rate?" "https://en.wikipedia.org/wiki/Mortality_rate"
+                , span [ class "float-right" ] [ footerButton "Like It?" "Do you like this webpage?" "https://en.wikipedia.org/wiki/Mortality_rate" ]
 
                 -- https://package.elm-lang.org/packages/rundis/elm-bootstrap/latest/Bootstrap-Popover
                 ]
