@@ -281,5 +281,5 @@ yearlyAnalysis country =
             getYearlyData c
     in
     GraphData "Year"
-        [ LineChart.line Colors.cyan Dots.circle "2020" yearly
+        [ LineChart.line Colors.cyan Dots.circle "2020" <| LE.dropWhile (\ci -> ci.y == 0) yearly
         ]

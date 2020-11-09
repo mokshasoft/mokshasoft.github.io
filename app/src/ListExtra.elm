@@ -9,6 +9,7 @@
 
 module ListExtra exposing
     ( dropRight
+    , dropWhile
     , takeWhile
     )
 
@@ -37,6 +38,22 @@ takeWhile p ls =
 
             else
                 []
+
+        [] ->
+            []
+
+
+{-| Drop elements from a list until the predicate is true.
+-}
+dropWhile : (a -> Bool) -> List a -> List a
+dropWhile p ls =
+    case ls of
+        h :: rest ->
+            if p h then
+                dropWhile p rest
+
+            else
+                ls
 
         [] ->
             []
