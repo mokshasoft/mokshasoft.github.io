@@ -218,6 +218,20 @@ estimate2020 year =
 -- ANALYSIS
 
 
+warnAboutDataSize : Country -> String
+warnAboutDataSize c =
+    let
+        samples : Int
+        samples =
+            L.length <| LE.dropWhile (\ci -> ci.y == 0) <| getYearlyData c
+    in
+    if samples < 10 then
+        "Warning: the dataset only contains data from " ++ S.fromInt samples ++ " years!"
+
+    else
+        "The dataset contains data from " ++ S.fromInt samples ++ " years."
+
+
 {-| Display mortality in 2020 with highest mortality of 2000-2019.
 -}
 maxAnalysis : String -> GraphData
@@ -240,7 +254,7 @@ maxAnalysis country =
             getYearData deadliestYear c
     in
     GraphData "Week number"
-        ""
+        (warnAboutDataSize c)
         [ LineChart.line Colors.blue Dots.circle "2020" year
         , LineChart.line Colors.green Dots.circle (S.fromInt deadliestYear) deadliestYearData
         ]
@@ -266,7 +280,7 @@ maxWeeklyAnalysis country =
             getYearData deadliestPeakYear c
     in
     GraphData "Week number"
-        ""
+        (warnAboutDataSize c)
         [ LineChart.line Colors.blue Dots.circle "2020" year
         , LineChart.line Colors.gold Dots.circle (S.fromInt deadliestPeakYear) comparedYearData
         ]
