@@ -18,16 +18,6 @@ import Maybe as M
 import Tuple as T
 
 
-getCountryData : String -> D.Dict Int Int
-getCountryData country =
-    case country of
-        "Sweden" ->
-            popSweden
-
-        _ ->
-            D.empty
-
-
 getPopulationList : String -> List Int
 getPopulationList country =
     let
@@ -338,3 +328,154 @@ popSwitzerland : D.Dict Int Int
 popSwitzerland =
     D.fromList
         [ ( 2000, 7144000 ), ( 2001, 7179000 ), ( 2002, 7220000 ), ( 2003, 7268000 ), ( 2004, 7324000 ), ( 2005, 7387000 ), ( 2006, 7458000 ), ( 2007, 7537000 ), ( 2008, 7623000 ), ( 2009, 7714000 ), ( 2010, 7809000 ), ( 2011, 7907000 ), ( 2012, 8008000 ), ( 2013, 8109000 ), ( 2014, 8206000 ), ( 2015, 8297000 ), ( 2016, 8380000 ), ( 2017, 8456000 ), ( 2018, 8526000 ), ( 2019, 8591000 ), ( 2020, 8655000 ) ]
+
+
+getCountryData : String -> D.Dict Int Int
+getCountryData country =
+    case country of
+        "Belarus" ->
+            popBelarus
+
+        "Bulgaria" ->
+            popBulgaria
+
+        "Czechia" ->
+            popCzechia
+
+        "Hungary" ->
+            popHungary
+
+        "Poland" ->
+            popPoland
+
+        "RepublicofMoldova" ->
+            popRepublicofMoldova
+
+        "Romania" ->
+            popRomania
+
+        "RussianFederation" ->
+            popRussianFederation
+
+        "Slovakia" ->
+            popSlovakia
+
+        "Ukraine" ->
+            popUkraine
+
+        "ChannelIslands" ->
+            popChannelIslands
+
+        "Denmark" ->
+            popDenmark
+
+        "Estonia" ->
+            popEstonia
+
+        "FaroeIslands" ->
+            popFaroeIslands
+
+        "Finland" ->
+            popFinland
+
+        "Iceland" ->
+            popIceland
+
+        "Ireland" ->
+            popIreland
+
+        "IsleofMan" ->
+            popIsleofMan
+
+        "Latvia" ->
+            popLatvia
+
+        "Lithuania" ->
+            popLithuania
+
+        "Norway" ->
+            popNorway
+
+        "Sweden" ->
+            popSweden
+
+        "UnitedKingdom" ->
+            popUnitedKingdom
+
+        "Albania" ->
+            popAlbania
+
+        "Andorra" ->
+            popAndorra
+
+        "BosniaandHerzegovina" ->
+            popBosniaandHerzegovina
+
+        "Croatia" ->
+            popCroatia
+
+        "Gibraltar" ->
+            popGibraltar
+
+        "Greece" ->
+            popGreece
+
+        "HolySee" ->
+            popHolySee
+
+        "Italy" ->
+            popItaly
+
+        "Malta" ->
+            popMalta
+
+        "Montenegro" ->
+            popMontenegro
+
+        "NorthMacedonia" ->
+            popNorthMacedonia
+
+        "Portugal" ->
+            popPortugal
+
+        "SanMarino" ->
+            popSanMarino
+
+        "Serbia" ->
+            popSerbia
+
+        "Slovenia" ->
+            popSlovenia
+
+        "Spain" ->
+            popSpain
+
+        "Austria" ->
+            popAustria
+
+        "Belgium" ->
+            popBelgium
+
+        "France" ->
+            popFrance
+
+        "Germany" ->
+            popGermany
+
+        "Liechtenstein" ->
+            popLiechtenstein
+
+        "Luxembourg" ->
+            popLuxembourg
+
+        "Monaco" ->
+            popMonaco
+
+        "Netherlands" ->
+            popNetherlands
+
+        "Switzerland" ->
+            popSwitzerland
+
+        _ ->
+            D.empty
