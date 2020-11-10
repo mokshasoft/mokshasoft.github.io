@@ -218,10 +218,17 @@ viewFaqOptions accordionState =
                 { id = "option1"
                 , options = []
                 , header =
-                    Accordion.header [] <| Accordion.toggle [] [ text "Option 1" ]
+                    Accordion.header [] <| Accordion.toggle [] [ text "What is mortality rate?" ]
                 , blocks =
                     [ Accordion.block []
-                        [ Block.text [] [ text "Lorem ipsum etc" ] ]
+                        [ Block.text []
+                            [ text "Mortality rate is the number of individual that die during a year in a population. The mortality on this site is caluculated on a population of 1000 individuals."
+                            , a
+                                [ href "https://en.wikipedia.org/wiki/Mortality_rate"
+                                ]
+                                [ text " Mortality on Wikipedia" ]
+                            ]
+                        ]
                     ]
                 }
             , Accordion.card
