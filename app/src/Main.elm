@@ -271,6 +271,41 @@ viewFaqOptions accordionState =
                         [ Block.text [] [ text "I live in Sweden and have therefore focused on Europe. It has also been easy to find data from Eurostat. Do you know a data source for deaths/week for a country you wish to see added? Send the link to me, jonas.cl@protonmail.com, and I might add it (I have a full-time job so it will be depending on time). I need to be able to verify that it is from an official source, possibly UN or similar." ] ]
                     ]
                 }
+            , Accordion.card
+                { id = "option6"
+                , options = []
+                , header =
+                    Accordion.header [] <| Accordion.toggle [] [ text "Can I download this website and send to my friends?" ]
+                , blocks =
+                    [ Accordion.block []
+                        [ Block.text [] [ text "I encourage you to download and save this website. The website has been developed for easy to downloading and watching off-line. Just press File -> Save Page as... and you'll have everything you need to view and email to friends, etc." ] ]
+                    ]
+                }
+            , Accordion.card
+                { id = "option7"
+                , options = []
+                , header =
+                    Accordion.header [] <| Accordion.toggle [] [ text "Is there a backup?" ]
+                , blocks =
+                    [ Accordion.block []
+                        [ Block.text []
+                            [ text "This website is hosted on two addresses in case one would go down. First try GitHub, then mokshasoft.com. If you are a developer I you can clone the repo from GitHub."
+                            , a
+                                [ href "https://mokshasoft.github.io/"
+                                ]
+                                [ text " mokshasoft.github.io" ]
+                            , a
+                                [ href "http://mokshasoft.com/mortality"
+                                ]
+                                [ text " mokshasoft.com/mortality" ]
+                            , a
+                                [ href "https://github.com/mokshasoft/mokshasoft.github.io"
+                                ]
+                                [ text " github.com/mokshasoft/mokshasoft.github.io" ]
+                            ]
+                        ]
+                    ]
+                }
             ]
         |> Accordion.view accordionState
 
