@@ -235,10 +235,40 @@ viewFaqOptions accordionState =
                 { id = "option2"
                 , options = []
                 , header =
-                    Accordion.header [] <| Accordion.toggle [] [ text "Option 2" ]
+                    Accordion.header [] <| Accordion.toggle [] [ text "Why comparing mortality rate?" ]
                 , blocks =
                     [ Accordion.block []
-                        [ Block.text [] [ text "Lorem ipsum etc" ] ]
+                        [ Block.text [] [ text "Comparing mortality makes it possible to compare countries with different sizes of population, and comparing different years within the same country when population might have changed." ] ]
+                    ]
+                }
+            , Accordion.card
+                { id = "option3"
+                , options = []
+                , header =
+                    Accordion.header [] <| Accordion.toggle [] [ text "Where is the data from?" ]
+                , blocks =
+                    [ Accordion.block []
+                        [ Block.text [] [ text "All data is open for everyone to download and inspect. The statistics of deaths comes from Eurostat and the population statistics comes from UN. Follow the links in the footer to download the raw data." ] ]
+                    ]
+                }
+            , Accordion.card
+                { id = "option4"
+                , options = []
+                , header =
+                    Accordion.header [] <| Accordion.toggle [] [ text "What is open-source?" ]
+                , blocks =
+                    [ Accordion.block []
+                        [ Block.text [] [ text "Open source is a big area, but one important point is that you can see the inner workings of a program. You can for instance follow the link in the footer and inspect the code that runs this web site yourself, or let someone else that you trust do it. In that way you can have a greater trust that what you see is correct." ] ]
+                    ]
+                }
+            , Accordion.card
+                { id = "option5"
+                , options = []
+                , header =
+                    Accordion.header [] <| Accordion.toggle [] [ text "Why is my country not on the web site?" ]
+                , blocks =
+                    [ Accordion.block []
+                        [ Block.text [] [ text "I live in Sweden and have therefore focused on Europe. It has also been easy to find data from Eurostat. Do you know a data source for deaths/week for a country you wish to see added? Send the link to me, jonas.cl@protonmail.com, and I might add it (I have a full-time job so it will be depending on time). I need to be able to verify that it is from an official source, possibly UN or similar." ] ]
                     ]
                 }
             ]
