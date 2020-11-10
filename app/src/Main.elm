@@ -182,6 +182,7 @@ viewLikeItOptions : Accordion.State -> Html Msg
 viewLikeItOptions accordionState =
     Accordion.config LikeItAccordionMsg
         |> Accordion.withAnimation
+        |> Accordion.onlyOneOpen
         |> Accordion.cards
             [ Accordion.card
                 { id = "option1"
@@ -211,6 +212,7 @@ viewFaqOptions : Accordion.State -> Html Msg
 viewFaqOptions accordionState =
     Accordion.config FaqAccordionMsg
         |> Accordion.withAnimation
+        |> Accordion.onlyOneOpen
         |> Accordion.cards
             [ Accordion.card
                 { id = "option1"
