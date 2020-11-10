@@ -299,6 +299,6 @@ yearlyAnalysis country =
             getYearlyData c
     in
     GraphData "Year"
-        ""
+        (warnAboutDataSize c)
         [ LineChart.line Colors.cyan Dots.circle "2020" <| LE.dropWhile (\ci -> ci.y == 0) yearly
         ]
