@@ -180,32 +180,46 @@ viewHeader =
 
 viewLikeItOptions : Accordion.State -> Html Msg
 viewLikeItOptions accordionState =
-    Accordion.config LikeItAccordionMsg
-        |> Accordion.withAnimation
-        |> Accordion.onlyOneOpen
-        |> Accordion.cards
-            [ Accordion.card
-                { id = "option1"
-                , options = []
-                , header =
-                    Accordion.header [] <| Accordion.toggle [] [ text "Option 1" ]
-                , blocks =
-                    [ Accordion.block []
-                        [ Block.text [] [ text "Lorem ipsum etc" ] ]
-                    ]
-                }
-            , Accordion.card
-                { id = "option2"
-                , options = []
-                , header =
-                    Accordion.header [] <| Accordion.toggle [] [ text "Option 2" ]
-                , blocks =
-                    [ Accordion.block []
-                        [ Block.text [] [ text "Lorem ipsum etc" ] ]
-                    ]
-                }
-            ]
-        |> Accordion.view accordionState
+    div []
+        [ p []
+            [ text "If you like this website and the data it presents there is a possibility of donation. See options below. One does not exclude the other." ]
+        , Accordion.config LikeItAccordionMsg
+            |> Accordion.withAnimation
+            |> Accordion.onlyOneOpen
+            |> Accordion.cards
+                [ Accordion.card
+                    { id = "option1"
+                    , options = []
+                    , header =
+                        Accordion.header [] <| Accordion.toggle [] [ text "Send the link to a friend or a colleague" ]
+                    , blocks =
+                        [ Accordion.block []
+                            [ Block.text [] [ text "Forwarding the link is the most helpful way to donate. If you know someone that could be helped by seeing this data, send it to them." ] ]
+                        ]
+                    }
+                , Accordion.card
+                    { id = "option2"
+                    , options = []
+                    , header =
+                        Accordion.header [] <| Accordion.toggle [] [ text "Option 2" ]
+                    , blocks =
+                        [ Accordion.block []
+                            [ Block.text [] [ text "Lorem ipsum etc" ] ]
+                        ]
+                    }
+                , Accordion.card
+                    { id = "option3"
+                    , options = []
+                    , header =
+                        Accordion.header [] <| Accordion.toggle [] [ text "Option 3" ]
+                    , blocks =
+                        [ Accordion.block []
+                            [ Block.text [] [ text "Lorem ipsum etc" ] ]
+                        ]
+                    }
+                ]
+            |> Accordion.view accordionState
+        ]
 
 
 viewFaqOptions : Accordion.State -> Html Msg
