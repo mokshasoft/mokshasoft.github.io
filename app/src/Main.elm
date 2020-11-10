@@ -26,6 +26,7 @@ import Html.Events.Extra as Extra
 import Lines
 import List as L
 import Maybe as M
+import Platform.Sub as Sub
 
 
 
@@ -61,6 +62,8 @@ type alias Model =
     { selection : Selection
     , likeItVisibility : Modal.Visibility
     , likeItAccordionState : Accordion.State
+    , faqVisibility : Modal.Visibility
+    , faqAccordionState : Accordion.State
     }
 
 
@@ -69,6 +72,8 @@ init _ =
     ( { selection = defaultSelection
       , likeItVisibility = Modal.hidden
       , likeItAccordionState = Accordion.initialState
+      , faqVisibility = Modal.hidden
+      , faqAccordionState = Accordion.initialState
       }
     , Cmd.none
     )
@@ -84,6 +89,9 @@ type Msg
     | CloseLikeIt
     | ShowLikeIt
     | LikeItAccordionMsg Accordion.State
+    | CloseFaq
+    | ShowFaq
+    | FaqAccordionMsg Accordion.State
 
 
 update : Msg -> Model -> ( Model, Cmd Msg )
@@ -118,7 +126,30 @@ update msg model =
             )
 
         LikeItAccordionMsg state ->
-            ( { model | likeItAccordionState = state }
+            ( { model
+                | likeItAccordionState = state
+              }
+            , Cmd.none
+            )
+
+        CloseFaq ->
+            ( { model
+                | faqVisibility = Modal.hidden
+              }
+            , Cmd.none
+            )
+
+        ShowFaq ->
+            ( { model
+                | faqVisibility = Modal.shown
+              }
+            , Cmd.none
+            )
+
+        FaqAccordionMsg state ->
+            ( { model
+                | faqAccordionState = state
+              }
             , Cmd.none
             )
 
@@ -129,7 +160,10 @@ update msg model =
 
 subscriptions : Model -> Sub Msg
 subscriptions model =
-    Accordion.subscriptions model.likeItAccordionState LikeItAccordionMsg
+    Sub.batch
+        [ Accordion.subscriptions model.likeItAccordionState LikeItAccordionMsg
+        , Accordion.subscriptions model.faqAccordionState FaqAccordionMsg
+        ]
 
 
 
@@ -144,8 +178,8 @@ viewHeader =
         ]
 
 
-viewLikeItOptions : Model -> Html Msg
-viewLikeItOptions model =
+viewLikeItOptions : Accordion.State -> Html Msg
+viewLikeItOptions accordionState =
     Accordion.config LikeItAccordionMsg
         |> Accordion.withAnimation
         |> Accordion.cards
@@ -170,35 +204,64 @@ viewLikeItOptions model =
                     ]
                 }
             ]
-        |> Accordion.view model.likeItAccordionState
+        |> Accordion.view accordionState
 
 
-viewLikeIt : Model -> Html Msg
-viewLikeIt model =
-    Grid.container []
+viewFaqOptions : Accordion.State -> Html Msg
+viewFaqOptions accordionState =
+    Accordion.config FaqAccordionMsg
+        |> Accordion.withAnimation
+        |> Accordion.cards
+            [ Accordion.card
+                { id = "option1"
+                , options = []
+                , header =
+                    Accordion.header [] <| Accordion.toggle [] [ text "Option 1" ]
+                , blocks =
+                    [ Accordion.block []
+                        [ Block.text [] [ text "Lorem ipsum etc" ] ]
+                    ]
+                }
+            , Accordion.card
+                { id = "option2"
+                , options = []
+                , header =
+                    Accordion.header [] <| Accordion.toggle [] [ text "Option 2" ]
+                , blocks =
+                    [ Accordion.block []
+                        [ Block.text [] [ text "Lorem ipsum etc" ] ]
+                    ]
+                }
+            ]
+        |> Accordion.view accordionState
+
+
+viewModal : String -> String -> Modal.Visibility -> Accordion.State -> Msg -> Msg -> Html Msg
+viewModal titleButton titleModal visibility accordionState clickMsg closeMsg =
+    span []
         [ Button.button
-            [ Button.attrs [ onClick ShowLikeIt ] ]
-            [ text "Like It?" ]
-        , Modal.config CloseLikeIt
+            [ Button.attrs [ onClick clickMsg ] ]
+            [ text titleButton ]
+        , Modal.config closeMsg
             |> Modal.large
-            |> Modal.h5 [] [ text "Did you like this?" ]
+            |> Modal.h5 [] [ text titleModal ]
             |> Modal.body []
                 [ Grid.containerFluid []
                     [ Grid.row []
                         [ Grid.col
                             [ Col.xs12 ]
-                            [ viewLikeItOptions model ]
+                            [ viewLikeItOptions accordionState ]
                         ]
                     ]
                 ]
             |> Modal.footer []
                 [ Button.button
                     [ Button.outlinePrimary
-                    , Button.attrs [ onClick CloseLikeIt ]
+                    , Button.attrs [ onClick closeMsg ]
                     ]
                     [ text "Close" ]
                 ]
-            |> Modal.view model.likeItVisibility
+            |> Modal.view visibility
         ]
 
 
@@ -222,8 +285,8 @@ viewFooter model =
                 [ footerButton "Open-Source" "Link to Source Code" "https://github.com/mokshasoft/mokshasoft.github.io"
                 , footerButton "Eurostat" "Eurostat total deaths" "https://appsso.eurostat.ec.europa.eu/nui/show.do?dataset=demo_r_mweek3&lang=en"
                 , footerButton "UN Data" "UN Population Data" "https://population.un.org/wpp/DataQuery/"
-                , footerButton "Mortality Rate?" "The Mortality Rate shown in the graphs, is the number of people that die in a population of 1000 individual in a year." "https://en.wikipedia.org/wiki/Mortality_rate"
-                , span [ class "float-right" ] [ viewLikeIt model ]
+                , viewModal "FAQ" "Frequently Asked Questions" model.faqVisibility model.faqAccordionState ShowFaq CloseFaq
+                , span [ class "float-right" ] [ viewModal "Like It?" "Did you like this?" model.likeItVisibility model.likeItAccordionState ShowLikeIt CloseLikeIt ]
                 ]
             ]
         ]
