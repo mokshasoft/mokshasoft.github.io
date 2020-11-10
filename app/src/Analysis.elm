@@ -155,15 +155,16 @@ getDeadliestPeakYear : Country -> Int
 getDeadliestPeakYear country =
     let
         cmp : ( Int, Year ) -> ( Int, Int ) -> ( Int, Int )
-        cmp ( year, yearData ) ( y, diff ) =
+        cmp ( year, yearData ) ( prevYear, prevMax ) =
             let
-                min =
-                    M.withDefault 0 <| L.minimum yearData.data
-
                 max =
                     M.withDefault 0 <| L.maximum yearData.data
             in
-            ( year, max - min )
+            if max > prevMax then
+                ( year, max )
+
+            else
+                ( prevYear, prevMax )
 
         list : List ( Int, Year )
         list =
