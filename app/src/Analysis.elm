@@ -42,6 +42,7 @@ type Analysis
 
 type alias GraphData =
     { captionX : String
+    , description : String
     , lines : List (LineChart.Series ChartInfo)
     }
 
@@ -58,22 +59,22 @@ type alias ChartInfo =
 
 getAllAnalysis : List String
 getAllAnalysis =
-    [ "Max Year"
-    , "Max Weekly"
-    , "Yearly"
+    [ "Compare the year with highest mortality with 2020"
+    , "Compare the year with highest weekly mortality with 2020"
+    , "Show how mortality has changed from 2000-2020"
     ]
 
 
 getAnalysis : String -> Analysis
 getAnalysis a =
     case a of
-        "Max Year" ->
+        "Compare the year with highest mortality with 2020" ->
             MaxYear
 
-        "Max Weekly" ->
+        "Compare the year with highest weekly mortality with 2020" ->
             MaxWeekly
 
-        "Yearly" ->
+        "Show how mortality has changed from 2000-2020" ->
             Yearly
 
         _ ->
@@ -239,6 +240,7 @@ maxAnalysis country =
             getYearData deadliestYear c
     in
     GraphData "Week number"
+        ""
         [ LineChart.line Colors.blue Dots.circle "2020" year
         , LineChart.line Colors.green Dots.circle (S.fromInt deadliestYear) deadliestYearData
         ]
@@ -264,6 +266,7 @@ maxWeeklyAnalysis country =
             getYearData deadliestPeakYear c
     in
     GraphData "Week number"
+        ""
         [ LineChart.line Colors.blue Dots.circle "2020" year
         , LineChart.line Colors.gold Dots.circle (S.fromInt deadliestPeakYear) comparedYearData
         ]
@@ -281,5 +284,6 @@ yearlyAnalysis country =
             getYearlyData c
     in
     GraphData "Year"
+        ""
         [ LineChart.line Colors.cyan Dots.circle "2020" <| LE.dropWhile (\ci -> ci.y == 0) yearly
         ]

@@ -10,7 +10,8 @@
 module Lines exposing (chart)
 
 import Analysis as A
-import Html
+import Html exposing (..)
+import Html.Attributes exposing (..)
 import LineChart
 import LineChart.Area as Area
 import LineChart.Axis as Axis
@@ -36,18 +37,22 @@ chart country analysisType =
         analysis =
             A.analysis country analysisType
     in
-    LineChart.viewCustom
-        { x = Axis.full 1000 analysis.captionX .x
-        , y = Axis.full 500 "Mortality" .y
-        , container = Container.responsive "line-chart-1"
-        , interpolation = Interpolation.monotone
-        , intersection = Intersection.default
-        , legends = Legends.default
-        , events = Events.default
-        , junk = Junk.default
-        , grid = Grid.default
-        , area = Area.default
-        , line = Line.default
-        , dots = Dots.custom (Dots.empty 5 1)
-        }
-        analysis.lines
+    div []
+        [ LineChart.viewCustom
+            { x = Axis.full 1000 analysis.captionX .x
+            , y = Axis.full 500 "Mortality" .y
+            , container = Container.responsive "line-chart-1"
+            , interpolation = Interpolation.monotone
+            , intersection = Intersection.default
+            , legends = Legends.default
+            , events = Events.default
+            , junk = Junk.default
+            , grid = Grid.default
+            , area = Area.default
+            , line = Line.default
+            , dots = Dots.custom (Dots.empty 5 1)
+            }
+            analysis.lines
+        , p [ class "text-center" ]
+            [ text analysis.description ]
+        ]
