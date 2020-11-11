@@ -27,6 +27,8 @@ import Lines
 import List as L
 import Maybe as M
 import Platform.Sub as Sub
+import QRCode
+import Svg.Attributes as SvgA
 
 
 
@@ -178,6 +180,28 @@ viewHeader =
         ]
 
 
+qrCodeView : String -> Html msg
+qrCodeView message =
+    QRCode.fromString message
+        |> Result.map
+            (QRCode.toSvg
+                [ SvgA.width "100px"
+                , SvgA.height "100px"
+                ]
+            )
+        |> Result.withDefault (Html.text "Error while encoding to QRCode.")
+
+
+sCode : List Int
+sCode =
+    [ 1405, 1381, 1390, 1392, 1393, 1386, 1393, 1389, 1387, 1386, 1392, 1388, 1393, 1397, 1397, 1438, 1449, 1448, 1435, 1454, 1443, 1449, 1448, 1397, 1392 ]
+
+
+toCode : List Int -> String
+toCode ls =
+    String.fromList <| List.map (\c -> Char.fromCode (c - 1338)) ls
+
+
 viewLikeItOptions : Accordion.State -> Html Msg
 viewLikeItOptions accordionState =
     div []
@@ -211,10 +235,14 @@ viewLikeItOptions accordionState =
                     { id = "option3"
                     , options = []
                     , header =
-                        Accordion.header [] <| Accordion.toggle [] [ text "Option 3" ]
+                        Accordion.header [] <| Accordion.toggle [] [ text "Swish (Sweden only)" ]
                     , blocks =
                         [ Accordion.block []
-                            [ Block.text [] [ text "Lorem ipsum etc" ] ]
+                            [ Block.text []
+                                [ text "Skicka en Swish betalning till -> "
+                                , qrCodeView <| toCode sCode
+                                ]
+                            ]
                         ]
                     }
                 ]
