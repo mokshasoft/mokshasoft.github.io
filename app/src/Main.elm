@@ -284,6 +284,7 @@ viewFaqOptions accordionState =
                             [ text "Mortality rate is the number of individual that die during a year in a population. The mortality on this site is caluculated on a population of 1000 individuals."
                             , a
                                 [ href "https://en.wikipedia.org/wiki/Mortality_rate"
+                                , target "_blank"
                                 ]
                                 [ text " Mortality on Wikipedia" ]
                             ]
@@ -351,14 +352,17 @@ viewFaqOptions accordionState =
                             [ text "This website is hosted on two addresses in case one would go down. First try GitHub, then mokshasoft.com. If you are a developer I you can clone the repo from GitHub."
                             , a
                                 [ href "https://mokshasoft.github.io/"
+                                , target "_blank"
                                 ]
                                 [ text " mokshasoft.github.io" ]
                             , a
                                 [ href "http://mokshasoft.com/mortality"
+                                , target "_blank"
                                 ]
                                 [ text " mokshasoft.com/mortality" ]
                             , a
                                 [ href "https://github.com/mokshasoft/mokshasoft.github.io"
+                                , target "_blank"
                                 ]
                                 [ text " github.com/mokshasoft/mokshasoft.github.io" ]
                             ]
@@ -411,6 +415,7 @@ footerButton txt tooltip link =
     a
         [ class "btn btn-secondary mx-1"
         , href link
+        , target "_blank"
         , attribute "data-toggle" "tooltip"
         , attribute "data-placement" "top"
         , attribute "title" tooltip
