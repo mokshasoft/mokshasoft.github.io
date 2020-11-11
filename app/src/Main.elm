@@ -385,18 +385,22 @@ viewModal titleButton titleModal visibility accordionState clickMsg closeMsg =
     in
     span []
         [ Button.button
-            [ Button.attrs [ onClick clickMsg ] ]
+            [ Button.attrs
+                [ onClick clickMsg
+                , if closeMsg == CloseFaq then
+                    class "btn btn-primary mx-1"
+
+                  else
+                    class "btn btn-success mx-1 float-right"
+                ]
+            ]
             [ text titleButton ]
         , Modal.config closeMsg
             |> Modal.large
             |> Modal.h5 [] [ text titleModal ]
             |> Modal.body []
                 [ Grid.containerFluid []
-                    [ Grid.row []
-                        [ Grid.col
-                            [ Col.xs12 ]
-                            [ option ]
-                        ]
+                    [ option
                     ]
                 ]
             |> Modal.footer []
@@ -413,7 +417,7 @@ viewModal titleButton titleModal visibility accordionState clickMsg closeMsg =
 footerButton : String -> String -> String -> Html Msg
 footerButton txt tooltip link =
     a
-        [ class "btn btn-secondary mx-1"
+        [ class "btn btn-primary mx-1"
         , href link
         , target "_blank"
         , attribute "data-toggle" "tooltip"
@@ -427,12 +431,12 @@ viewFooter : Model -> Html Msg
 viewFooter model =
     div [ class "jumbotron jumbotron-fluid px-3" ]
         [ div [ class "cointainer" ]
-            [ p []
+            [ span []
                 [ footerButton "Open-Source" "Link to Source Code" "https://github.com/mokshasoft/mokshasoft.github.io"
                 , footerButton "Eurostat" "Eurostat total deaths" "https://appsso.eurostat.ec.europa.eu/nui/show.do?dataset=demo_r_mweek3&lang=en"
                 , footerButton "UN Data" "UN Population Data" "https://population.un.org/wpp/DataQuery/"
-                , viewModal "FAQ" "Frequently Asked Questions" model.faqVisibility model.faqAccordionState ShowFaq CloseFaq
-                , span [ class "float-right" ] [ viewModal "Like It?" "Did you like this?" model.likeItVisibility model.likeItAccordionState ShowLikeIt CloseLikeIt ]
+                , span [] [ viewModal "FAQ" "Frequently Asked Questions" model.faqVisibility model.faqAccordionState ShowFaq CloseFaq ]
+                , span [] [ viewModal "Like It?" "Did you like this?" model.likeItVisibility model.likeItAccordionState ShowLikeIt CloseLikeIt ]
                 ]
             ]
         ]
