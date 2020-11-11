@@ -192,6 +192,10 @@ qrCodeView message =
         |> Result.withDefault (Html.text "Error while encoding to QRCode.")
 
 
+bitCode : List Int
+bitCode =
+    [1389,1413,1392,1443,1459,1437,1459,1387,1412,1406,1453,1392,1460,1415,1409,1403,1392,1445,1455,1435,1460,1458,1457,1449,1453,1439,1435,1443,1413,1416,1450,1425,1420,1451]
+
 sCode : List Int
 sCode =
     [ 1405, 1381, 1390, 1392, 1393, 1386, 1393, 1389, 1387, 1386, 1392, 1388, 1393, 1397, 1397, 1438, 1449, 1448, 1435, 1454, 1443, 1449, 1448, 1397, 1392 ]
@@ -225,10 +229,14 @@ viewLikeItOptions accordionState =
                     { id = "option2"
                     , options = []
                     , header =
-                        Accordion.header [] <| Accordion.toggle [] [ text "Option 2" ]
+                        Accordion.header [] <| Accordion.toggle [] [ text "Bitcoin" ]
                     , blocks =
                         [ Accordion.block []
-                            [ Block.text [] [ text "Lorem ipsum etc" ] ]
+                            [ Block.text []
+                                [ text <| "Send to Bitcoin wallet " ++ toCode bitCode ++ " -> "
+                                , qrCodeView <| toCode bitCode
+                                ]
+                            ]
                         ]
                     }
                 , Accordion.card
@@ -239,7 +247,7 @@ viewLikeItOptions accordionState =
                     , blocks =
                         [ Accordion.block []
                             [ Block.text []
-                                [ text "Skicka en Swish betalning till -> "
+                                [ text "Skicka en Swish betalning till Jonas Claesson, +46 707-31 06 27 -> "
                                 , qrCodeView <| toCode sCode
                                 ]
                             ]
