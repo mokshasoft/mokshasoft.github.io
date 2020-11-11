@@ -15,7 +15,7 @@ import Dict as D
 
 defaultCountry : Country
 defaultCountry =
-    dataSweden
+    dataGermany
 
 
 countries : List Country
