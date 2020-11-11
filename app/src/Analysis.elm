@@ -257,7 +257,7 @@ maxAnalysis country =
     GraphData "Week number"
         (warnAboutDataSize c)
         [ LineChart.line Colors.blue Dots.circle "2020" year
-        , LineChart.line Colors.green Dots.circle (S.fromInt deadliestYear) deadliestYearData
+        , LineChart.line Colors.rust Dots.circle (S.fromInt deadliestYear) deadliestYearData
         ]
 
 

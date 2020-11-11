@@ -38,7 +38,9 @@ chart country analysisType =
             A.analysis country analysisType
     in
     div []
-        [ LineChart.viewCustom
+        [ p [ class "" ]
+            [ text "Mortality per year per 1000 individuals" ]
+        , LineChart.viewCustom
             { x = Axis.full 1000 analysis.captionX .x
             , y = Axis.full 500 "Mortality" .y
             , container = Container.responsive "line-chart-1"
@@ -49,7 +51,7 @@ chart country analysisType =
             , junk = Junk.default
             , grid = Grid.default
             , area = Area.default
-            , line = Line.default
+            , line = Line.wider 2
             , dots = Dots.custom (Dots.empty 5 1)
             }
             analysis.lines
