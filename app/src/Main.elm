@@ -245,6 +245,23 @@ viewLikeItOptions accordionState =
                             ]
                         ]
                     }
+                , Accordion.card
+                    { id = "option4"
+                    , options = []
+                    , header =
+                        Accordion.header [] <| Accordion.toggle [] [ text "Other options" ]
+                    , blocks =
+                        [ Accordion.block []
+                            [ Block.text []
+                                [ text "If you want to donate in another way or just say thanks, email me at "
+                                , a
+                                    [ href "mailto:jonas.cl@protonmail.com"
+                                    ]
+                                    [ text "jonas.cl@protonmail.com" ]
+                                ]
+                            ]
+                        ]
+                    }
                 ]
             |> Accordion.view accordionState
         ]
