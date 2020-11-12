@@ -39,7 +39,7 @@ chart country analysisType =
     in
     div []
         [ p [ class "mt-3" ]
-            [ text "Mortality per year per 1000 individuals" ]
+            [ text "General mortality rate per year per 1000 individuals" ]
         , LineChart.viewCustom
             { x = Axis.full 1000 analysis.captionX .x
             , y = Axis.full 500 "Mortality" .y
