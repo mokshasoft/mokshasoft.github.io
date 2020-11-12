@@ -291,7 +291,7 @@ viewFaqOptions accordionState =
                 , blocks =
                     [ Accordion.block []
                         [ Block.text []
-                            [ text "Mortality rate is the number of individual that die during a year in a population. The mortality on this site is caluculated on a population of 1000 individuals."
+                            [ text "Mortality rate is the total number of individuals that die during a year in a population. This website shows the general mortality, that is all causes of deaths are included. The mortality on this site is caluculated on a population of 1000 individuals."
                             , a
                                 [ href "https://en.wikipedia.org/wiki/Mortality_rate"
                                 , target "_blank"
