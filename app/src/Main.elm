@@ -18,6 +18,7 @@ import Bootstrap.Grid as Grid
 import Bootstrap.Grid.Col as Col
 import Bootstrap.Modal as Modal
 import Browser
+import Color as ColorExtra
 import Country as C
 import Html exposing (..)
 import Html.Attributes exposing (..)
@@ -194,7 +195,8 @@ qrCodeView message =
 
 bitCode : List Int
 bitCode =
-    [1436,1443,1454,1437,1449,1443,1448,1396,1389,1413,1392,1443,1459,1437,1459,1387,1412,1406,1453,1392,1460,1415,1409,1403,1392,1445,1455,1435,1460,1458,1457,1449,1453,1439,1435,1443,1413,1416,1450,1425,1420,1451]
+    [ 1436, 1443, 1454, 1437, 1449, 1443, 1448, 1396, 1389, 1413, 1392, 1443, 1459, 1437, 1459, 1387, 1412, 1406, 1453, 1392, 1460, 1415, 1409, 1403, 1392, 1445, 1455, 1435, 1460, 1458, 1457, 1449, 1453, 1439, 1435, 1443, 1413, 1416, 1450, 1425, 1420, 1451 ]
+
 
 sCode : List Int
 sCode =
@@ -396,10 +398,15 @@ viewModal titleButton titleModal visibility accordionState clickMsg closeMsg =
             [ Button.attrs
                 [ onClick clickMsg
                 , if closeMsg == CloseFaq then
-                    class "btn btn-primary mx-1"
+                    class "btn mx-1"
 
                   else
                     class "btn btn-success mx-1 float-right"
+                , if closeMsg == CloseFaq then
+                    style "background-color" blue
+
+                  else
+                    style "" ""
                 ]
             ]
             [ text titleButton ]
@@ -422,11 +429,17 @@ viewModal titleButton titleModal visibility accordionState clickMsg closeMsg =
         ]
 
 
+blue : String
+blue =
+    ColorExtra.toCssString <| ColorExtra.rgb255 3 169 244
+
+
 footerButton : String -> String -> String -> Html Msg
 footerButton txt tooltip link =
     a
-        [ class "btn btn-primary mx-1"
+        [ class "btn mx-1"
         , href link
+        , style "background-color" blue
         , target "_blank"
         , attribute "data-toggle" "tooltip"
         , attribute "data-placement" "top"
