@@ -55,6 +55,13 @@ chart country analysisType =
             , dots = Dots.custom (Dots.empty 5 1)
             }
             analysis.lines
-        , p [ class "text-center" ]
+        , p
+            [ class "text-center"
+            , if analysis.warning then
+                style "color" "#cc3300"
+
+              else
+                style "color" "black"
+            ]
             [ text analysis.description ]
         ]

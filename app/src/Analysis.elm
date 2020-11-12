@@ -43,6 +43,7 @@ type Analysis
 type alias GraphData =
     { captionX : String
     , description : String
+    , warning : Bool
     , lines : List (LineChart.Series ChartInfo)
     }
 
@@ -219,7 +220,7 @@ estimate2020 year =
 -- ANALYSIS
 
 
-warnAboutDataSize : Country -> String
+warnAboutDataSize : Country -> ( String, Bool )
 warnAboutDataSize c =
     let
         samples : Int
@@ -227,10 +228,14 @@ warnAboutDataSize c =
             L.length <| LE.dropWhile (\ci -> ci.y == 0) <| getYearlyData c
     in
     if samples < 10 then
-        "Warning: the dataset only contains data from " ++ S.fromInt samples ++ " years!"
+        ( "Warning: the dataset only contains data from " ++ S.fromInt samples ++ " years!"
+        , True
+        )
 
     else
-        "The dataset contains data from " ++ S.fromInt samples ++ " years."
+        ( "The dataset contains data from " ++ S.fromInt samples ++ " years."
+        , False
+        )
 
 
 {-| Display mortality in 2020 with highest mortality of 2000-2019.
@@ -253,9 +258,13 @@ maxAnalysis country =
         deadliestYearData : List ChartInfo
         deadliestYearData =
             getYearData deadliestYear c
+
+        ( caption, warning ) =
+            warnAboutDataSize c
     in
     GraphData "Week number"
-        (warnAboutDataSize c)
+        caption
+        warning
         [ LineChart.line Colors.blue Dots.circle "2020" year
         , LineChart.line Colors.rust Dots.circle (S.fromInt deadliestYear) deadliestYearData
         ]
@@ -279,9 +288,13 @@ maxWeeklyAnalysis country =
         comparedYearData : List ChartInfo
         comparedYearData =
             getYearData deadliestPeakYear c
+
+        ( caption, warning ) =
+            warnAboutDataSize c
     in
     GraphData "Week number"
-        (warnAboutDataSize c)
+        caption
+        warning
         [ LineChart.line Colors.blue Dots.circle "2020" year
         , LineChart.line Colors.gold Dots.circle (S.fromInt deadliestPeakYear) comparedYearData
         ]
@@ -297,8 +310,12 @@ yearlyAnalysis country =
         yearly : List ChartInfo
         yearly =
             getYearlyData c
+
+        ( caption, warning ) =
+            warnAboutDataSize c
     in
     GraphData "Year"
-        (warnAboutDataSize c)
+        caption
+        warning
         [ LineChart.line Colors.cyan Dots.circle "2020" <| LE.dropWhile (\ci -> ci.y == 0) yearly
         ]
