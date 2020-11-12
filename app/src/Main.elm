@@ -348,7 +348,7 @@ viewFaqOptions accordionState =
                     Accordion.header [] <| Accordion.toggle [] [ text "Can I download this website and send to my friends?" ]
                 , blocks =
                     [ Accordion.block []
-                        [ Block.text [] [ text "I encourage you to download and save this website. The website has been developed for easy to downloading and watching off-line. Just press File -> Save Page as... and you'll have everything you need to view and email to friends, etc." ] ]
+                        [ Block.text [] [ text "I encourage you to download and save this website. The website has been developed for easy to downloading and watching off-line. Just press File -> Save Page as... and you'll have everything you need in index.html to view offline and email to friends, etc." ] ]
                     ]
                 }
             , Accordion.card
@@ -359,17 +359,22 @@ viewFaqOptions accordionState =
                 , blocks =
                     [ Accordion.block []
                         [ Block.text []
-                            [ text "This website is hosted on two addresses in case one would go down. First try GitHub, then mokshasoft.com. If you are a developer I you can clone the repo from GitHub."
+                            [ text "I encourage you to download and save this website. This website is hosted on two addresses in case one would go down and linked from "
+                            , a
+                                [ href "http://graphly.org"
+                                ]
+                                [ text "graphly.org" ]
+                            , text ". First try graphly.org, then "
                             , a
                                 [ href "https://mokshasoft.github.io/"
-                                , target "_blank"
                                 ]
-                                [ text " mokshasoft.github.io" ]
+                                [ text "GitHub" ]
+                            , text ", then "
                             , a
-                                [ href "http://mokshasoft.com/mortality"
-                                , target "_blank"
+                                [ href "http://mokshasoft.com/graphly"
                                 ]
-                                [ text " mokshasoft.com/mortality" ]
+                                [ text "mokshasoft.com" ]
+                            , text ". If you are a developer, you can clone the repo from "
                             , a
                                 [ href "https://github.com/mokshasoft/mokshasoft.github.io"
                                 , target "_blank"
