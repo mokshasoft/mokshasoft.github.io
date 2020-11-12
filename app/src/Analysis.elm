@@ -60,8 +60,8 @@ type alias ChartInfo =
 
 getAllAnalysis : List String
 getAllAnalysis =
-    [ "Compare the year with highest mortality with 2020"
-    , "Compare the year with highest weekly mortality with 2020"
+    [ "Year with highest mortality rate compared to 2020"
+    , "Year with highest weekly mortality rate compared to 2020"
     , "Show how mortality has changed from 2000-2020"
     ]
 
@@ -69,10 +69,10 @@ getAllAnalysis =
 getAnalysis : String -> Analysis
 getAnalysis a =
     case a of
-        "Compare the year with highest mortality with 2020" ->
+        "Year with highest mortality rate compared to 2020" ->
             MaxYear
 
-        "Compare the year with highest weekly mortality with 2020" ->
+        "Year with highest weekly mortality rate compared to 2020" ->
             MaxWeekly
 
         "Show how mortality has changed from 2000-2020" ->
