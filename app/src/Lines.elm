@@ -51,7 +51,7 @@ chart country analysisType =
             [ text "General mortality rate per year per 1000 individuals" ]
         , LineChart.viewCustom
             { x = Axis.full 1000 analysis.captionX .x
-            , y = Axis.full 500 "Mortality" .y
+            , y = Axis.full 500 "Mort. rate" .y
             , container = Container.responsive "line-chart-1"
             , interpolation = Interpolation.monotone
             , intersection = Intersection.default
