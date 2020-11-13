@@ -399,7 +399,7 @@ getCountryData country =
         "Sweden" ->
             popSweden
 
-        "UnitedKingdom" ->
+        "United Kingdom" ->
             popUnitedKingdom
 
         "Albania" ->
