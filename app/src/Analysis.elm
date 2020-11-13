@@ -338,7 +338,7 @@ allYearsAnalysis country =
             warnAboutDataSize c
     in
     GraphData "Week number"
-        caption
+        (caption ++ " (2020 is the blue line)")
         warning
     <|
         L.append
