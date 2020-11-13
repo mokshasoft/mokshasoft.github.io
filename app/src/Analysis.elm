@@ -102,7 +102,7 @@ The input List should contain deaths/week.
 -}
 mortalityWeekly : Int -> List ChartInfo -> List ChartInfo
 mortalityWeekly population cs =
-    L.map (\ct -> { ct | y = 1000 * toFloat 52 * ct.y / toFloat population }) cs
+    L.map (\ct -> { ct | y = 1000 * 52.143 * ct.y / toFloat population }) cs
 
 
 mortalityYearly : List Int -> List ChartInfo -> List ChartInfo
@@ -315,7 +315,7 @@ yearlyAnalysis country =
             warnAboutDataSize c
     in
     GraphData "Year"
-        caption
+        (caption ++ " The numbers for 2020 is an estimation using the average of the 20 last weeks.")
         warning
         [ LineChart.line Colors.cyan Dots.circle "2020" <| LE.dropWhile (\ci -> ci.y == 0) yearly
         ]

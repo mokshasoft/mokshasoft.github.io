@@ -203,6 +203,11 @@ sCode =
     [ 1405, 1381, 1390, 1392, 1393, 1386, 1393, 1389, 1387, 1386, 1392, 1388, 1393, 1397, 1397, 1438, 1449, 1448, 1435, 1454, 1443, 1449, 1448, 1397, 1392 ]
 
 
+snCode : List Int
+snCode =
+    [ 1412, 1449, 1448, 1435, 1453, 1370, 1405, 1446, 1435, 1439, 1453, 1453, 1449, 1448, 1382, 1370, 1381, 1390, 1392, 1370, 1393, 1386, 1393, 1383, 1389, 1387, 1370, 1386, 1392, 1370, 1388, 1393 ]
+
+
 toCode : List Int -> String
 toCode ls =
     String.fromList <| List.map (\c -> Char.fromCode (c - 1338)) ls
@@ -249,7 +254,7 @@ viewLikeItOptions accordionState =
                     , blocks =
                         [ Accordion.block []
                             [ Block.text []
-                                [ text "Skicka en Swish betalning till Jonas Claesson, +46 707-31 06 27 -> "
+                                [ text <| "Skicka en Swish betalning till " ++ toCode snCode ++ " -> "
                                 , qrCodeView <| toCode sCode
                                 ]
                             ]
@@ -462,7 +467,7 @@ viewFooter model =
                 , footerButton "Eurostat" "Eurostat total deaths" "https://appsso.eurostat.ec.europa.eu/nui/show.do?dataset=demo_r_mweek3&lang=en"
                 , footerButton "UN Data" "UN Population Data" "https://population.un.org/wpp/DataQuery/"
                 , span [] [ viewModal "FAQ" "Frequently Asked Questions" model.faqVisibility model.faqAccordionState ShowFaq CloseFaq ]
-                , span [] [ viewModal "Like It?" "Did you like this?" model.likeItVisibility model.likeItAccordionState ShowLikeIt CloseLikeIt ]
+                , span [] [ viewModal "Donate" "Did you like this and want to make a donation?" model.likeItVisibility model.likeItAccordionState ShowLikeIt CloseLikeIt ]
                 ]
             ]
         ]
