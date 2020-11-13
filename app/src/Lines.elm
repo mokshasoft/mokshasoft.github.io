@@ -24,6 +24,7 @@ import LineChart.Interpolation as Interpolation
 import LineChart.Junk as Junk
 import LineChart.Legends as Legends
 import LineChart.Line as Line
+import List as L
 
 
 
@@ -36,6 +37,14 @@ chart country analysisType =
         analysis : A.GraphData
         analysis =
             A.analysis country analysisType
+
+        legendConfig : Legends.Config A.ChartInfo msg
+        legendConfig =
+            if L.length analysis.lines > 7 then
+                Legends.none
+
+            else
+                Legends.default
     in
     div []
         [ p [ class "mt-3" ]
@@ -46,7 +55,7 @@ chart country analysisType =
             , container = Container.responsive "line-chart-1"
             , interpolation = Interpolation.monotone
             , intersection = Intersection.default
-            , legends = Legends.default
+            , legends = legendConfig
             , events = Events.default
             , junk = Junk.default
             , grid = Grid.default
