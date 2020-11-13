@@ -48,9 +48,11 @@ filterCountryData country =
         transformer : Int -> Year -> D.Dict Int Year -> D.Dict Int Year
         transformer year yearData dict =
             let
+                d : List Int
                 d =
                     L.take 52 <| dropTrailingZeros yearData.data
 
+                dd : List Int
                 dd =
                     if L.length d < 52 then
                         -- The last samples in 2020 is probably not correct enough, drop two

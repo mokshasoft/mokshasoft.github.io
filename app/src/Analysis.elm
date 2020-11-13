@@ -158,6 +158,7 @@ getDeadliestPeakYear country =
         cmp : ( Int, Year ) -> ( Int, Int ) -> ( Int, Int )
         cmp ( year, yearData ) ( prevYear, prevMax ) =
             let
+                max : Int
                 max =
                     M.withDefault 0 <| L.maximum yearData.data
             in
@@ -189,12 +190,15 @@ getYearlyData country =
         pop =
             Pop.getPopulationList country.name
 
+        year2020 : Year
         year2020 =
             M.withDefault (Year 0 []) <| D.get 2020 country.data
 
+        chart : List ChartInfo
         chart =
             L.map transform <| D.toList country.data
 
+        last : ChartInfo
         last =
             M.withDefault (ChartInfo 0 0) <| L.head <| L.reverse chart
     in
@@ -204,12 +208,15 @@ getYearlyData country =
 estimate2020 : Year -> Float
 estimate2020 year =
     let
+        len : Int
         len =
             L.length year.data
 
+        l20 : List Int
         l20 =
             L.take (len - 20) year.data
 
+        avg20 : Float
         avg20 =
             toFloat (L.sum l20) / toFloat (L.length l20)
     in

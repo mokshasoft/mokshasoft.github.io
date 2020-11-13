@@ -396,6 +396,7 @@ viewFaqOptions accordionState =
 viewModal : String -> String -> Modal.Visibility -> Accordion.State -> Msg -> Msg -> Html Msg
 viewModal titleButton titleModal visibility accordionState clickMsg closeMsg =
     let
+        option : Html Msg
         option =
             if closeMsg == CloseLikeIt then
                 viewLikeItOptions accordionState
