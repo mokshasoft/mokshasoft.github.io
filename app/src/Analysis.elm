@@ -37,6 +37,7 @@ import Tuple as T
 type Analysis
     = MaxYear
     | MaxWeekly
+    | AllYears
     | Yearly
 
 
@@ -62,6 +63,7 @@ getAllAnalysis : List String
 getAllAnalysis =
     [ "Year with highest mortality rate compared to 2020"
     , "Year with highest weekly mortality rate compared to 2020"
+    , "Show data for all available years 2000-2020"
     , "Show how mortality has changed from 2000-2020"
     ]
 
@@ -74,6 +76,9 @@ getAnalysis a =
 
         "Year with highest weekly mortality rate compared to 2020" ->
             MaxWeekly
+
+        "Show data for all available years 2000-2020" ->
+            AllYears
 
         "Show how mortality has changed from 2000-2020" ->
             Yearly
@@ -90,6 +95,9 @@ analysis country analysisType =
 
         MaxWeekly ->
             maxWeeklyAnalysis country
+
+        AllYears ->
+            allYearsAnalysis country
 
         Yearly ->
             yearlyAnalysis country
@@ -305,6 +313,37 @@ maxWeeklyAnalysis country =
         [ LineChart.line Colors.blue Dots.circle "2020" year
         , LineChart.line Colors.gold Dots.circle (S.fromInt deadliestPeakYear) comparedYearData
         ]
+
+
+allYearsAnalysis : String -> GraphData
+allYearsAnalysis country =
+    let
+        c : Country
+        c =
+            C.getCountry country
+
+        year : List ChartInfo
+        year =
+            getYearData 2020 c
+
+        allBut2020 : Country
+        allBut2020 =
+            Country c.name <| D.remove 2020 c.data
+
+        allYearsData : List (List ChartInfo)
+        allYearsData =
+            L.map (\y -> getYearData y allBut2020) <| D.keys allBut2020.data
+
+        ( caption, warning ) =
+            warnAboutDataSize c
+    in
+    GraphData "Week number"
+        caption
+        warning
+    <|
+        L.append
+            (L.map (\d -> LineChart.line Colors.gold Dots.circle "" d) allYearsData)
+            [ LineChart.line Colors.blue Dots.circle "2020" year ]
 
 
 yearlyAnalysis : String -> GraphData
