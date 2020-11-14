@@ -175,8 +175,8 @@ subscriptions model =
 
 viewHeader : Html Msg
 viewHeader =
-    div [ class "jumbotron jumbotron-fluid text-center" ]
-        [ div [ class "cointainer" ]
+    div [ class "jumbotron text-center container-xl" ]
+        [ div [ class "container-xl" ]
             [ h1 [] [ text "Interactive Graph of EU Mortality 2000-2020" ] ]
         ]
 
@@ -422,10 +422,11 @@ viewModal titleButton titleModal visibility accordionState clickMsg closeMsg =
             ]
             [ text titleButton ]
         , Modal.config closeMsg
+            |> Modal.attrs [ style "max-width" "100%" ]
             |> Modal.large
             |> Modal.h5 [] [ text titleModal ]
-            |> Modal.body []
-                [ Grid.containerFluid []
+            |> Modal.body [ class "fullscreen-md" ]
+                [ container []
                     [ option
                     ]
                 ]
@@ -461,8 +462,8 @@ footerButton txt tooltip link =
 
 viewFooter : Model -> Html Msg
 viewFooter model =
-    div [ class "jumbotron jumbotron-fluid px-3" ]
-        [ div [ class "cointainer" ]
+    div [ class "jumbotron" ]
+        [ div [ class "container-xl" ]
             [ span []
                 [ footerButton "Open-Source" "Link to Source Code" "https://github.com/mokshasoft/mokshasoft.github.io"
                 , footerButton "Eurostat" "Eurostat total deaths" "https://appsso.eurostat.ec.europa.eu/nui/show.do?dataset=demo_r_mweek3&lang=en"
@@ -499,10 +500,24 @@ viewSelection model =
         ]
 
 
+stylesheet : Html msg
+stylesheet =
+    node "link"
+        [ rel "stylesheet"
+        , href "https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        ]
+        []
+
+
+container : List (Attribute msg) -> List (Html msg) -> Html msg
+container attributes children =
+    div ([ class "container-xl" ] ++ attributes) children
+
+
 view : Model -> Html Msg
 view model =
-    Grid.containerFluid []
-        [ CDN.stylesheet -- creates an inline style node with the Bootstrap CSS
+    container []
+        [ stylesheet -- creates an inline style node with the Bootstrap CSS
         , Grid.row []
             [ Grid.col []
                 [ viewHeader
