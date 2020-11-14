@@ -175,8 +175,8 @@ subscriptions model =
 
 viewHeader : Html Msg
 viewHeader =
-    div [ class "jumbotron text-center container-xl" ]
-        [ div [ class "container-xl" ]
+    div [ class "jumbotron text-centerl" ]
+        [ div []
             [ h1 [] [ text "Interactive Graph of EU Mortality 2000-2020" ] ]
         ]
 
@@ -425,7 +425,7 @@ viewModal titleButton titleModal visibility accordionState clickMsg closeMsg =
             |> Modal.attrs [ style "max-width" "100%" ]
             |> Modal.large
             |> Modal.h5 [] [ text titleModal ]
-            |> Modal.body [ class "fullscreen-md" ]
+            |> Modal.body []
                 [ container []
                     [ option
                     ]
@@ -463,7 +463,7 @@ footerButton txt tooltip link =
 viewFooter : Model -> Html Msg
 viewFooter model =
     div [ class "jumbotron" ]
-        [ div [ class "container-xl" ]
+        [ div []
             [ span []
                 [ footerButton "Open-Source" "Link to Source Code" "https://github.com/mokshasoft/mokshasoft.github.io"
                 , footerButton "Eurostat" "Eurostat total deaths" "https://appsso.eurostat.ec.europa.eu/nui/show.do?dataset=demo_r_mweek3&lang=en"
