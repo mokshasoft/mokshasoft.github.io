@@ -409,10 +409,10 @@ viewModal titleButton titleModal visibility accordionState clickMsg closeMsg =
             [ Button.attrs
                 [ onClick clickMsg
                 , if closeMsg == CloseFaq then
-                    class "btn mx-1"
+                    class "btn btn-lg mx-1"
 
                   else
-                    class "btn btn-success mx-1 float-right"
+                    class "btn btn-lg btn-success mx-1 float-right"
                 , if closeMsg == CloseFaq then
                     style "background-color" blue
 
@@ -424,7 +424,7 @@ viewModal titleButton titleModal visibility accordionState clickMsg closeMsg =
         , Modal.config closeMsg
             |> Modal.attrs [ style "max-width" "100%" ]
             |> Modal.large
-            |> Modal.h5 [] [ text titleModal ]
+            |> Modal.h5 [ class "mx-auto" ] [ text titleModal ]
             |> Modal.body []
                 [ container []
                     [ option
@@ -433,7 +433,10 @@ viewModal titleButton titleModal visibility accordionState clickMsg closeMsg =
             |> Modal.footer []
                 [ Button.button
                     [ Button.outlinePrimary
-                    , Button.attrs [ onClick closeMsg ]
+                    , Button.attrs
+                        [ onClick closeMsg
+                        , class "btn-lg"
+                        ]
                     ]
                     [ text "Close" ]
                 ]
@@ -449,7 +452,7 @@ blue =
 footerButton : String -> String -> String -> Html Msg
 footerButton txt tooltip link =
     a
-        [ class "btn mx-1"
+        [ class "btn btn-lg mx-1"
         , href link
         , style "background-color" blue
         , target "_blank"
