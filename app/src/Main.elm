@@ -217,7 +217,7 @@ viewLikeItOptions : Accordion.State -> Html Msg
 viewLikeItOptions accordionState =
     div []
         [ p []
-            [ text "This web-site intentionally lacks ads and trackers. There are a few donation options if you like this website and the data it presents, and you feel like supporting independent efforts." ]
+            [ text "This website intentionally lacks ads and trackers. There are a few donation options if you like this website and the data it presents, and you feel like supporting independent efforts." ]
         , Accordion.config LikeItAccordionMsg
             |> Accordion.withAnimation
             |> Accordion.onlyOneOpen
@@ -501,7 +501,7 @@ viewSelection model =
 
 view : Model -> Html Msg
 view model =
-    Grid.container []
+    Grid.containerFluid []
         [ CDN.stylesheet -- creates an inline style node with the Bootstrap CSS
         , Grid.row []
             [ Grid.col []
@@ -515,7 +515,7 @@ view model =
             ]
         , Grid.row []
             [ Grid.col []
-                [ div [ class "container" ] [ Lines.chart model.selection.country model.selection.analysis ]
+                [ div [] [ Lines.chart model.selection.country model.selection.analysis ]
                 ]
             ]
         , Grid.row []
