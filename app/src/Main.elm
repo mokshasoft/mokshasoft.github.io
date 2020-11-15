@@ -313,7 +313,7 @@ viewFaqOptions accordionState =
                     Accordion.header [] <| Accordion.toggle [] [ text "Why comparing mortality rate?" ]
                 , blocks =
                     [ Accordion.block []
-                        [ Block.text [] [ text "Comparing mortality makes it possible to compare countries with different sizes of population, and comparing different years within the same country when population might have changed." ] ]
+                        [ Block.text [] [ text "I think that general mortality rate is the only trustworthy measurement that sets the events of 2020 in a bigger perspective. It also increases the comparability of data from different countries and years since it takes population numbers into account. This bigger perspective is a very important tool to understand and analyze data." ] ]
                     ]
                 }
             , Accordion.card
@@ -425,6 +425,7 @@ viewModal titleButton titleModal visibility accordionState clickMsg closeMsg =
             |> Modal.attrs [ style "max-width" "100%" ]
             |> Modal.large
             |> Modal.h5 [ class "mx-auto" ] [ text titleModal ]
+            |> Modal.scrollableBody True
             |> Modal.body []
                 [ container []
                     [ option
