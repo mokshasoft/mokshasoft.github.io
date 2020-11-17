@@ -13,7 +13,7 @@ APP_FILES=\
   ./app/src/DataTypes.elm\
   ./app/src/Analysis.elm
 
-app/elm.min.js: $(APP_FILES)
+app/elm.min.js: $(APP_FILES) index.html.begin index.html.end
 	(cd app && \
 	./optimize.sh src/Main.elm && \
 	cat ../index.html.begin elm.min.js ../index.html.end > ../index.html)
