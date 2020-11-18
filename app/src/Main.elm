@@ -431,10 +431,10 @@ viewModal titleButton titleModal visibility accordionState clickMsg closeMsg =
             [ Button.attrs
                 [ onClick clickMsg
                 , if closeMsg == CloseFaq then
-                    class "btn btn-lg mx-1"
+                    class "btn btn-lg m-1"
 
                   else
-                    class "btn btn-lg btn-success mx-1 float-right"
+                    class "btn btn-lg btn-success m-1"
                 , if closeMsg == CloseFaq then
                     style "background-color" blue
 
@@ -475,7 +475,7 @@ blue =
 footerButton : String -> String -> String -> Html Msg
 footerButton txt tooltip link =
     a
-        [ class "btn btn-lg mx-1"
+        [ class "btn btn-lg m-1"
         , href link
         , style "background-color" blue
         , target "_blank"
@@ -490,7 +490,9 @@ viewFooter : Model -> Html Msg
 viewFooter model =
     div [ class "jumbotron" ]
         [ div []
-            [ span []
+            [ p []
+                [ text "Click on the Open-Source, Eurostat, UN Data, FAQ or Donate button below!" ]
+            , span []
                 [ footerButton "Open-Source" "Link to Source Code" "https://github.com/mokshasoft/mokshasoft.github.io"
                 , footerButton "Eurostat" "Eurostat total deaths" "https://appsso.eurostat.ec.europa.eu/nui/show.do?dataset=demo_r_mweek3&lang=en"
                 , footerButton "UN Data" "UN Population Data" "https://population.un.org/wpp/DataQuery/"
