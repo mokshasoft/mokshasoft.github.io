@@ -177,7 +177,29 @@ viewHeader : Html Msg
 viewHeader =
     div [ class "jumbotron text-centerl" ]
         [ div []
-            [ h1 [] [ text "Interactive Graph of EU Mortality 2000-2020" ] ]
+            [ h1 [] [ text "Interactive Graph of EU Mortality 2000-2020" ]
+            , p []
+                [ text "All data on this site is from official EU and UN sources."
+                , a
+                    [ href "https://appsso.eurostat.ec.europa.eu/nui/show.do?dataset=demo_r_mweek3&lang=en"
+                    , target "_blank"
+                    ]
+                    [ text " EU data on deaths" ]
+                , a
+                    [ href "https://population.un.org/wpp/DataQuery/"
+                    , target "_blank"
+                    ]
+                    [ text " UN population data" ]
+                ]
+            , p []
+                [ text " All source code that shows these graphs are publicly available (open-source)"
+                , a
+                    [ href "https://github.com/mokshasoft/mokshasoft.github.io"
+                    , target "_blank"
+                    ]
+                    [ text " Source code" ]
+                ]
+            ]
         ]
 
 
