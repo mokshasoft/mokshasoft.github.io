@@ -531,12 +531,12 @@ viewSelection model =
     div []
         [ select
             [ Extra.onChange SetCountry
-            , class "custom-select"
+            , class "custom-select m-1"
             ]
             optListCountry
         , select
             [ Extra.onChange SetAnalysis
-            , class "custom-select"
+            , class "custom-select m-1"
             ]
             optListAnalysis
         ]
@@ -567,7 +567,9 @@ view model =
             ]
         , Grid.row []
             [ Grid.col []
-                [ viewSelection model
+                [ p [ class "lead" ]
+                    [ text "Select Your country right below, and the type of graph you want to see!" ]
+                , viewSelection model
                 ]
             ]
         , Grid.row []
