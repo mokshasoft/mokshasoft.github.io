@@ -178,6 +178,8 @@ viewHeader =
     div [ class "jumbotron text-centerl" ]
         [ div []
             [ h1 [] [ text "Interactive Graph of EU Mortality 2000-2020" ]
+            , hr []
+                []
             , p []
                 [ text "All data on this site is from official EU and UN sources."
                 , a
