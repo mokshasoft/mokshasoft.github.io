@@ -499,6 +499,20 @@ viewFooter model =
                 , span [] [ viewModal "FAQ" "Frequently Asked Questions" model.faqVisibility model.faqAccordionState ShowFaq CloseFaq ]
                 , span [] [ viewModal "Donate" "Did you like this and want to make a donation?" model.likeItVisibility model.likeItAccordionState ShowLikeIt CloseLikeIt ]
                 ]
+            , p [ class "text-center m-1" ]
+                [ text "e-mail: "
+                , a
+                    [ href "mailto:jonas.cl@protonmail.com"
+                    ]
+                    [ text "jonas.cl@protonmail.com" ]
+                , text ", mobile: "
+                , a
+                    [ href "tel:+46707310627"
+                    ]
+                    [ text " +46 707 31 06 27" ]
+                ]
+            , p [ class "text-center m-1" ]
+                [ text "This website is built as charity and I have another day job. Remember this if I don't have time to answer all your inquiries." ]
             ]
         ]
 
