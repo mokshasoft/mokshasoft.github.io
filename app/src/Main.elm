@@ -514,7 +514,7 @@ viewFooter model =
                     [ text " +46 707 31 06 27" ]
                 ]
             , p [ class "text-center m-1" ]
-                [ text "This website is built as charity and I have another day job. Remember this if I don't have time to answer all your inquiries." ]
+                [ text "This website is built as charity and I have another day job. I will try to get back to you as soon as possible, but due to those circumstances it might take a while." ]
             ]
         ]
 
