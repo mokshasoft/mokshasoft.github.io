@@ -2,7 +2,10 @@
 # Targets for building the website
 #
 
-web: app/elm.min.js
+web: concat
+
+concat: index.html.begin app/elm.min.js index.html.end
+	cat index.html.begin app/elm.min.js index.html.end > index.html
 
 APP_FILES=\
   ./app/src/Lines.elm\
@@ -13,11 +16,9 @@ APP_FILES=\
   ./app/src/DataTypes.elm\
   ./app/src/Analysis.elm
 
-app/elm.min.js: $(APP_FILES) index.html.begin index.html.end
+app/elm.min.js: $(APP_FILES)
 	(cd app && \
-	./optimize.sh src/Main.elm && \
-	cat ../index.html.begin elm.min.js ../index.html.end > ../index.html)
-
+	./optimize.sh src/Main.elm)
 
 #
 # Targets for preprocessing data
