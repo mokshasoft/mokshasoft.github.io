@@ -14,10 +14,13 @@ module Lib
 import           ElmWriter
 import           Parser
 
+folder :: String
+folder = "../data/Eurostat/old/"
+
 elmDataGenerator :: IO ()
 elmDataGenerator = do
   putStrLn "Start parsing..."
-  csvData <- readFile "demo_r_mweek3_1_Data.csv"
+  csvData <- readFile $ folder ++ "demo_r_mweek3_1_Data.csv"
   let recs = lines2Records (drop 1 $ lines csvData)
   putStrLn "Parsing done."
   putStrLn "Writing Data.elm file..."
