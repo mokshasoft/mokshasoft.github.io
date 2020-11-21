@@ -14,6 +14,7 @@ module ElmWriter
 import           Data.Foldable       as F
 import           Data.HashMap.Strict as Map
 import           Data.List           as L
+import           Data.List.Extra     as LE
 import           Data.Maybe          as M
 import           Parser              as R
 
@@ -45,7 +46,7 @@ country2String (name, y) =
   in
   funcName ++ " : Country\n" ++
   funcName ++ " =\n" ++
-  "    Country \"" ++ name ++ "\" <|\n" ++
+  "    Country \"" ++ (LE.trim $ L.takeWhile (/= '(') name) ++ "\" <|\n" ++
   "        D.fromList\n" ++
   "            [ " ++ list ++ "\n" ++
   "            ]"
