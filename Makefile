@@ -34,7 +34,12 @@ CONV_FILES=\
   ./ElmDataGenerator/src/Lib.hs\
   ./ElmDataGenerator/src/ElmWriter.hs
 
-app/src/Gen/Data.elm: $(CONV_FILES)
+app/src/Gen/Data.elm: $(CONV_FILES) data/Eurostat/merged-data.csv
 	(cd ElmDataGenerator && \
 	stack build && \
 	stack exec ElmDataGenerator-exe)
+
+mergedata: data/Eurostat/merged-data.csv
+data/Eurostat/merged-data.csv:
+	(cd ./data/Eurostat && \
+	./merge-data.sh)

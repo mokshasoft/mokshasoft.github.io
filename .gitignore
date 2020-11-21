@@ -3,3 +3,4 @@ app/elm.js
 app/elm.min.js
 app/review/elm-stuff/
 index.html.old
+data/Eurostat/merged-data.csv
