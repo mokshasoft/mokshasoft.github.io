@@ -36,7 +36,7 @@ year2String (y, w) =
 country2String :: (String, Years) -> String
 country2String (name, y) =
   let
-    funcName = "data" ++ name
+    funcName = "data" ++ (L.filter (/= ' ') name)
     list = L.concat $ L.intersperse "\n            , " $ L.map year2String $ L.sortOn fst $ Map.toList y
   in
   funcName ++ " : Country\n" ++
