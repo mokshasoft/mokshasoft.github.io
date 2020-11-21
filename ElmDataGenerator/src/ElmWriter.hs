@@ -33,10 +33,14 @@ year2String (y, w) =
     total = L.sum nbrs
   in "( " ++ show y ++ ", Year " ++ show total ++ " [ " ++ nbrsStr ++ " ] )"
 
+countryNameVariable :: String -> String
+countryNameVariable name =
+  "data" ++ (L.filter (/= ' ') name)
+
 country2String :: (String, Years) -> String
 country2String (name, y) =
   let
-    funcName = "data" ++ (L.filter (/= ' ') name)
+    funcName = countryNameVariable name
     list = L.concat $ L.intersperse "\n            , " $ L.map year2String $ L.sortOn fst $ Map.toList y
   in
   funcName ++ " : Country\n" ++
@@ -109,7 +113,7 @@ record2String rs =
   let
     countries = records2Countries rs
   in genHeader ++
-     (genCountriesFunctions "dataGermany" $ L.map (\c -> "data" ++ (L.filter (/= ' ') c)) $ Map.keys countries) ++
+     (genCountriesFunctions "dataGermany" $ L.map (\c -> countryNameVariable c) $ Map.keys countries) ++
      countries2String countries
 
 record2ElmData :: FilePath -> [R.Record] -> IO ()
