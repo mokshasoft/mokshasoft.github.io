@@ -354,6 +354,16 @@ viewFaqOptions accordionState =
                 { id = "option4"
                 , options = []
                 , header =
+                    Accordion.header [] <| Accordion.toggle [] [ text "Why is there data missing for 2020?" ]
+                , blocks =
+                    [ Accordion.block []
+                        [ Block.text [] [ text "The data is from Eurostat and different countries seem to report data at different rates, so this data is always lagging a bit and the lag differ between countries. The last weeks of data does not seem to be reliable since it shows very low numbers, so the last weeks are filtered out. The data on this website also needs to be updated manually, and I will try to do that twice-a-month." ] ]
+                    ]
+                }
+            , Accordion.card
+                { id = "option5"
+                , options = []
+                , header =
                     Accordion.header [] <| Accordion.toggle [] [ text "What is open-source?" ]
                 , blocks =
                     [ Accordion.block []
@@ -361,7 +371,7 @@ viewFaqOptions accordionState =
                     ]
                 }
             , Accordion.card
-                { id = "option5"
+                { id = "option6"
                 , options = []
                 , header =
                     Accordion.header [] <| Accordion.toggle [] [ text "Why is my country not on the web site?" ]
@@ -371,7 +381,7 @@ viewFaqOptions accordionState =
                     ]
                 }
             , Accordion.card
-                { id = "option6"
+                { id = "option7"
                 , options = []
                 , header =
                     Accordion.header [] <| Accordion.toggle [] [ text "Can I download this website and send to my friends?" ]
@@ -381,7 +391,7 @@ viewFaqOptions accordionState =
                     ]
                 }
             , Accordion.card
-                { id = "option7"
+                { id = "option8"
                 , options = []
                 , header =
                     Accordion.header [] <| Accordion.toggle [] [ text "Is there a backup?" ]
