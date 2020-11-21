@@ -35,7 +35,7 @@ year2String (y, w) =
 
 countryNameVariable :: String -> String
 countryNameVariable name =
-  "data" ++ (L.filter (/= ' ') name)
+  L.takeWhile (/= '(') $ "data" ++ (L.filter (/= ' ') name)
 
 country2String :: (String, Years) -> String
 country2String (name, y) =
