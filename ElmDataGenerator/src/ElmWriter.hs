@@ -109,7 +109,7 @@ record2String rs =
   let
     countries = records2Countries rs
   in genHeader ++
-     (genCountriesFunctions "dataGermany" $ L.map ("data"++) $ Map.keys countries) ++
+     (genCountriesFunctions "dataGermany" $ L.map (\c -> "data" ++ (L.filter (/= ' ') c)) $ Map.keys countries) ++
      countries2String countries
 
 record2ElmData :: FilePath -> [R.Record] -> IO ()
