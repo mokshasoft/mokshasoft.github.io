@@ -32,7 +32,9 @@ year2String (y, w) =
     nbrs = L.map snd $ L.sortOn fst $ Map.toList w
     nbrsStr = L.concat $ L.intersperse ", " $ L.map show nbrs
     total = L.sum nbrs
-  in "( " ++ show y ++ ", Year " ++ show total ++ " [ " ++ nbrsStr ++ " ] )"
+  in if total /= 0
+    then "( " ++ show y ++ ", Year " ++ show total ++ " [ " ++ nbrsStr ++ " ] )"
+    else ""
 
 countryNameVariable :: String -> String
 countryNameVariable name =
@@ -42,7 +44,7 @@ country2String :: (String, Years) -> String
 country2String (name, y) =
   let
     funcName = countryNameVariable name
-    list = L.concat $ L.intersperse "\n            , " $ L.map year2String $ L.sortOn fst $ Map.toList y
+    list = L.concat $ L.intersperse "\n            , " $ L.filter (/= "") $ L.map year2String $ L.sortOn fst $ Map.toList y
   in
   funcName ++ " : Country\n" ++
   funcName ++ " =\n" ++
