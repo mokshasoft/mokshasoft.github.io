@@ -38,6 +38,7 @@ type Analysis
     = MaxYear
     | MaxWeekly
     | AllYears
+    | AllWeeks
     | Yearly
 
 
@@ -64,6 +65,7 @@ getAllAnalysis =
     [ "Year with highest mortality rate compared to 2020"
     , "Year with highest weekly mortality rate compared to 2020"
     , "Show data for all available years 2000-2020"
+    , "Show data for all available weeks 2000-2020"
     , "Show how mortality has changed from 2000-2020"
     ]
 
@@ -79,6 +81,9 @@ getAnalysis a =
 
         "Show data for all available years 2000-2020" ->
             AllYears
+
+        "Show data for all available weeks 2000-2020" ->
+            AllWeeks
 
         "Show how mortality has changed from 2000-2020" ->
             Yearly
@@ -98,6 +103,9 @@ analysis country analysisType =
 
         AllYears ->
             allYearsAnalysis country
+
+        AllWeeks ->
+            allWeeksAnalysis country
 
         Yearly ->
             yearlyAnalysis country
@@ -344,6 +352,34 @@ allYearsAnalysis country =
         L.append
             (L.map (\d -> LineChart.line Colors.gold Dots.circle "" d) allYearsData)
             [ LineChart.line Colors.blue Dots.circle "2020" year ]
+
+
+allWeeksAnalysis : String -> GraphData
+allWeeksAnalysis country =
+    let
+        c : Country
+        c =
+            C.getCountry country
+
+        allYearsData : List ChartInfo
+        allYearsData =
+            L.concat <| L.map (\y -> getYearData y c) <| D.keys c.data
+
+        earliestYear : Float
+        earliestYear =
+            toFloat <| M.withDefault 2000 <| L.head <| D.keys c.data
+
+        allWeeksData : List ChartInfo
+        allWeeksData =
+            L.map2 (\ci idx -> ChartInfo (earliestYear + toFloat idx / 52.143) ci.y) allYearsData (L.range 1 (L.length allYearsData))
+
+        ( caption, warning ) =
+            warnAboutDataSize c
+    in
+    GraphData "Year"
+        caption
+        warning
+        [ LineChart.line Colors.gold Dots.circle "" allWeeksData ]
 
 
 yearlyAnalysis : String -> GraphData
