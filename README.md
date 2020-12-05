@@ -6,6 +6,8 @@ This website is built with open-data and open-source code using pure functional 
 
 The preprocessing reads the data from Eurostat and transforms it into an elm-file that is compiled into the frontend app.
 
+Using pure functional languages such as Haskell and elm lets me focus on the logic and features, instead of searching for bugs. This saves a lot of motivation, brain power and time.
+
 ## The Power of Open-Source
 This website took around 40 hours to create, which would not have been possible without the power of open-source. First of all, both programming languages used in this project is fully open-source. The Haskell preprocessing stage depends directly on five open-source libraries and indirectly on 30 more libraries. The elm frontend app depends directly on nine libraries and indirectly on 17 more libraries, including Bootstrap. Using open-source let's me utilize, leverage and reuse probably hundreds of thousands of hours of work.
 
