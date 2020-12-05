@@ -14,7 +14,7 @@ This website took around 40 hours to create, which would not have been possible 
 ## Results
 The graphs show that the mortality in EU has not been affected by the Corona pandemic, at least in most countries. Some countries show a higher mortality temporarily during a couple of weeks, but put in the bigger perspective of 20 years, 2020 does not stick out in but a few countries. The following list is compiled with data from the graphs of "Year with highest mortality compared to 2020".
 
-Countries *with* an unusual high mortality:
+Countries **with** an unusual high mortality:
 - Belgium
 - France (only 8 years of data)
 - Italy (only 6 years of data)
@@ -22,7 +22,7 @@ Countries *with* an unusual high mortality:
 - Spain (The deadliest country. A five week peak with an average increase of mortality by 80%, i.e. contributes 10% in total to 2020)
 - United Kingdom (only 6 years of data)
 
-Countries *without* an unusual high mortality:
+Countries **without** an unusual high mortality:
 - Albania (only 6 years of data)
 - Austria
 - Bulgaria
@@ -51,6 +51,8 @@ Countries *without* an unusual high mortality:
 - Slovenia
 - Sweden (Close to the deadliest year of 2002)
 - Switzerland
+
+The pandemic of 2020, was there really one? Pan, from Greek meaning "all". In hindsight it seems that only some countries were affected.
 
 ## Different graphs
 There are currently five types of graphs available for each country:
