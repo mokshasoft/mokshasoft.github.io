@@ -1,8 +1,8 @@
-# Graphly.org - European general mortality during 2000-2020
+# [Graphly.org](http://www.graphly.org/) - European general mortality during 2000-2020
 This site shows the mortality within EU during the period 2000-2020. The mortality shown is called general mortality, i.e. all deaths per poplation per time. In Graphly the mortality shown is per 1000 individuals/year.
 
-## Haskell/elm and Technology
-This website is built with open-data and open-source code using pure functional programming; Haskell and elm. Haskell is used in the data preprocessing pipeline, and elm is used as the frontend language generating the website. The website is static to make it faster to use and easier to share (The whole website is contained in the index.html file). This is possible since the data-set is fairly small.
+## [Haskell](https://www.haskell.org/)/[elm](https://elm-lang.org/)
+This website is built with [Eurostat open-data](https://appsso.eurostat.ec.europa.eu/nui/show.do?dataset=demo_r_mweek3&lang=en) and open-source code using pure functional programming; Haskell and elm. Haskell is used in the data preprocessing pipeline, and elm is used as the frontend language generating the website. The website is static to make it faster to use and easier to share (The whole website is contained in the index.html file). This is possible since the data-set is fairly small.
 
 The preprocessing reads the data from Eurostat and transforms it into an elm-file that is compiled into the frontend app.
 
