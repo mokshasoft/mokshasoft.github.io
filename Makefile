@@ -40,6 +40,6 @@ app/src/Gen/Data.elm: $(CONV_FILES) data/Eurostat/merged-data.csv
 	stack exec ElmDataGenerator-exe)
 
 mergedata: data/Eurostat/merged-data.csv
-data/Eurostat/merged-data.csv:
+data/Eurostat/merged-data.csv: data/Eurostat/new/demo_r_mweek3_1_Data.csv
 	(cd ./data/Eurostat && \
 	./merge-data.sh)
