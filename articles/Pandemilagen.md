@@ -1,7 +1,21 @@
 # Pandemilagen, ett brott mot mänskligheten?
 , Sverige ej längre en demokrati
+, Gör pandemilagen Sverige till en diktatur?
+, Är pandemilagen dödsstöten för Svensk demokrati?
+, Är Sverige en demokrati efter pandemilagen?
+, Pandemilagen är antidemokratisk enligt riksdagen!
 
 This text is licenced under [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0/legalcode)
+
+"Mötesfriheten är okränkbar i en demokrati", står det på centerpartiets hemsida [1].
+"Frihet – yttrandefrihet, mötesfrihet, tryckfrihet. Det här är våra värderingar." står det på socialdemokraternas hemsida [2].
+"I Sverige är varje medborgare gentemot det allmänna tillförsäkrad yttrandefrihet, informationsfrihet, mötesfrihet, demonstrationsfrihet, föreningsfrihet och religionsfrihet." säger Alice Bah Kuhnke (Miljöpartiet) i en interpellationsdebatt i riksdagen [3].
+"Mötesfriheten är fortsatt kraftigt inskränkt och myndigheterna arbetar systematiskt för att försvåra och förhindra protestdemonstrationer." står det i Utrikesdepartementets rapport angående demokratin i Belarus [4].
+
+Påståenden likt dessa är väldigt lätt att hitta från alla riksdagspartierna, olika myndiheter, NGO:er, etc, etc. Det skulle nog vara svårt att hitta någon som inte tyckte att mötesfriheten var en hörnsten i en fungerande demokrati. Betyder det då att vi inte längre har en fungerande demokrati i Sverige sen pandemilagen röstades genom [5]? Det verkar ju onekligen så om man läser vad politiker har sagt åtminstone fram till nyligen.
+
+## Mötesfriheten är grunden i en demokrati
+Att mötesfriheten är grunden i en demokrati skulle nog dom flesta riksdagspolitikerna 2018 ha svarat ett rungande "JA" på. Ett ytterligare bevis på att den är så extremt viktig visas också av att den är reglerad i den första och viktigaste grundlagen, Regeringsformen [6]. När den skrevs så tyckte man tydligen att mötesfriheten till och med var viktigare än yttrandefriheten som är den yngsta grundlagen [7]. Den är faktiskt bara från 1991.
 
 ## Stödord
 Nurnbergrättegången, Riksdagsbranden, Endast SD röstade emot lagen, yttrandefriheten en grundpelare i demokrati,
@@ -23,6 +37,9 @@ Demonstrationsfrihet/Mötesfrihet
 https://sv.wikipedia.org/wiki/Demonstrationsfrihet
 https://sv.wikipedia.org/wiki/M%C3%B6tesfrihet
 
+Regeringsformen
+[6] http://rkrattsbaser.gov.se/sfst?bet=1974:152
+
 Lag (2005:900) om förbud mot maskering i vissa fall
 https://lagen.nu/2005:900
 
@@ -39,7 +56,7 @@ Lag om särskilda begränsningar för att förhindra spridning av sjukdomen covi
 https://svenskforfattningssamling.se/sites/default/files/sfs/2021-01/SFS2021-4.pdf
 
 En tillfällig covid-19-lag - Socialutskottets betänkande 2020/21:SoU23
-https://riksdagen.se/sv/dokument-lagar/arende/betankande/en-tillfallig-covid-19-lag_H801SoU23
+[5] https://riksdagen.se/sv/dokument-lagar/arende/betankande/en-tillfallig-covid-19-lag_H801SoU23
 
 Riksdagshusbranden
 https://sv.wikipedia.org/wiki/Riksdagshusbranden
@@ -77,12 +94,13 @@ https://www.liberalerna.se/politik/yttrandefrihet/
 https://nt.se/nyheter/varfor-ar-det-viktigt-med-yttrandefrihet-10611382.aspx
 https://www.informationsverige.se/sv/jag-har-fatt-uppehallstillstand/samhallsorientering/boken-om-sverige/att-paverka-i-sverige/vad-ar-demokrati/
 
-Mötesfriheten är grunden i en demokrati (Regeringsformen är den viktigaste av grundlagarna)
-https://www.centerpartiet.se/lokal/vasterbotten/umea/startsida/nyheter/nyheter/2017-02-17-motesfriheten-ar-okrankbar-i-en-demokrati
+[5] Mötesfriheten är grunden i en demokrati (Regeringsformen är den viktigaste av grundlagarna)
+[1] https://www.centerpartiet.se/lokal/vasterbotten/umea/startsida/nyheter/nyheter/2017-02-17-motesfriheten-ar-okrankbar-i-en-demokrati
 https://www.dagen.se/debatt/2020/08/27/dags-att-agera-for-motesfriheten/
 https://firademokratin.riksdagen.se/fordjupning/demokratins-varderingar/demokratins-kannetecken/#Vad-%C3%A4r-demokrati
-https://www.regeringen.se/rapporter/2020/12/manskliga-rattigheter-demokrati-och-rattsstatens-principer-i-belarus/
+[4] https://www.regeringen.se/rapporter/2020/12/manskliga-rattigheter-demokrati-och-rattsstatens-principer-i-belarus/
 https://vardemokrati.se/om-demokratin/
 https://www.socialdemokraterna.se/download/18.6a46455216c3d0f447e7134/1568881617947/nationell-sakerhetsstrategi.pdf
-https://www.socialdemokraterna.se/download/18.61db1f4116d5d8fea6f1b18/1572532938222/kongressprotokoll_2019.pdf
+[2] https://www.socialdemokraterna.se/download/18.61db1f4116d5d8fea6f1b18/1572532938222/kongressprotokoll_2019.pdf
 https://gront.mp.se/coronapandemin-ett-hot-mot-demokratin/
+[3] https://www.riksdagen.se/sv/dokument-lagar/dokument/interpellationsdebatt/islams-paverkan-pa-det-svenska-samhallet_H510578
