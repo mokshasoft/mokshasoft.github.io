@@ -28,11 +28,12 @@ Vidare kan man lätt hitta hur mycket alla partier har pratat om hur yttrandefri
 Nästa problem med yttrandefriheten är att mediaägandet har centraliserats mer och mer, och speciellt i Sverige har ägandet centraliserats till extremt få ägare. Det gör att rapporteringen blir väldigt likformig, och när dom flesta av dessa medier är beroende av presstödet så blir medierna inte särskillt oberoende av det dom bör granska. Jag tror att fler och fler upplever att medierna har blivit mer likt en PR kanal för regeringen och riksdagen, och att journalister inte längre ställer svåra frågor följt av svåra följdfrågor. "Alternativ media", eller medier som är finansierade med donationer från folket och inte genom pressstödet, gör ofta ett mycket bättre jobb. Dom har inget att förlora på att göra sig ovän med makten, utan har allt att vinna på att ställa svåra frågor. Det finns ett sug efter bra journalistik! Lyssna tex på Swebbtv's intervju med JK angånde pandemilagen, och fundera på när du senast hörde en liknande skarp intervju i tex SVT, SR, DN eller SvD [9].
 
 ## Hitlers maktövertagande
-Riksdagsbranden
+Det finns vissa liknelser mellan dagens Covid-19 skrämsel med tillhörande brott mot våra grundlagsskyddade friheter. Enligt Wikipedia "Riksdagshusbranden (tyska: der Reichstagsbrand) kallas den eldsvåda som härjade Berlins riksdagshus den 27 februari 1933 och som anses vara ett avgörande moment i etablerandet av nazisternas styre." Denna händelse gav Hitler möjlighet att införa Riksdagsbrandsförordningen. "Riksdagsbrandförordningen gav enligt artikel 48 i Weimarkonstitutionen regeringen befogenheter att vidta åtgärder för att skydda allmänheten utan riksdagens godkännande och upphävde de flesta medborgerliga rättigheter på obestämd tid" [10]. Det går såklart inte jämföra dagens händelser med dom som hände i Tyskland före 2:a världskriget, men hur många visste 1933 vad som skulle hända i framtiden? Hur vet vi att dessa lagar vi skapar i Sverige idag inte missbrukas i framtiden? Är det inte just detta som grundlagarna ska skydda oss mot?
 
 ## Mänskliga rättigheter och brott mot mänskligheten
+Efter 2:a världskriget så dömdes många i Nürnbergrättegångarna för brott mot mänskligheten [11]. Det var inte bara generaler och militärer som stod åtalade utan även ministrar, läkare, domare, tjänstemän, företagsledare, chefer, mm. Ingen skulle bli fri från straff även om dom handlat på order. Det gällde inte heller bara folkmord och liknande, utan även "Andra omänskliga handlingar av liknandebeskaffenhet som uppsåtligen förorsakar svårtlidande, svår kroppslig skada eller svårt själsligt eller fysiskt men" [12]. En nedstängning skulle kunna falla under detta.
 
-## Nürnbergrättegång 2.0
+Det kan vara bra att tänka på för dom som idag kränker våra friheter och orsakar mycket lidande, att en dag när denna röran kommer redas ut så kan det möjligtvis bli tal om en Nürnbergrättegång 2.0.
 
 ## Vilka röstade för?
 
@@ -81,13 +82,13 @@ Riksdagshusbranden
 https://sv.wikipedia.org/wiki/Riksdagshusbranden
 
 Riksdagshusbrandsförordningen
-https://de.wikisource.org/wiki/Reichstagsbrandverordnung
+[10] https://de.wikisource.org/wiki/Reichstagsbrandverordnung
 
 Läkarrättegången
 https://sv.wikipedia.org/wiki/USA_mot_Karl_Brandt_et_al.
 
 Nürnbergrättegångarna
-https://sv.wikipedia.org/wiki/N%C3%BCrnbergr%C3%A4tteg%C3%A5ngarna
+[11] https://sv.wikipedia.org/wiki/N%C3%BCrnbergr%C3%A4tteg%C3%A5ngarna
 
 Domarrättegången
 https://sv.wikipedia.org/wiki/Domarr%C3%A4tteg%C3%A5ngen
@@ -123,3 +124,9 @@ https://www.socialdemokraterna.se/download/18.6a46455216c3d0f447e7134/1568881617
 [2] https://www.socialdemokraterna.se/download/18.61db1f4116d5d8fea6f1b18/1572532938222/kongressprotokoll_2019.pdf
 https://gront.mp.se/coronapandemin-ett-hot-mot-demokratin/
 [3] https://www.riksdagen.se/sv/dokument-lagar/dokument/interpellationsdebatt/islams-paverkan-pa-det-svenska-samhallet_H510578
+
+Corbettreport
+https://odysee.com/@corbettreport:0/solutionswatch-freedomair:c
+
+Brott mot mänskligheten
+[12] https://www.regeringen.se/contentassets/4de6714d72b4486f8a92cb6722b05622/romstadgan-for-internationella-brottmalsdomstolen
