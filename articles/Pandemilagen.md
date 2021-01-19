@@ -23,7 +23,9 @@ När man läser protokollet från riksdagen så ser det ut som att vi bara har e
 ## Valdeltagande i riksdagen 16%
 
 ## Yttrandefriheten är grunden i en demokrati
-Medier med presstöd rapporterar är inte oberoende av det som dom granskar, endast alternativ media är det för att dom inte får pressstöd, utan bara lever på donationer från allmänheten.
+Vidare kan man lätt hitta hur mycket alla partier har pratat om hur yttrandefriheten är grunden i en demokrati. Det har blivit väldigt aktuellt i dagens samhälle där stora monopol företag styr över informationen. Tycka vad man tycka vill om dessa företag ska få censurera eller inte, eller göra som dom vill. Faktum är att dom gör det, och det påverkar yttrandefriheten negativt. Är det någon som tror att svenskarna på 70-talet hade accepterat att ett företag styrde över vad som fick sägas i praktiken?
+
+Nästa problem med yttrandefriheten är att mediaägandet har centraliserats mer och mer, och speciellt i Sverige har ägandet centraliserats till extremt få ägare. Det gör att rapporteringen blir väldigt likformig, och när dom flesta av dessa medier är beroende av presstödet så blir medierna inte särskillt oberoende av det dom bör granska. Jag tror att fler och fler upplever att medierna har blivit mer likt en PR kanal för regeringen och riksdagen, och att journalister inte längre ställer svåra frågor följt av svåra följdfrågor. "Alternativ media", eller medier som är finansierade med donationer från folket och inte genom pressstödet, gör ofta ett mycket bättre jobb. Dom har inget att förlora på att göra sig ovän med makten, utan har allt att vinna på att ställa svåra frågor. Det finns ett sug efter bra journalistik! Lyssna tex på Swebbtv's intervju med JK angånde pandemilagen, och fundera på när du senast hörde en liknande skarp intervju i tex SVT, SR, DN eller SvD [9].
 
 ## Hitlers maktövertagande
 Riksdagsbranden
@@ -97,7 +99,7 @@ Brott mot mänskligheten
 https://sv.wikipedia.org/wiki/Brott_mot_m%C3%A4nskligheten
 
 JK intervju om Pandemilagen
-https://swebbtv.se/videos/watch/ab09ee4f-5457-421b-b7f7-00cc5330fc47?start=7m19s
+[9] https://swebbtv.se/videos/watch/ab09ee4f-5457-421b-b7f7-00cc5330fc47?start=7m19s
 
 Polisen stoppar demonstration mha Pandemilagen
 https://swebbtv.se/videos/watch/0d4fedb7-2f37-4c73-9154-4607743cc0d1?start=2m9s
