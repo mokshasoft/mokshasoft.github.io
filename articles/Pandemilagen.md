@@ -20,8 +20,6 @@ Att mötesfriheten är grunden i en demokrati skulle nog dom flesta riksdagspoli
 ## Är Sverige Demokraterna dom enda demokraterna?
 När man läser protokollet från riksdagen så ser det ut som att vi bara har ett demokratiskt parti, Sverige Demokraterna. Anledningen till detta är att det endast var SD som röstade emot pandemilagen [5], alla andra partier valde att rösta för. Vid nogrannare granskning ser man att SD heller inte är så demokratiska. I debatten och protokollet syns det att dom är för en pandemilag, fast med några undantag [8]. Den första skillnaden är att SD vill att regeringens beslut om nedstängning ska prövas direkt av riksdagen och inte efter en vecka. Den andra skillnaden är att lagen ska gälla hälften så länge, och den tredje att besluten bör bygga på "vetenskap och beprövad erfarenhet". Dvs, även Sverige Demokraterna är inte demokrater eftersom dom vill begränsa mötesfriheten. KD, SD och Socialdemokraterna bör därför ta bort ordet demokrati ur sina partinamn för att inte fara med osanning. Liberalerna bör byta namn helt eftersom dom inte är det minst liberala, inte ens när det gäller grundlagsskyddade rättigheter.
 
-## Valdeltagande i riksdagen 16%
-
 ## Yttrandefriheten är grunden i en demokrati
 Vidare kan man lätt hitta hur mycket alla partier har pratat om hur yttrandefriheten är grunden i en demokrati. Det har blivit väldigt aktuellt i dagens samhälle där stora monopol företag styr över informationen. Tycka vad man tycka vill om dessa företag ska få censurera eller inte, eller göra som dom vill. Faktum är att dom gör det, och det påverkar yttrandefriheten negativt. Är det någon som tror att svenskarna på 70-talet hade accepterat att ett företag styrde över vad som fick sägas i praktiken?
 
@@ -41,6 +39,55 @@ Författare:
 Jonas Claesson
 jonas.cl@protonmail.com
 http://www.graphly.org/
+
+## Vilka röstade för?
+Dessa riksdagsledamöter röstade för pandemilagen.
+
+Ankarberg Johansson, Acko KD - Jönköpings län
+Axén Olin, Kristina M - Stockholms kommun
+Berglund, Jörgen M - Västernorrlands län
+Brodin, Camilla KD - Stockholms län
+Carlson, Andreas KD - Jönköpings län
+Deremar, Catarina C - Uppsala län
+Ericson, Jan M - Västra Götalands läns södra
+Forssell, Joar L - Stockholms kommun
+Green, Mats M - Jönköpings län
+Halef, Abraham S - Stockholms län
+Helmersson Olsson, Caroline S - Södermanlands län
+Herrey, Richard M - Stockholms län
+Hirvonen, Annika MP - Stockholms län
+Holm, Jens V - Stockholms kommun
+Johansson, Martina C - Södermanlands län
+Jörgensen, Ulrika M - Hallands län
+Karlsson, Mattias i Luleå M - Norrbottens län
+Kayhan, Sultan S - Stockholms kommun
+Köse, Serkan S - Stockholms län
+Lantz, Gustaf S - Uppsala län
+Larsson, Dag S - Stockholms kommun
+Larsson, Rikard S - Skåne läns södra
+Lennström, Sanne S - Uppsala län
+Lindberg, Teres S - Stockholms kommun
+Lodenius, Per C - Stockholms län
+Lundgren, Kerstin C - Stockholms län
+Modig, Linda C - Norrbottens län
+Nilsson, Maria L - Göteborgs kommun
+Nordquist, Lina L - Uppsala län
+Nysmed, Leif S - Stockholms län
+Püss, Lars M - Hallands län
+Quicklund, Saila M - Jämtlands län
+Riedl, Edward M - Västerbottens län
+Rojhan Gustafsson, Azadeh S - Stockholms län
+Rågsjö, Karin V - Stockholms kommun
+Schröder, Magdalena M - Stockholms län
+Strömkvist, Maria S - Dalarnas län
+Stålhammar, Pernilla MP - Stockholms kommun
+Sydow Mölleby, Mia V - Örebro län
+Szatmari Waldau, Ilona V - Uppsala län
+Tovatt, Lorentz MP - Stockholms kommun
+Vepsä, Mattias S - Stockholms kommun
+Vikström, Anna S - Stockholms län
+Westlund, Åsa S - Stockholms län
+Österberg, Anders S - Stockholms kommun
 
 ## Referenser
 
