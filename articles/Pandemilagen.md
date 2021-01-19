@@ -15,7 +15,12 @@ This text is licenced under [CC BY-SA 2.0](https://creativecommons.org/licenses/
 Påståenden likt dessa är väldigt lätt att hitta från alla riksdagspartierna, olika myndiheter, NGO:er, etc, etc. Det skulle nog vara svårt att hitta någon som inte tyckte att mötesfriheten var en hörnsten i en fungerande demokrati. Betyder det då att vi inte längre har en fungerande demokrati i Sverige sen pandemilagen röstades genom [5]? Det verkar ju onekligen så om man läser vad politiker har sagt åtminstone fram till nyligen.
 
 ## Mötesfriheten är grunden i en demokrati
-Att mötesfriheten är grunden i en demokrati skulle nog dom flesta riksdagspolitikerna 2018 ha svarat ett rungande "JA" på. Ett ytterligare bevis på att den är så extremt viktig visas också av att den är reglerad i den första och viktigaste grundlagen, Regeringsformen [6]. När den skrevs så tyckte man tydligen att mötesfriheten till och med var viktigare än yttrandefriheten som är den yngsta grundlagen [7]. Den är faktiskt bara från 1991.
+Att mötesfriheten är grunden i en demokrati skulle nog dom flesta riksdagspolitikerna 2018 ha svarat ett rungande "JA" på. Dem flesta partier har historiskt även kritiserat andra länder som inskränker mötesfriheten. Ett ytterligare bevis på att den är så extremt viktig visas också av att den är reglerad i den första och viktigaste grundlagen, Regeringsformen [6]. När den skrevs så tyckte man tydligen att mötesfriheten till och med var viktigare än yttrandefriheten som är den yngsta grundlagen [7]. Den är faktiskt bara från 1991. Efter att pandemilagen röstades genom fredagen den 8 januari 2021 har man redan låtit polisen slå ner på helt fredliga demonstrationer, och polisen har till och med använt fysiskt våld mot pensionärer [8]. Är det så här vi i Sverige vill att landet ska styras? Vill vi ha möjligheten att demonstrera mot beslut som berör oss till och med på ett så direkt sätt som att begränsa vår rörelsefrihet? Att inte fler gör motstånd mot detta förvånar mig, men jag tror att missnöjet gror och tillslut kommer folket att ställa sig upp mot sina förtryckande makthavare.
+
+## Är Sverige Demokraterna dom enda demokraterna?
+När man läser protokollet från riksdagen så ser det ut som att vi bara har ett demoktatiskt parti, Sverige Demokraterna. Anledningen till detta är att det endast var SD som röstade emot pandemilagen [5], alla andra partier valde att rösta för. Vid nogrannare granskning ser man att SD heller inte är så demokratiska. I debatten och protokollet syns det att dom är för en pandemilag, fast med några undantag [8]. Den första skillnaden är att SD vill att regeringens beslut om nedstängning ska prövas direkt av riksdagen och inte efter en vecka. Den andra skillnaden är att lagen ska gälla hälften så länge, och den tredje att besluten bör bygga på "vetenskap och beprövad erfarenhet". Dvs, även Sverige Demokraterna är inte demokrater eftersom dom vill begränsa mötesfriheten. KD, SD och Socialdemokraterna bör därför ta bort ordet demokrati ur sina partinamn för att inte fara med osanning. Liberalerna bör byta namn helt eftersom dom inte är det minst liberala, inte ens när det gäller grundlagsskyddade rättigheter.
+
+##
 
 ## Stödord
 Nurnbergrättegången, Riksdagsbranden, Endast SD röstade emot lagen, yttrandefriheten en grundpelare i demokrati,
@@ -47,7 +52,7 @@ Grundlagarna
 https://www.riksdagen.se/sv/Sa-funkar-riksdagen/Demokrati/Grundlagarna/
 
 Yttrandefrihetsgrundlag (1991:1469)
-https://www.riksdagen.se/sv/dokument-lagar/dokument/svensk-forfattningssamling/yttrandefrihetsgrundlag-19911469_sfs-1991-1469
+[7] https://www.riksdagen.se/sv/dokument-lagar/dokument/svensk-forfattningssamling/yttrandefrihetsgrundlag-19911469_sfs-1991-1469
 
 Förordningom särskilda begränsningar för att förhindra spridning av sjukdomen covid-19
 https://svenskforfattningssamling.se/sites/default/files/sfs/2021-01/SFS2021-8.pdf
@@ -57,6 +62,9 @@ https://svenskforfattningssamling.se/sites/default/files/sfs/2021-01/SFS2021-4.p
 
 En tillfällig covid-19-lag - Socialutskottets betänkande 2020/21:SoU23
 [5] https://riksdagen.se/sv/dokument-lagar/arende/betankande/en-tillfallig-covid-19-lag_H801SoU23
+
+En tillfällig covid-19-lag - Hela betänkandet
+[8] https://riksdagen.se/sv/dokument-lagar/arende/betankande/en-tillfallig-covid-19-lag_H801SoU23/html#_Toc60919634
 
 Riksdagshusbranden
 https://sv.wikipedia.org/wiki/Riksdagshusbranden
