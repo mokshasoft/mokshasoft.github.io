@@ -31,14 +31,11 @@ Nästa problem med yttrandefriheten är att mediaägandet har centraliserats mer
 Det finns vissa liknelser mellan dagens Covid-19 skrämsel med tillhörande brott mot våra grundlagsskyddade friheter. Enligt Wikipedia "Riksdagshusbranden (tyska: der Reichstagsbrand) kallas den eldsvåda som härjade Berlins riksdagshus den 27 februari 1933 och som anses vara ett avgörande moment i etablerandet av nazisternas styre." Denna händelse gav Hitler möjlighet att införa Riksdagsbrandsförordningen. "Riksdagsbrandförordningen gav enligt artikel 48 i Weimarkonstitutionen regeringen befogenheter att vidta åtgärder för att skydda allmänheten utan riksdagens godkännande och upphävde de flesta medborgerliga rättigheter på obestämd tid" [10]. Det går såklart inte jämföra dagens händelser med dom som hände i Tyskland före 2:a världskriget, men hur många visste 1933 vad som skulle hända i framtiden? Hur vet vi att dessa lagar vi skapar i Sverige idag inte missbrukas i framtiden? Är det inte just detta som grundlagarna ska skydda oss mot?
 
 ## Mänskliga rättigheter och brott mot mänskligheten
-Efter 2:a världskriget så dömdes många i Nürnbergrättegångarna för brott mot mänskligheten [11]. Det var inte bara generaler och militärer som stod åtalade utan även ministrar, läkare, domare, tjänstemän, företagsledare, chefer, mm. Ingen skulle bli fri från straff även om dom handlat på order. Det gällde inte heller bara folkmord och liknande, utan även "Andra omänskliga handlingar av liknandebeskaffenhet som uppsåtligen förorsakar svårtlidande, svår kroppslig skada eller svårt själsligt eller fysiskt men" [12]. En nedstängning skulle kunna falla under detta.
+Efter 2:a världskriget så dömdes många i Nürnbergrättegångarna för brott mot mänskligheten [11]. Det var inte bara generaler och militärer som stod åtalade utan även ministrar, läkare, domare, tjänstemän, företagsledare, chefer, mm. Ingen skulle bli fri från straff även om dom handlat på order. Det gällde inte heller bara folkmord och liknande, utan även "Andra omänskliga handlingar av liknandebeskaffenhet som uppsåtligen förorsakar svårtlidande, svår kroppslig skada eller svårt själsligt eller fysiskt men" [12]. En nedstängning skulle kunna falla under detta enligt min mening, men det borde åtminstone prövas i domstol.
 
-Det kan vara bra att tänka på för dom som idag kränker våra friheter och orsakar mycket lidande, att en dag när denna röran kommer redas ut så kan det möjligtvis bli tal om en Nürnbergrättegång 2.0.
+Pandemilagen bryter även mot mänskliga rättigheter [13]. Artikel 3, "Envar har rätt till liv, frihet och personlig säkerhet.", frihet kan man fråga sig om man har om man inte får protestera mot beslut som man berörs av. Artikel 13, "Envar har rätt att inom varje stats gränser fritt förflytta sig och välja sin vistelseort. Envar har rätt att lämna varje land, inbegripet sitt eget, och att återvända till sitt eget land.", att fritt förflytta sig begränsas av pandemilagen. Artikel 20, "Envar har rätt till frihet i fråga om fredliga möten och sammanslutningar.", denna mänskliga rättighet har vi definitivt blivit av med i Sverige!  Artkel 27, "Envar har rätt att fritt taga del i samhällets kulturella liv, att njuta av konsten samt att bli delaktig av vetenskapens framsteg och dess förmåner.", kulturlivet är kraftigt begränsat genom pandemilagen, så även på denna punkten har vi förlorat våra mänskliga rättigheter. Var det inte lite lättare att bli förbannad när liknande saker händer i länder som är våra "fiender"? Hur känns det nu när det händer dig i Sverige? Ska du bli lika upprörd och göra motstånd, eller finna dig i din nya fångenskap?
 
-## Vilka röstade för?
-
-## Scenario
-Hur hade ni reagerat om ni sett på SVT att Ryssland hade begränsat mötesfrihten pga av ett virus? Nu händer detta i Sverige. Hur känns det? Vad ska ni göra åt det?
+Ni som är ansvariga eller medhjälpare i att kränka våra mänskliga rättigher, ni som begår handlingar som kanske är brott mot mänskligheten, ni som kränker våra friheter, ni som kränker våra grundlagar, ni bör tänka på att en dag kanske dessa handlingar kommer prövas i domstol. Då är det kanske ni som är dom nya "nazisterna" i denna Nürnbergrättegången 2.0. Kommer man då i framtiden fundera över "hur någon kunde göra så hemska saker"?
 
 Författare:
 Jonas Claesson
@@ -48,7 +45,7 @@ http://www.graphly.org/
 ## Referenser
 
 Universal Declaration of Human Rights
-https://www.ohchr.org/EN/UDHR/Pages/Language.aspx?LangID=swd
+[13] https://www.ohchr.org/EN/UDHR/Pages/Language.aspx?LangID=swd
 
 Demonstrationsfrihet/Mötesfrihet
 https://sv.wikipedia.org/wiki/Demonstrationsfrihet
