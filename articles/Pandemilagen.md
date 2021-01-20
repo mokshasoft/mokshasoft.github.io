@@ -1,9 +1,4 @@
-# Pandemilagen, ett brott mot mänskligheten?
-, Sverige ej längre en demokrati
-, Gör pandemilagen Sverige till en diktatur?
-, Är pandemilagen dödsstöten för Svensk demokrati?
-, Är Sverige en demokrati efter pandemilagen?
-, Pandemilagen är antidemokratisk enligt riksdagen!
+# Pandemilagen är antidemokratisk enligt Sveriges regeringen!?
 
 This text is licenced under [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0/legalcode)
 
@@ -107,16 +102,18 @@ Westlund, Åsa S - Stockholms län
 
 ## Referenser
 
-[5] Mötesfriheten är grunden i en demokrati (Regeringsformen är den viktigaste av grundlagarna)
+I dessa tider med censur på internet försvinner ibland information. Det finns en icke-vinstdrivande tjänst på internet som heter Wayback Machine, som lagrar viktiga hemsidor på nätet. Det innebär att man kan hitta gamla hemsidor som sen länge har plockats ned eller ändrats. Desto populärare hemsida, desto fler versioner sparas vid olika datum. För att hämta en hemsida från Wayback Machine gå till adressen http://web.archive.org/web/<länk>, t.ex. http://web.archive.org/web/https://www.ohchr.org/EN/UDHR/Pages/Language.aspx?LangID=swd Överst på sidan kan man välja från vilket datum man vill se hemsidan från.
+
 [1] https://www.centerpartiet.se/lokal/vasterbotten/umea/startsida/nyheter/nyheter/2017-02-17-motesfriheten-ar-okrankbar-i-en-demokrati
 [2] https://www.socialdemokraterna.se/download/18.61db1f4116d5d8fea6f1b18/1572532938222/kongressprotokoll_2019.pdf
 [3] https://www.riksdagen.se/sv/dokument-lagar/dokument/interpellationsdebatt/islams-paverkan-pa-det-svenska-samhallet_H510578
 [4] https://www.regeringen.se/rapporter/2020/12/manskliga-rattigheter-demokrati-och-rattsstatens-principer-i-belarus/
-https://vardemokrati.se/om-demokratin/
-https://www.socialdemokraterna.se/download/18.6a46455216c3d0f447e7134/1568881617947/nationell-sakerhetsstrategi.pdf
-https://gront.mp.se/coronapandemin-ett-hot-mot-demokratin/
-https://www.dagen.se/debatt/2020/08/27/dags-att-agera-for-motesfriheten/
-https://firademokratin.riksdagen.se/fordjupning/demokratins-varderingar/demokratins-kannetecken/#Vad-%C3%A4r-demokrati
+[5] "Mötesfriheten är grunden i en demokrati"
+    https://vardemokrati.se/om-demokratin/
+    https://www.socialdemokraterna.se/download/18.6a46455216c3d0f447e7134/1568881617947/nationell-sakerhetsstrategi.pdf
+    https://gront.mp.se/coronapandemin-ett-hot-mot-demokratin/
+    https://www.dagen.se/debatt/2020/08/27/dags-att-agera-for-motesfriheten/
+    https://firademokratin.riksdagen.se/fordjupning/demokratins-varderingar/demokratins-kannetecken/#Vad-%C3%A4r-demokrati
 
 [5] En tillfällig covid-19-lag - Socialutskottets betänkande 2020/21:SoU23
     https://riksdagen.se/sv/dokument-lagar/arende/betankande/en-tillfallig-covid-19-lag_H801SoU23
