@@ -46,6 +46,24 @@ http://www.graphly.org/
 ## Frågor, påståenden och korta svar
 
 - Varför har jag inte fått denna information från tidningarna?
+  Av någon anledning vill Sanningsministeriet (regeringen, SVT, SR, SvD, DN, GP, m.m.) att du ska tycka på ett visst sätt. Följer du nyheter varje dag endast från dessa är risken stor att du får en sned bild av verkligheten, balansera denna bild med att kanske titta på en av Swebbtvs nyhetssändningar per vecka. Det kan väl inte skada?
+
+- Vi måste begränsa friheterna för att inte belasta sjukvården!
+  Att sjukvården är belastad i Sverige beror på att vi har näst sämst intensivsjukvård inom EU, och bland dom sämsta inom OECD. Som ett exempel kan nämnas att Tyskland har 5 gånger fler intensivvårdsplatser än Sverige per capita.
+  - https://link.springer.com/article/10.1007/s00134-020-06229-6
+  - https://link.springer.com/article/10.1007%2Fs00134-012-2627-8
+  - https://en.wikipedia.org/wiki/List_of_countries_by_hospital_beds
+  - https://ec.europa.eu/eurostat/statistics-explained/index.php/Healthcare_resource_statistics_-_beds
+  - https://read.oecd-ilibrary.org/view/?ref=119_119689-ud5comtf84&title=Beyond_Containment:Health_systems_responses_to_COVID-19_in_the_OECD
+  - https://www.oecd.org/coronavirus/en/data-insights/intensive-care-beds-capacity
+  - https://www.politico.eu/article/charting-europes-capacity-to-deal-with-the-coronavirus-crisis/
+  - https://www.aftonbladet.se/nyheter/kolumnister/a/BJBK79/sverige-har-lagst-antal-vardplatser-i-hela-eu
+
+- Vi måste begränsa friheterna för att inte många ska dö!
+  Man kan ju **tro** det, men hur vet man att det stämmer? Om den här pandemin verkligen hade varit farlig, hade inte människor då frivilligt skyddat sig? Då borde väl ingen inskränkande lag behövas?
+
+- Alla säger ju att vi måste stoppa smittspridningen!
+  Varför ska vi göra det? Borde vi inte bara stoppa smittspridningen bland dom som kan råka illa ut? 99% av befolkningen riskerar inga allvarliga komplikationer, blir dessa sjuka och sen friska så skyddar det dom svaga senare. Dessa 99% belastar statistiskt sett inte sjukvården heller. Sett ur detta perspektivet finns det två smittspridningar; en "bra" och en "dålig".
 
 ## Vilka röstade för?
 Dessa riksdagsledamöter röstade för pandemilagen. Hur skulle ni cirka 84% som inte röstade i frågan i riksdagen ha röstat [5]? Ni hade enkelt kunna stoppa denna totalitära lag.
@@ -176,5 +194,5 @@ Brott mot mänskligheten
 - Lag (2005:900) om förbud mot maskering i vissa fall
   - https://lagen.nu/2005:900
 
-- Corbett Report
+- Corbett Report, en bra alternativ informations kanal på engelska
   - https://odysee.com/@corbettreport:0/solutionswatch-freedomair:c
