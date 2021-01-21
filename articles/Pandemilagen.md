@@ -123,8 +123,8 @@ I dessa tider med censur på internet försvinner ibland information. Det finns 
   - https://www.liberalerna.se/politik/yttrandefrihet/
   - https://nt.se/nyheter/varfor-ar-det-viktigt-med-yttrandefrihet-10611382.aspx
   - https://www.informationsverige.se/sv/jag-har-fatt-uppehallstillstand/samhallsorientering/boken-om-sverige/att-paverka-i-sverige/vad-ar-demokrati/
-11. Swebbtv's JK intervju om Pandemilagen
-  - https://swebbtv.se/videos/watch/ab09ee4f-5457-421b-b7f7-00cc5330fc47?start=7m19s
+11. Swebbtv's JK intervju om Pandemilagen, inslaget börjar på 7 min 19 sekunder i nyhetssändningen
+  - https://swebbtv.se/videos/watch/ab09ee4f-5457-421b-b7f7-00cc5330fc47
 12. Riksdagshusbrandsförordningen
   - https://de.wikisource.org/wiki/Reichstagsbrandverordnung
 13. Nürnbergrättegångarna
@@ -137,8 +137,8 @@ I dessa tider med censur på internet försvinner ibland information. Det finns 
   - https://www.regeringen.se/4ab3d0/contentassets/c4f57b68335e491a948185108aa3833f/en-gransoverskridande-mediepolitik.-for-upplysning-engagemang-och-ansvar-sou-201680
 17. ProjektSanning, Covid-19 en farlig pandemi?
   - https://projektsanning.com/2020/12/18/jonas-claesson-covid-19-en-farlig-pandemi/
-18. Swebbtv, Polisen stoppar demonstration mha Pandemilagen
-  - https://swebbtv.se/videos/watch/0d4fedb7-2f37-4c73-9154-4607743cc0d1?start=2m9s
+18. Swebbtv, Polisen stoppar demonstration mha Pandemilagen, inslaget börjar på 2 min 9 sekunder i nyhetssändningen
+  - https://swebbtv.se/videos/watch/0d4fedb7-2f37-4c73-9154-4607743cc0d1
 
 ## Relaterade länkar
 
