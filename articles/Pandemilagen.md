@@ -100,82 +100,81 @@ Dessa riksdagsledamöter röstade för pandemilagen. Hur skulle ni cirka 84% som
 
 I dessa tider med censur på internet försvinner ibland information. Det finns en icke-vinstdrivande tjänst på internet som heter Wayback Machine, som lagrar viktiga hemsidor på nätet. Det innebär att man kan hitta gamla hemsidor som sen länge har plockats ned eller ändrats. Desto populärare hemsida, desto fler versioner sparas vid olika datum. För att hämta en hemsida från Wayback Machine gå till adressen http://web.archive.org/web/<länk>, t.ex. http://web.archive.org/web/https://www.ohchr.org/EN/UDHR/Pages/Language.aspx?LangID=swd Överst på sidan kan man välja från vilket datum man vill se hemsidan från.
 
-[1] https://www.centerpartiet.se/lokal/vasterbotten/umea/startsida/nyheter/nyheter/2017-02-17-motesfriheten-ar-okrankbar-i-en-demokrati
-[2] https://www.socialdemokraterna.se/download/18.61db1f4116d5d8fea6f1b18/1572532938222/kongressprotokoll_2019.pdf
-[3] https://www.riksdagen.se/sv/dokument-lagar/dokument/interpellationsdebatt/islams-paverkan-pa-det-svenska-samhallet_H510578
-[4] https://www.regeringen.se/rapporter/2020/12/manskliga-rattigheter-demokrati-och-rattsstatens-principer-i-belarus/
-[5] En tillfällig covid-19-lag - Socialutskottets betänkande 2020/21:SoU23
-    https://riksdagen.se/sv/dokument-lagar/arende/betankande/en-tillfallig-covid-19-lag_H801SoU23
-[6] "Mötesfriheten är grunden i en demokrati"
-    https://vardemokrati.se/om-demokratin/
-    https://www.socialdemokraterna.se/download/18.6a46455216c3d0f447e7134/1568881617947/nationell-sakerhetsstrategi.pdf
-    https://gront.mp.se/coronapandemin-ett-hot-mot-demokratin/
-    https://www.dagen.se/debatt/2020/08/27/dags-att-agera-for-motesfriheten/
-    https://firademokratin.riksdagen.se/fordjupning/demokratins-varderingar/demokratins-kannetecken/#Vad-%C3%A4r-demokrati
-[7] Regeringsformen
-    http://rkrattsbaser.gov.se/sfst?bet=1974:152
-[8] Yttrandefrihetsgrundlag (1991:1469)
-    https://www.riksdagen.se/sv/dokument-lagar/dokument/svensk-forfattningssamling/yttrandefrihetsgrundlag-19911469_sfs-1991-1469
-[9] En tillfällig covid-19-lag - Hela betänkandet
-    https://riksdagen.se/sv/dokument-lagar/arende/betankande/en-tillfallig-covid-19-lag_H801SoU23/html#_Toc60919634
-[10] Yttrandefriheten är grunden i Demokrati
-     https://www.so-rummet.se/kategorier/samhallskunskap/demokrati/demokratins-grunder
-     https://www.liberalerna.se/politik/yttrandefrihet/
-     https://nt.se/nyheter/varfor-ar-det-viktigt-med-yttrandefrihet-10611382.aspx
-     https://www.informationsverige.se/sv/jag-har-fatt-uppehallstillstand/samhallsorientering/boken-om-sverige/att-paverka-i-sverige/vad-ar-demokrati/
-[11] Swebbtv's JK intervju om Pandemilagen
-     https://swebbtv.se/videos/watch/ab09ee4f-5457-421b-b7f7-00cc5330fc47?start=7m19s
-[12] Riksdagshusbrandsförordningen
-     https://de.wikisource.org/wiki/Reichstagsbrandverordnung
-[13] Nürnbergrättegångarna
-     https://sv.wikipedia.org/wiki/N%C3%BCrnbergr%C3%A4tteg%C3%A5ngarna
-[14] Brott mot mänskligheten
-     https://www.regeringen.se/contentassets/4de6714d72b4486f8a92cb6722b05622/romstadgan-for-internationella-brottmalsdomstolen
-[15] Universal Declaration of Human Rights
-     https://www.ohchr.org/EN/UDHR/Pages/Language.aspx?LangID=swd
-[16] SOU 2016:80
-     sidan 75
-     https://www.regeringen.se/4ab3d0/contentassets/c4f57b68335e491a948185108aa3833f/en-gransoverskridande-mediepolitik.-for-upplysning-engagemang-och-ansvar-sou-201680
-[17] ProjektSanning, Covid-19 en farlig pandemi?
-     https://projektsanning.com/2020/12/18/jonas-claesson-covid-19-en-farlig-pandemi/
-[18] Swebbtv, Polisen stoppar demonstration mha Pandemilagen
-     https://swebbtv.se/videos/watch/0d4fedb7-2f37-4c73-9154-4607743cc0d1?start=2m9s
+1. https://www.centerpartiet.se/lokal/vasterbotten/umea/startsida/nyheter/nyheter/2017-02-17-motesfriheten-ar-okrankbar-i-en-demokrati
+2. https://www.socialdemokraterna.se/download/18.61db1f4116d5d8fea6f1b18/1572532938222/kongressprotokoll_2019.pdf
+3. https://www.riksdagen.se/sv/dokument-lagar/dokument/interpellationsdebatt/islams-paverkan-pa-det-svenska-samhallet_H510578
+4. https://www.regeringen.se/rapporter/2020/12/manskliga-rattigheter-demokrati-och-rattsstatens-principer-i-belarus/
+5. En tillfällig covid-19-lag - Socialutskottets betänkande 2020/21:SoU23
+  - https://riksdagen.se/sv/dokument-lagar/arende/betankande/en-tillfallig-covid-19-lag_H801SoU23
+6. "Mötesfriheten är grunden i en demokrati"
+  - https://vardemokrati.se/om-demokratin/
+  - https://www.socialdemokraterna.se/download/18.6a46455216c3d0f447e7134/1568881617947/nationell-sakerhetsstrategi.pdf
+  - https://gront.mp.se/coronapandemin-ett-hot-mot-demokratin/
+  - https://www.dagen.se/debatt/2020/08/27/dags-att-agera-for-motesfriheten/
+  - https://firademokratin.riksdagen.se/fordjupning/demokratins-varderingar/demokratins-kannetecken/#Vad-%C3%A4r-demokrati
+7. Regeringsformen
+  - http://rkrattsbaser.gov.se/sfst?bet=1974:152
+8. Yttrandefrihetsgrundlag (1991:1469)
+  - https://www.riksdagen.se/sv/dokument-lagar/dokument/svensk-forfattningssamling/yttrandefrihetsgrundlag-19911469_sfs-1991-1469
+9. En tillfällig covid-19-lag - Hela betänkandet
+  - https://riksdagen.se/sv/dokument-lagar/arende/betankande/en-tillfallig-covid-19-lag_H801SoU23/html#_Toc60919634
+10. Yttrandefriheten är grunden i Demokrati
+  - https://www.so-rummet.se/kategorier/samhallskunskap/demokrati/demokratins-grunder
+  - https://www.liberalerna.se/politik/yttrandefrihet/
+  - https://nt.se/nyheter/varfor-ar-det-viktigt-med-yttrandefrihet-10611382.aspx
+  - https://www.informationsverige.se/sv/jag-har-fatt-uppehallstillstand/samhallsorientering/boken-om-sverige/att-paverka-i-sverige/vad-ar-demokrati/
+11. Swebbtv's JK intervju om Pandemilagen
+  - https://swebbtv.se/videos/watch/ab09ee4f-5457-421b-b7f7-00cc5330fc47?start=7m19s
+12. Riksdagshusbrandsförordningen
+  - https://de.wikisource.org/wiki/Reichstagsbrandverordnung
+13. Nürnbergrättegångarna
+  - https://sv.wikipedia.org/wiki/N%C3%BCrnbergr%C3%A4tteg%C3%A5ngarna
+14. Brott mot mänskligheten
+  - https://www.regeringen.se/contentassets/4de6714d72b4486f8a92cb6722b05622/romstadgan-for-internationella-brottmalsdomstolen
+15. Universal Declaration of Human Rights
+  - https://www.ohchr.org/EN/UDHR/Pages/Language.aspx?LangID=swd
+16. SOU 2016:80, sidan 75
+  - https://www.regeringen.se/4ab3d0/contentassets/c4f57b68335e491a948185108aa3833f/en-gransoverskridande-mediepolitik.-for-upplysning-engagemang-och-ansvar-sou-201680
+17. ProjektSanning, Covid-19 en farlig pandemi?
+  - https://projektsanning.com/2020/12/18/jonas-claesson-covid-19-en-farlig-pandemi/
+18. Swebbtv, Polisen stoppar demonstration mha Pandemilagen
+  - https://swebbtv.se/videos/watch/0d4fedb7-2f37-4c73-9154-4607743cc0d1?start=2m9s
 
 ## Relaterade länkar
 
 Demonstrationsfrihet/Mötesfrihet
-https://sv.wikipedia.org/wiki/Demonstrationsfrihet
-https://sv.wikipedia.org/wiki/M%C3%B6tesfrihet
+  - https://sv.wikipedia.org/wiki/Demonstrationsfrihet
+  - https://sv.wikipedia.org/wiki/M%C3%B6tesfrihet
 
 Grundlagarna
-https://www.riksdagen.se/sv/Sa-funkar-riksdagen/Demokrati/Grundlagarna/
+  - https://www.riksdagen.se/sv/Sa-funkar-riksdagen/Demokrati/Grundlagarna/
 
 Riksdagshusbranden
-https://sv.wikipedia.org/wiki/Riksdagshusbranden
+  - https://sv.wikipedia.org/wiki/Riksdagshusbranden
 
 Lag om särskilda begränsningar för att förhindra spridning av sjukdomen covid-19
-https://svenskforfattningssamling.se/sites/default/files/sfs/2021-01/SFS2021-4.pdf
+  - https://svenskforfattningssamling.se/sites/default/files/sfs/2021-01/SFS2021-4.pdf
 
 Förordning om särskilda begränsningar för att förhindra spridning av sjukdomen covid-19
-https://svenskforfattningssamling.se/sites/default/files/sfs/2021-01/SFS2021-8.pdf
+  - https://svenskforfattningssamling.se/sites/default/files/sfs/2021-01/SFS2021-8.pdf
 
 Läkarrättegången
-https://sv.wikipedia.org/wiki/USA_mot_Karl_Brandt_et_al.
+  - https://sv.wikipedia.org/wiki/USA_mot_Karl_Brandt_et_al.
 
 Domarrättegången
-https://sv.wikipedia.org/wiki/Domarr%C3%A4tteg%C3%A5ngen
+  - https://sv.wikipedia.org/wiki/Domarr%C3%A4tteg%C3%A5ngen
 
 Ministerierättegången
-https://sv.wikipedia.org/wiki/Ministerier%C3%A4tteg%C3%A5ngen
+  - https://sv.wikipedia.org/wiki/Ministerier%C3%A4tteg%C3%A5ngen
 
 Brott mot mänskligheten
-https://sv.wikipedia.org/wiki/Brott_mot_m%C3%A4nskligheten
+  - https://sv.wikipedia.org/wiki/Brott_mot_m%C3%A4nskligheten
 
-Universal Declaration on Bioethics and Human Rights
-http://web.archive.org/web/20201216082550/http://portal.unesco.org/en/ev.php-URL_ID=31058&URL_DO=DO_TOPIC&URL_SECTION=201.html
+- Universal Declaration on Bioethics and Human Rights
+  - http://web.archive.org/web/20201216082550/http://portal.unesco.org/en/ev.php-URL_ID=31058&URL_DO=DO_TOPIC&URL_SECTION=201.html
 
-Lag (2005:900) om förbud mot maskering i vissa fall
-https://lagen.nu/2005:900
+- Lag (2005:900) om förbud mot maskering i vissa fall
+  - https://lagen.nu/2005:900
 
-Corbett Report
-https://odysee.com/@corbettreport:0/solutionswatch-freedomair:c
+- Corbett Report
+  - https://odysee.com/@corbettreport:0/solutionswatch-freedomair:c
