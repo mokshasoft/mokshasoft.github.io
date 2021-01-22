@@ -47,6 +47,7 @@ http://www.graphly.org/
 
 - Varför har jag inte fått denna information från tidningarna?
   Av någon anledning vill Sanningsministeriet (regeringen, SVT, SR, SvD, DN, GP, m.m.) att du ska tycka på ett visst sätt. Följer du nyheter varje dag endast från dessa är risken stor att du får en sned bild av verkligheten, balansera denna bild med att kanske titta på en av Swebbtvs nyhetssändningar per vecka. Det kan väl inte skada?
+  - https://swebbtv.se/
 
 - Vi måste begränsa friheterna för att inte belasta sjukvården.
   Att sjukvården är belastad i Sverige beror på att vi har näst sämst intensivsjukvård inom EU, och bland de sämsta inom OECD. Som ett exempel kan nämnas att Tyskland har 5 gånger fler intensivvårdsplatser än Sverige per capita.
@@ -64,7 +65,7 @@ http://www.graphly.org/
 
 - Samhället måste ju göra på det här sättet för att skydda de svaga.
   Finns det inte andra sätt att skydda de svaga än att inskränka våra grundlagsskyddade rättigheter och samtidigt bryta mot mänskliga rättigheter? När asiaten härjade mellan 1956-58, som var en värre influensa, valde man att stänga skolorna i några dagar, gå ut med rekommendationer till allmänheten och införde besöksförbud på sjukhus. 10 år senare kom Hongkonginfluensan. Besöksförbud infördes på sjukhusen var relativt få. Man inskränkte inte mötesfriheten vid någon av dessa pandemier, och begränsade inte småföretagares möjligheter att försörja sig. Inte heller under svininfluensapandemin gjorde dessa "åtgärder".
-  https://web.archive.org/web/20160815204251/http://www.lakartidningen.se/Functions/OldArticleView.aspx?articleId=6140
+  - https://web.archive.org/web/20160815204251/http://www.lakartidningen.se/Functions/OldArticleView.aspx?articleId=6140
 
 - Vi måste vaccinera oss för att skydda som svaga.
   Kom ihåg svininfluensapandemin, vad som hände med den vaccineringen. Detta skriver SVT om det; "När svininfluensan spreds 2009 var det nästan fem miljoner svenskar som vaccinerade sig – den största massvaccineringen i svensk historia. Men vaccinet visade sig ha en allvarlig biverkan." Är det någon som tror att de inte stod på pressmöten och sa att det inte var någon fara att vaccinera sig? Fortsatt enligt SVT; "2013 beräknade Smittskyddsinstitutet att vaccineringsprogrammet räddat 44 liv. Samtidigt får 440 barn och vuxna ersättning från läkemedelsförsäkringen eftersom att de utvecklat narkolepsi på grund av vaccinet." Tänk på detta innan du går och vaccinerar dig. Hur många var det som fick andra biverkningar som inte godkändes som en skada? Det var en oerhört svår process att få rätt, lyssna på SRs dokumentär nedan. SVT har redan gått ut för att lugna befolkningen att de troligtvis inte kommer få narkolepsi av coronavaccinet, men vad vet man om långtidseffekterna? Kan detta vaccin möjligtvis ge andra biverkningar som kommer upptäckas efter vaccineringen är klar, precis som under svininfluensan?
@@ -202,11 +203,11 @@ Ministerierättegången
 Brott mot mänskligheten
   - https://sv.wikipedia.org/wiki/Brott_mot_m%C3%A4nskligheten
 
-- Universal Declaration on Bioethics and Human Rights
+Universal Declaration on Bioethics and Human Rights
   - http://web.archive.org/web/20201216082550/http://portal.unesco.org/en/ev.php-URL_ID=31058&URL_DO=DO_TOPIC&URL_SECTION=201.html
 
-- Lag (2005:900) om förbud mot maskering i vissa fall
+Lag (2005:900) om förbud mot maskering i vissa fall
   - https://lagen.nu/2005:900
 
-- Corbett Report, en bra alternativ informations kanal på engelska
+Corbett Report, en bra alternativ informations kanal på engelska
   - https://odysee.com/@corbettreport:0/solutionswatch-freedomair:c
