@@ -36,7 +36,11 @@ Pandemilagen bryter även mot mänskliga rättigheter [15].
 
 Var det inte lite lättare att bli förbannad när liknande saker händer i länder som är våra "fiender"? Hur känns det nu när det händer dig i Sverige? Ska du bli lika upprörd och göra motstånd, eller finna dig i din nya fångenskap?
 
-Ni som är ansvariga eller medhjälpare i att kränka våra mänskliga rättigheter, ni som begår handlingar som kanske är brott mot mänskligheten, ni som kränker våra friheter, ni som kränker våra grundlagar, ni bör tänka på att en dag kanske dessa handlingar kommer prövas i domstol. Då är det kanske ni som är de nya "nazisterna" i denna "Nürnbergrättegången 2.0". Ingen av er kommer förhoppningsvis komma undan i en rättsprocess med att "ni bara följde order".
+## Men vi måste väl göra något åt smittspridningen?
+
+## En varning
+
+Ni som är ansvariga eller medhjälpare i att kränka våra mänskliga rättigheter, ni som begår handlingar som kanske är brott mot mänskligheten, ni som kränker våra friheter, ni som kränker våra grundlagar, ni bör tänka på att en dag kanske dessa handlingar kommer prövas i domstol. Då är det kanske ni som är de nya "nazisterna" i denna "Nürnbergrättegången 2.0". Ingen av er kommer förhoppningsvis komma undan i en rättsprocess med att "ni bara följde order". Till er andra vill jag säga att det inte är något oövervinnligt vi står inför. Det är ingen diffus grupp människor som har röstat igenom den här lagen. Det är 45 människor av kött och blod precis som dig och mig som har tagit vår demokrati ifrån oss. Låt dom inte göra det.
 
 Författare:
 Jonas Claesson
@@ -79,55 +83,6 @@ http://www.graphly.org/
 - Men den här lagen är ju bara temporär.
   Ja men vad spelar det för roll? Och hur vet du att lagen inte bara kommer att förlängas? Sammansättningen i riksdagen kommer inte att ha ändrats när lagen går ut. Dessutom så påstod Modernas VD Stephane Bancel nyligen att vi troligtvis kommer att få leva med Covid-19 för all framtid, dvs en endemisk sjukdom. Så argumentationen kring varför vi behöver pandemilagen kommer se ut på samma sätt framöver, och då är det troligtvis att politikerna kommer att göra lagen permanent.
   - http://web.archive.org/web/20210120160808/https://www.cnbc.com/2021/01/13/moderna-ceo-says-the-world-will-have-to-live-with-the-coronavirus-forever.html
-
-## Vilka röstade för?
-Hur skulle ni cirka 84% som inte röstade i frågan i riksdagen ha röstat [5]? Ni hade enkelt kunna stoppa denna totalitära lag, eftersom röstsiffrorna blev 45-10 [5]. I riksdagen sitter 349 ledamöter. Nedan är riksdagsledamöterna som röstade för pandemilagen listade. Det är i första hand dessa som bör hållas ansvariga.
-
-- Ankarberg Johansson, Acko - KD - Jönköpings län
-- Axén Olin, Kristina - M - Stockholms kommun
-- Berglund, Jörgen - M - Västernorrlands län
-- Brodin, Camilla - KD - Stockholms län
-- Carlson, Andreas - KD - Jönköpings län
-- Deremar, Catarina - C - Uppsala län
-- Ericson, Jan - M - Västra Götalands läns södra
-- Forssell, Joar - L - Stockholms kommun
-- Green, Mats - M - Jönköpings län
-- Halef, Abraham - S - Stockholms län
-- Helmersson Olsson, Caroline - S - Södermanlands län
-- Herrey, Richard - M - Stockholms län
-- Hirvonen, Annika - MP - Stockholms län
-- Holm, Jens - V - Stockholms kommun
-- Johansson, Martina - C - Södermanlands län
-- Jörgensen, Ulrika - M - Hallands län
-- Karlsson, Mattias i Luleå - M - Norrbottens län
-- Kayhan, Sultan - S - Stockholms kommun
-- Köse, Serkan - S - Stockholms län
-- Lantz, Gustaf - S - Uppsala län
-- Larsson, Dag - S - Stockholms kommun
-- Larsson, Rikard - S - Skåne läns södra
-- Lennström, Sanne - S - Uppsala län
-- Lindberg, Teres - S - Stockholms kommun
-- Lodenius, Per - C - Stockholms län
-- Lundgren, Kerstin - C - Stockholms län
-- Modig, Linda - C - Norrbottens län
-- Nilsson, Maria - L - Göteborgs kommun
-- Nordquist, Lina - L - Uppsala län
-- Nysmed, Leif - S - Stockholms län
-- Püss, Lars - M - Hallands län
-- Quicklund, Saila - M - Jämtlands län
-- Riedl, Edward - M - Västerbottens län
-- Rojhan Gustafsson, Azadeh - S - Stockholms län
-- Rågsjö, Karin - V - Stockholms kommun
-- Schröder, Magdalena - M - Stockholms län
-- Strömkvist, Maria - S - Dalarnas län
-- Stålhammar, Pernilla - MP - Stockholms kommun
-- Sydow Mölleby, Mia - V - Örebro län
-- Szatmari Waldau, Ilona - V - Uppsala län
-- Tovatt, Lorentz - MP - Stockholms kommun
-- Vepsä, Mattias - S - Stockholms kommun
-- Vikström, Anna - S - Stockholms län
-- Westlund, Åsa - S - Stockholms län
-- Österberg, Anders - S - Stockholms kommun
 
 ## Referenser
 
