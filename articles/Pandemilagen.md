@@ -54,9 +54,8 @@ Ni som är ansvariga eller medhjälpare i att kränka våra mänskliga rättighe
 
 Till er andra vill jag säga att det inte är något oövervinnligt vi står inför, men trycker vi inte tillbaka nu då är jag orolig för framtiden för oss svenskar. Det är ingen diffus grupp människor som har röstat igenom den här lagen. Det är 45 människor av kött och blod precis som dig och mig som har tagit vår demokrati ifrån oss. Låt dom inte göra det.
 
-Författare:
-Jonas Claesson
-jonas.cl@protonmail.com
+Författare: Jonas Claesson  
+jonas.cl@protonmail.com  
 http://www.graphly.org/
 
 ## Referenser
