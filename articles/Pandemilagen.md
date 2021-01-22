@@ -12,7 +12,9 @@ Att Sverige nu lever under ett antidemokratisk styre stämmer, i alla fall om ma
 Påståenden likt dessa är väldigt lätt att hitta från alla riksdagspartierna, olika myndigheter, NGO:er, etc, etc. Det skulle nog vara svårt att hitta någon som inte tyckte att mötesfriheten var en hörnsten i en fungerande demokrati. Betyder det då att vi inte längre har en fungerande demokrati i Sverige sen pandemilagen röstades igenom [5], nu när vi lever med en kraftigt inskränkt mötesfrihet i Sverige? Det verkar ju onekligen så om man läser vad våra egna politiker har sagt i frågan tidigare [6].
 
 ## Mötesfriheten är grunden i en demokrati
-Att mötesfriheten är grunden i en demokrati skulle nog de flesta riksdagspolitikerna 2018 ha svarat ett rungande JA på. Dem flesta partier har historiskt även kritiserat andra länder som inskränker mötesfriheten. Ett ytterligare bevis på att den är så extremt viktig visas av att den är reglerad i den första och viktigaste grundlagen, Regeringsformen [7]. När den skrevs så tyckte man tydligen att mötesfriheten till och med var viktigare än yttrandefriheten som är den yngsta grundlagen [8]. Efter att pandemilagen röstades igenom fredagen den 8 januari 2021 har man redan låtit polisen slå ner på helt fredliga demonstrationer, och polisen har till och med använt fysiskt våld mot pensionärer [18]. Är det så här vi i Sverige vill att landet ska styras? Vill vi ha möjligheten att demonstrera mot beslut som berör oss till och med på ett så direkt sätt som att begränsa vår rörelsefrihet? Att inte fler gör motstånd mot detta förvånar mig, men jag tror att missnöjet gror och till slut kommer folket att ställa sig upp mot sina förtryckande makthavare. Precis på samma sätt som sker i andra länder som våra politiker rutinmässigt kritiserar.
+Att mötesfriheten är grunden i en demokrati skulle nog de flesta riksdagspolitikerna 2018 ha svarat ett rungande JA på. Dem flesta partier har historiskt även kritiserat andra länder som inskränker mötesfriheten. Ett ytterligare bevis på att den är så extremt viktig visas av att den är reglerad i den första och viktigaste grundlagen, Regeringsformen [7]. När den skrevs så tyckte man tydligen att mötesfriheten till och med var viktigare än yttrandefriheten som är den yngsta grundlagen [8].
+
+Efter att pandemilagen röstades igenom fredagen den 8 januari 2021 har man redan låtit polisen slå ner på helt fredliga demonstrationer, och polisen har till och med använt fysiskt våld mot pensionärer [18]. Är det så här vi i Sverige vill att landet ska styras? Vill vi ha möjligheten att demonstrera mot beslut som berör oss till och med på ett så direkt sätt som att begränsa vår rörelsefrihet? Att inte fler gör motstånd mot detta förvånar mig, men jag tror att missnöjet gror och till slut kommer folket att ställa sig upp mot sina förtryckande makthavare. Precis på samma sätt som sker i andra länder som våra politiker rutinmässigt kritiserar.
 
 ## Är Sverigedemokraterna de enda demokraterna?
 Läser man protokollet från riksdagen rörande pandemilagen så ser det ut som att vi bara har ett demokratiskt parti i Sverige, Sverigedemokraterna. Det kan vara något förvånande för många eftersom det oftast är de som anklagas för att vara anti-demokratiska. Anledningen till att SD kanske är Sveriges enda demokratiska riksdagsparti är att det var det enda partiet som röstade emot pandemilagen [5], alla andra partier valde att rösta för. Vid noggrannare granskning ser man att SD heller inte är så demokratiska. I debatten och protokollet syns det att de är för en pandemilag, fast med några undantag [9]. Den första skillnaden är att SD vill att regeringens beslut om nedstängning ska prövas direkt av riksdagen och inte efter en vecka. Den andra skillnaden är att lagen ska gälla hälften så länge, och den tredje att besluten bör bygga på "vetenskap och beprövad erfarenhet". Dvs, inte heller Sverigedemokraterna är demokrater eftersom de vill inskränka mötesfriheten. KD, SD och Socialdemokraterna bör därför ta bort ordet demokrati ur sina partinamn för att inte vilseleda de som röstar. Liberalerna bör byta namn helt eftersom de inte är det minst liberala, inte ens när det gäller grundlagsskyddade rättigheter.
@@ -21,6 +23,8 @@ Läser man protokollet från riksdagen rörande pandemilagen så ser det ut som 
 Vidare kan man lätt hitta uttalanden från de flesta partier om hur yttrandefriheten är grunden i en demokrati [10]. Det har blivit väldigt aktuellt i dagens samhälle där stora utländska monopolföretag styr över informationen. Tycka vad man vill om huruvida dessa företag ska få censurera eller inte, eller göra som de vill. Faktum är att de gör det, och det påverkar yttrandefriheten negativt. Är det någon som tror att svenskarna på 70-talet hade accepterat att ett Amerikanskt företag styrde över vad som fick sägas i praktiken?
 
 Nästa problem med yttrandefriheten är att media-ägandet har centraliserats mer och mer, och i Sverige har ägandet centraliserats till extremt få ägare [16]. Det gör att rapporteringen blir väldigt likformig, och när de flesta av dessa medier är beroende av presstödet så blir medierna inte särskilt oberoende av det de bör granska. Jag tror att fler och fler upplever att medierna har blivit mer likt en PR kanal för regeringen och riksdagen, och att journalister inte längre ställer svåra frågor följt av svåra följdfrågor. "Alternativ media", eller medier som är finansierade med donationer från folket och inte genom presstödet, gör ofta ett mycket bättre jobb. De har inget att förlora på att göra sig ovän med makten, utan har allt att vinna på att ställa svåra frågor. Det finns ett sug efter bra journalistik. Lyssna t.ex. på Swebbtv's intervju med JK angående pandemilagen, och fundera på när du senast hörde en liknande skarp intervju i t.ex. SVT, SR, DN eller SvD [11].
+
+Jag tycker det är något fel med hur covid-19-pandemin hanteras i media. Är det balanserade debatter vi får höra? Har vi hört någon i SVT få debattera emot social distansering? Eller en debatt som balanserar demokratisk frihet emot pandemiåtgärderna? Varför har vi inte sett en sån debatt? Jag tror att av någon anledning vill Sanningsministeriet (regeringen, SVT, SR, SvD, DN, GP, m.m.) att vi ska tycka på ett visst sätt. Följer du nyheter varje dag endast från dessa är risken stor att du får en sned bild av verkligheten. Balansera denna bild med att kanske titta på en av Swebbtvs nyhetssändningar per vecka. Det kan väl inte skada?
 
 ## Hitlers maktövertagande
 Det finns vissa liknelser mellan dagens Covid-19 skrämsel [17] med tillhörande brott mot våra grundlagsskyddade friheter och Tyskland under 30-talet. Enligt Wikipedia, "Riksdagshusbranden (tyska: der Reichstagsbrand) kallas den eldsvåda som härjade Berlins riksdagshus den 27 februari 1933 och som anses vara ett avgörande moment i etablerandet av nazisternas styre." Denna händelse gav Hitler möjlighet att införa Riksdagsbrandsförordningen. "Riksdagsbrandförordningen gav enligt artikel 48 i Weimarkonstitutionen regeringen befogenheter att vidta åtgärder för att skydda allmänheten utan riksdagens godkännande och upphävde de flesta medborgerliga rättigheter på obestämd tid" [12]. Det går såklart inte jämföra dagens händelser med de som hände i Tyskland under 2:a världskriget, men hur många visste 1933 vad som skulle hända i framtiden? Hur vet vi att dessa lagar vi skapar i Sverige idag inte missbrukas i framtiden? Är det inte just detta som grundlagarna ska skydda oss mot?
@@ -34,55 +38,26 @@ Pandemilagen bryter även mot mänskliga rättigheter [15].
 - Artikel 20. "Envar har rätt till frihet i fråga om fredliga möten och sammanslutningar." Denna mänskliga rättighet har vi definitivt blivit av med i Sverige [18].
 - Artikel 27. "Envar har rätt att fritt taga del i samhällets kulturella liv, att njuta av konsten samt att bli delaktig av vetenskapens framsteg och dess förmåner." Kulturlivet är kraftigt begränsat genom pandemilagen, så även på denna punkten har vi förlorat våra mänskliga rättigheter.
 
-Var det inte lite lättare att bli förbannad när liknande saker händer i länder som är våra "fiender"? Hur känns det nu när det händer dig i Sverige? Ska du bli lika upprörd och göra motstånd, eller finna dig i din nya fångenskap?
+Var det inte lite lättare att bli förbannad när liknande saker händer i länder som är våra "fiender"? Hur känns det nu när det händer oss i Sverige? Ska vi bli lika upprörd och göra motstånd, eller finna oss i vår nya fångenskap?
 
-## Men vi måste väl göra något åt smittspridningen?
+## Vi måste väl göra något åt smittspridningen?
+Måste vi inte göra något åt smittspridningen? Det kanske vi måste, men vad ska vi göra? Jag tycker inte att sätta demokratin ur spel är rätt väg att gå oavsett hur farlig pandemi vi drabbas av. Drabbas vi av en verkligt farlig pandemi så kommer människor naturligt vilja skydda sig och man kommer inte att behöva frihetsberöva dom. Att sätta demokratin ur spel är en helt ny väg som vi aldrig prövat förut, men det har andra länder gjort i historien med ödesdigra resultet.
+
+Vad ska vi göra då? Det som händer nu är inget nytt om man tittar tillbaka i modern historia. Liknande pandemier har drabbat välden förut. Vi kan ta Asiaten 1956-58 och Hongkonginfluensan 1968-70. Dessa influensor var värre än Covid-19 pandemin, och speciellt om man räknar dödlighet per 1000 invånare, eftersom befolkningen var betydligt mindre då. Vad gjordes då? Sjukhusen var överbelastade även då, och man valde att stänga skolorna i några dagar, gå ut med rekommendationer till allmänheten och införde besöksförbud på sjukhus [19]. Mötesfriheten inskränktes inte vid någon av dessa pandemier, och småföretagares, butikers och restaurangers möjligheter att försörja sig begränsades inte.
+
+Ska vi göra något åt pandemier bör vi istället titta på vår sjukvård. Vi hade en gång i tiden en ganska bra sjukvård. Att sjukvården är belastad just nu i Sverige beror på att vi har näst sämst intensivsjukvård inom EU, och bland de sämsta inom OECD. Som ett exempel kan nämnas att Tyskland har 5 gånger fler intensivvårdsplatser än Sverige per capita [20].
+
+Ett urskuldrande argument för lagen som kommer dyka upp är att den bara är temporär. Vad spelar det för roll? Den blir inte mindre antidemokratisk för det. Hur vet vi att lagen inte kommer att förlängas? Sammansättningen i riksdagen kommer inte att ha ändrats när lagen går ut. Dessutom så påstod Modernas VD Stephane Bancel nyligen att vi troligtvis kommer att få leva med Covid-19 för all framtid, dvs att det är en endemisk sjukdom [21]. Så argumentationen kring varför vi behöver pandemilagen kommer se ut på samma sätt framöver, och då finns det en stor risk att politikerna kommer att göra lagen permanent.
 
 ## En varning
+Ni som är ansvariga eller medhjälpare i att kränka våra mänskliga rättigheter, ni som begår handlingar som kanske är brott mot mänskligheten, ni som kränker våra friheter, ni som kränker våra grundlagar, ni bör tänka på att en dag kanske dessa handlingar kommer prövas i domstol. Då är det kanske ni som är de nya "nazisterna" i denna "Nürnbergrättegången 2.0". Ingen av er kommer förhoppningsvis komma undan i en rättsprocess med att "ni bara följde order".
 
-Ni som är ansvariga eller medhjälpare i att kränka våra mänskliga rättigheter, ni som begår handlingar som kanske är brott mot mänskligheten, ni som kränker våra friheter, ni som kränker våra grundlagar, ni bör tänka på att en dag kanske dessa handlingar kommer prövas i domstol. Då är det kanske ni som är de nya "nazisterna" i denna "Nürnbergrättegången 2.0". Ingen av er kommer förhoppningsvis komma undan i en rättsprocess med att "ni bara följde order". Till er andra vill jag säga att det inte är något oövervinnligt vi står inför. Det är ingen diffus grupp människor som har röstat igenom den här lagen. Det är 45 människor av kött och blod precis som dig och mig som har tagit vår demokrati ifrån oss. Låt dom inte göra det.
+Till er andra vill jag säga att det inte är något oövervinnligt vi står inför, men trycker vi inte tillbaka nu då är jag orolig för framtiden för oss svenskar. Det är ingen diffus grupp människor som har röstat igenom den här lagen. Det är 45 människor av kött och blod precis som dig och mig som har tagit vår demokrati ifrån oss. Låt dom inte göra det.
 
 Författare:
 Jonas Claesson
 jonas.cl@protonmail.com
 http://www.graphly.org/
-
-## Frågor, påståenden och korta svar
-
-- Varför har jag inte fått denna information från tidningarna?
-  Av någon anledning vill Sanningsministeriet (regeringen, SVT, SR, SvD, DN, GP, m.m.) att du ska tycka på ett visst sätt. Följer du nyheter varje dag endast från dessa är risken stor att du får en sned bild av verkligheten, balansera denna bild med att kanske titta på en av Swebbtvs nyhetssändningar per vecka. Det kan väl inte skada?
-  - https://swebbtv.se/
-
-- Vi måste begränsa friheterna för att inte belasta sjukvården.
-  Att sjukvården är belastad i Sverige beror på att vi har näst sämst intensivsjukvård inom EU, och bland de sämsta inom OECD. Som ett exempel kan nämnas att Tyskland har 5 gånger fler intensivvårdsplatser än Sverige per capita.
-  - https://link.springer.com/article/10.1007/s00134-020-06229-6
-  - https://link.springer.com/article/10.1007%2Fs00134-012-2627-8
-  - https://en.wikipedia.org/wiki/List_of_countries_by_hospital_beds
-  - https://ec.europa.eu/eurostat/statistics-explained/index.php/Healthcare_resource_statistics_-_beds
-  - https://read.oecd-ilibrary.org/view/?ref=119_119689-ud5comtf84&title=Beyond_Containment:Health_systems_responses_to_COVID-19_in_the_OECD
-  - https://www.oecd.org/coronavirus/en/data-insights/intensive-care-beds-capacity
-  - https://www.politico.eu/article/charting-europes-capacity-to-deal-with-the-coronavirus-crisis/
-  - https://www.aftonbladet.se/nyheter/kolumnister/a/BJBK79/sverige-har-lagst-antal-vardplatser-i-hela-eu
-
-- Vi måste begränsa friheterna för att inte många ska dö.
-  Man kan ju **tro** det, men hur vet man att det stämmer? Om den här pandemin verkligen hade varit farlig, hade inte människor då frivilligt skyddat sig? Då borde väl ingen inskränkande lag behövas?
-
-- Samhället måste ju göra på det här sättet för att skydda de svaga.
-  Finns det inte andra sätt att skydda de svaga än att inskränka våra grundlagsskyddade rättigheter och samtidigt bryta mot mänskliga rättigheter? När asiaten härjade mellan 1956-58, som var en värre influensa, valde man att stänga skolorna i några dagar, gå ut med rekommendationer till allmänheten och införde besöksförbud på sjukhus. 10 år senare kom Hongkonginfluensan. Besöksförbud infördes på sjukhusen var relativt få. Man inskränkte inte mötesfriheten vid någon av dessa pandemier, och begränsade inte småföretagares möjligheter att försörja sig. Inte heller under svininfluensapandemin gjorde dessa "åtgärder".
-  - https://web.archive.org/web/20160815204251/http://www.lakartidningen.se/Functions/OldArticleView.aspx?articleId=6140
-
-- Vi måste vaccinera oss för att skydda som svaga.
-  Kom ihåg svininfluensapandemin, vad som hände med den vaccineringen. Detta skriver SVT om det; "När svininfluensan spreds 2009 var det nästan fem miljoner svenskar som vaccinerade sig – den största massvaccineringen i svensk historia. Men vaccinet visade sig ha en allvarlig biverkan." Är det någon som tror att de inte stod på pressmöten och sa att det inte var någon fara att vaccinera sig? Fortsatt enligt SVT; "2013 beräknade Smittskyddsinstitutet att vaccineringsprogrammet räddat 44 liv. Samtidigt får 440 barn och vuxna ersättning från läkemedelsförsäkringen eftersom att de utvecklat narkolepsi på grund av vaccinet." Tänk på detta innan du går och vaccinerar dig. Hur många var det som fick andra biverkningar som inte godkändes som en skada? Det var en oerhört svår process att få rätt, lyssna på SRs dokumentär nedan. SVT har redan gått ut för att lugna befolkningen att de troligtvis inte kommer få narkolepsi av coronavaccinet, men vad vet man om långtidseffekterna? Kan detta vaccin möjligtvis ge andra biverkningar som kommer upptäckas efter vaccineringen är klar, precis som under svininfluensan?
-  - https://www.svt.se/nyheter/inrikes/svininfluensan-sa-gick-det-till-nar-fem-miljoner-svenskar-vaccinerade-sig
-  - https://sverigesradio.se/avsnitt/1580286 (Svininfluensan och vaccinets offer)
-  - https://www.svt.se/nyheter/vetenskap/darfor-far-du-inte-narkolepsi-av-coronavaccinet
-
-- Alla säger ju att vi måste stoppa smittspridningen.
-  Varför ska vi göra det? Borde vi inte bara stoppa smittspridningen bland de som kan råka illa ut? 99% av befolkningen riskerar inga allvarliga komplikationer, blir dessa sjuka och sen friska så skyddar det de svaga senare. Dessa 99% belastar statistiskt sett inte sjukvården heller. Sett ur detta perspektivet finns det två smittspridningar; en "bra" och en "dålig".
-
-- Men den här lagen är ju bara temporär.
-  Ja men vad spelar det för roll? Och hur vet du att lagen inte bara kommer att förlängas? Sammansättningen i riksdagen kommer inte att ha ändrats när lagen går ut. Dessutom så påstod Modernas VD Stephane Bancel nyligen att vi troligtvis kommer att få leva med Covid-19 för all framtid, dvs en endemisk sjukdom. Så argumentationen kring varför vi behöver pandemilagen kommer se ut på samma sätt framöver, och då är det troligtvis att politikerna kommer att göra lagen permanent.
-  - http://web.archive.org/web/20210120160808/https://www.cnbc.com/2021/01/13/moderna-ceo-says-the-world-will-have-to-live-with-the-coronavirus-forever.html
 
 ## Referenser
 
@@ -127,6 +102,17 @@ I dessa tider med censur på internet försvinner ibland information. Det finns 
   - https://projektsanning.com/2020/12/18/jonas-claesson-covid-19-en-farlig-pandemi/
 18. Swebbtv, Polisen stoppar demonstration mha Pandemilagen, inslaget börjar på 2 min 9 sekunder i nyhetssändningen
   - https://swebbtv.se/videos/watch/0d4fedb7-2f37-4c73-9154-4607743cc0d1
+19. https://web.archive.org/web/20160815204251/http://www.lakartidningen.se/Functions/OldArticleView.aspx?articleId=6140
+20. Statistik om svensk sjukvård
+  - https://link.springer.com/article/10.1007/s00134-020-06229-6
+  - https://link.springer.com/article/10.1007%2Fs00134-012-2627-8
+  - https://en.wikipedia.org/wiki/List_of_countries_by_hospital_beds
+  - https://ec.europa.eu/eurostat/statistics-explained/index.php/Healthcare_resource_statistics_-_beds
+  - https://read.oecd-ilibrary.org/view/?ref=119_119689-ud5comtf84&title=Beyond_Containment:Health_systems_responses_to_COVID-19_in_the_OECD
+  - https://www.oecd.org/coronavirus/en/data-insights/intensive-care-beds-capacity
+  - https://www.politico.eu/article/charting-europes-capacity-to-deal-with-the-coronavirus-crisis/
+  - https://www.aftonbladet.se/nyheter/kolumnister/a/BJBK79/sverige-har-lagst-antal-vardplatser-i-hela-eu
+21. http://web.archive.org/web/20210120160808/https://www.cnbc.com/2021/01/13/moderna-ceo-says-the-world-will-have-to-live-with-the-coronavirus-forever.html
 
 ## Relaterade länkar
 
