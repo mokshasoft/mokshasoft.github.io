@@ -26,7 +26,7 @@ Nästa problem med yttrandefriheten är att media-ägandet har centraliserats me
 Det finns vissa liknelser mellan dagens Covid-19 skrämsel [17] med tillhörande brott mot våra grundlagsskyddade friheter och Tyskland under 30-talet. Enligt Wikipedia, "Riksdagshusbranden (tyska: der Reichstagsbrand) kallas den eldsvåda som härjade Berlins riksdagshus den 27 februari 1933 och som anses vara ett avgörande moment i etablerandet av nazisternas styre." Denna händelse gav Hitler möjlighet att införa Riksdagsbrandsförordningen. "Riksdagsbrandförordningen gav enligt artikel 48 i Weimarkonstitutionen regeringen befogenheter att vidta åtgärder för att skydda allmänheten utan riksdagens godkännande och upphävde de flesta medborgerliga rättigheter på obestämd tid" [12]. Det går såklart inte jämföra dagens händelser med dom som hände i Tyskland under 2:a världskriget, men hur många visste 1933 vad som skulle hända i framtiden? Hur vet vi att dessa lagar vi skapar i Sverige idag inte missbrukas i framtiden? Är det inte just detta som grundlagarna ska skydda oss mot?
 
 ## Mänskliga rättigheter och brott mot mänskligheten
-Efter 2:a världskriget så dömdes många i Nürnbergrättegångarna för brott mot mänskligheten [13]. Det var inte bara generaler och militärer som stod åtalade utan även ministrar, läkare, domare, tjänstemän, företagsledare, chefer, mm. Ingen skulle bli fri från straff även om dom handlat på order. Det gällde inte heller bara folkmord och liknande, utan även "Andra omänskliga handlingar av liknande beskaffenhet som uppsåtligen förorsakar svårtlidande, svår kroppslig skada eller svårt själsligt eller fysiskt men" [14]. En nedstängning eller en restriktion skulle kunna falla under detta enligt min mening, och det borde prövas i domstol framöver.
+Efter 2:a världskriget så dömdes många i Nürnbergrättegångarna för brott mot mänskligheten [13]. Det var inte bara generaler och militärer som stod åtalade utan även ministrar, läkare, domare, tjänstemän, företagsledare, chefer, mm. Ingen skulle bli fri från straff även om dom handlat på order. Det gällde inte heller bara folkmord och liknande, utan även "Andra omänskliga handlingar av liknande beskaffenhet som uppsåtligen förorsakar svårt lidande, svår kroppslig skada eller svårt själsligt eller fysiskt men" [14]. En nedstängning eller en restriktion skulle kunna falla under detta enligt min mening, och det borde prövas i domstol framöver.
 
 Pandemilagen bryter även mot mänskliga rättigheter [15].
 - Artikel 3. "Envar har rätt till liv, frihet och personlig säkerhet.", frihet kan man fråga sig om man har om man inte får protestera mot beslut som man berörs av.
@@ -36,7 +36,7 @@ Pandemilagen bryter även mot mänskliga rättigheter [15].
 
 Var det inte lite lättare att bli förbannad när liknande saker händer i länder som är våra "fiender"? Hur känns det nu när det händer dig i Sverige? Ska du bli lika upprörd och göra motstånd, eller finna dig i din nya fångenskap?
 
-Ni som är ansvariga eller medhjälpare i att kränka våra mänskliga rättigheter, ni som begår handlingar som kanske är brott mot mänskligheten, ni som kränker våra friheter, ni som kränker våra grundlagar, ni bör tänka på att en dag kanske dessa handlingar kommer prövas i domstol. Då är det kanske ni som är dom nya "nazisterna" i denna "Nürnbergrättegången 2.0".
+Ni som är ansvariga eller medhjälpare i att kränka våra mänskliga rättigheter, ni som begår handlingar som kanske är brott mot mänskligheten, ni som kränker våra friheter, ni som kränker våra grundlagar, ni bör tänka på att en dag kanske dessa handlingar kommer prövas i domstol. Då är det kanske ni som är dom nya "nazisterna" i denna "Nürnbergrättegången 2.0". Ingen kommer förhoppningsvis komma undan med att "dom bara följde order".
 
 Författare:
 Jonas Claesson
@@ -62,57 +62,71 @@ http://www.graphly.org/
 - Vi måste begränsa friheterna för att inte många ska dö!
   Man kan ju **tro** det, men hur vet man att det stämmer? Om den här pandemin verkligen hade varit farlig, hade inte människor då frivilligt skyddat sig? Då borde väl ingen inskränkande lag behövas?
 
+- Samhället måste ju göra på det här sättet för att skydda dom svaga!
+  Finns det inte andra sätt att skydda dom svaga än att inskränka våra grundlagsskyddade rättigheter och samtidigt bryta mot mänskliga rättigheter? När asiaten härjade mellan 1956-58, som var en värre influensa, valde man att stänga skolorna i några dagar, gå ut med rekommendationer till allmänheten och införde besöksförbud på sjukhus. 10 år senare kom Hongkonginfluensan. Besöksförbud infördes på sjukhusen var relativt få. Man inskränkte inte mötesfriheten vid någon av dessa pandemier, och begränsade inte småföretagares möjligheter att försörja sig. Inte heller under svininfluensapandemin gjorde dessa "åtgärder".
+  https://web.archive.org/web/20160815204251/http://www.lakartidningen.se/Functions/OldArticleView.aspx?articleId=6140
+
+- Vi måste vaccinera oss för att skydda som svaga!
+  Kom ihåg svininfluensapandemin, vad som hände med den vaccineringen. Detta skriver SVT om det; "När svininfluensan spreds 2009 var det nästan fem miljoner svenskar som vaccinerade sig – den största massvaccineringen i svensk historia. Men vaccinet visade sig ha en allvarlig biverkan." Är det någon som tror att dom inte stod på pressmöten och sa att det inte var någon fara att vaccinera sig? Fortsatt enligt SVT; "2013 beräknade Smittskyddsinstitutet att vaccineringsprogrammet räddat 44 liv. Samtidigt får 440 barn och vuxna ersättning från läkemedelsförsäkringen eftersom att de utvecklat narkolepsi på grund av vaccinet." Tänk på detta innan du går och vaccinerar dig. Hur många var det som fick andra biverkningar som inte godkändes som en skada? Det var en oerhört svår process att få rätt, lyssna på SRs dokumentär nedan. SVT har redan gått ut för att lugna befolkningen att dom troligtvis inte kommer få narkolepsi av coronavaccinet, men vad vet man om långtidseffekterna? Kan detta vaccin möjligtvis ge andra biverkningar som kommer upptäckas efter vaccineringen är klar, precis som under svininfluensan?
+  - https://www.svt.se/nyheter/inrikes/svininfluensan-sa-gick-det-till-nar-fem-miljoner-svenskar-vaccinerade-sig
+  - https://sverigesradio.se/avsnitt/1580286 (Svininfluensan och vaccinets offer)
+  - https://www.svt.se/nyheter/vetenskap/darfor-far-du-inte-narkolepsi-av-coronavaccinet
+
 - Alla säger ju att vi måste stoppa smittspridningen!
   Varför ska vi göra det? Borde vi inte bara stoppa smittspridningen bland dom som kan råka illa ut? 99% av befolkningen riskerar inga allvarliga komplikationer, blir dessa sjuka och sen friska så skyddar det dom svaga senare. Dessa 99% belastar statistiskt sett inte sjukvården heller. Sett ur detta perspektivet finns det två smittspridningar; en "bra" och en "dålig".
 
-## Vilka röstade för?
-Dessa riksdagsledamöter röstade för pandemilagen. Hur skulle ni cirka 84% som inte röstade i frågan i riksdagen ha röstat [5]? Ni hade enkelt kunna stoppa denna totalitära lag.
+- Men den här lagen är ju bara temporär!
+  Ja men vad spelar det för roll? Och hur vet du att lagen inte bara kommer att förlängas? Sammansättningen i riksdagen kommer inte att ha ändrats när lagen går ut. Dessutom så påstod Modernas VD Stephane Bancel nyligen att vi troligtvis kommer att få leva med Covid-19 för all framtid, dvs en endemisk sjukdom. Så argumentationen kring varför vi behöver pandemilagen kommer se ut på samma sätt framöver, och då är det troligtvis att politikerna kommer att göra lagen permanent.
+  - http://web.archive.org/web/20210120160808/https://www.cnbc.com/2021/01/13/moderna-ceo-says-the-world-will-have-to-live-with-the-coronavirus-forever.html
 
-- Ankarberg Johansson, Acko KD - Jönköpings län
-- Axén Olin, Kristina M - Stockholms kommun
-- Berglund, Jörgen M - Västernorrlands län
-- Brodin, Camilla KD - Stockholms län
-- Carlson, Andreas KD - Jönköpings län
-- Deremar, Catarina C - Uppsala län
-- Ericson, Jan M - Västra Götalands läns södra
-- Forssell, Joar L - Stockholms kommun
-- Green, Mats M - Jönköpings län
-- Halef, Abraham S - Stockholms län
-- Helmersson Olsson, Caroline S - Södermanlands län
-- Herrey, Richard M - Stockholms län
-- Hirvonen, Annika MP - Stockholms län
-- Holm, Jens V - Stockholms kommun
-- Johansson, Martina C - Södermanlands län
-- Jörgensen, Ulrika M - Hallands län
-- Karlsson, Mattias i Luleå M - Norrbottens län
-- Kayhan, Sultan S - Stockholms kommun
-- Köse, Serkan S - Stockholms län
-- Lantz, Gustaf S - Uppsala län
-- Larsson, Dag S - Stockholms kommun
-- Larsson, Rikard S - Skåne läns södra
-- Lennström, Sanne S - Uppsala län
-- Lindberg, Teres S - Stockholms kommun
-- Lodenius, Per C - Stockholms län
-- Lundgren, Kerstin C - Stockholms län
-- Modig, Linda C - Norrbottens län
-- Nilsson, Maria L - Göteborgs kommun
-- Nordquist, Lina L - Uppsala län
-- Nysmed, Leif S - Stockholms län
-- Püss, Lars M - Hallands län
-- Quicklund, Saila M - Jämtlands län
-- Riedl, Edward M - Västerbottens län
-- Rojhan Gustafsson, Azadeh S - Stockholms län
-- Rågsjö, Karin V - Stockholms kommun
-- Schröder, Magdalena M - Stockholms län
-- Strömkvist, Maria S - Dalarnas län
-- Stålhammar, Pernilla MP - Stockholms kommun
-- Sydow Mölleby, Mia V - Örebro län
-- Szatmari Waldau, Ilona V - Uppsala län
-- Tovatt, Lorentz MP - Stockholms kommun
-- Vepsä, Mattias S - Stockholms kommun
-- Vikström, Anna S - Stockholms län
-- Westlund, Åsa S - Stockholms län
-- Österberg, Anders S - Stockholms kommun
+## Vilka röstade för?
+Hur skulle ni cirka 84% som inte röstade i frågan i riksdagen ha röstat [5]? Ni hade enkelt kunna stoppa denna totalitära lag, eftersom röstsiffrorna blev 45-10 [5]. I riksdagen sitter 349 ledamöter. Nedan är riksdagsledamöterna som röstade för pandemilagen listade. Det är i första hand dessa som bör hållas ansvariga.
+
+- Ankarberg Johansson, Acko - KD - Jönköpings län
+- Axén Olin, Kristina - M - Stockholms kommun
+- Berglund, Jörgen - M - Västernorrlands län
+- Brodin, Camilla - KD - Stockholms län
+- Carlson, Andreas - KD - Jönköpings län
+- Deremar, Catarina - C - Uppsala län
+- Ericson, Jan - M - Västra Götalands läns södra
+- Forssell, Joar - L - Stockholms kommun
+- Green, Mats - M - Jönköpings län
+- Halef, Abraham - S - Stockholms län
+- Helmersson Olsson, Caroline - S - Södermanlands län
+- Herrey, Richard - M - Stockholms län
+- Hirvonen, Annika - MP - Stockholms län
+- Holm, Jens - V - Stockholms kommun
+- Johansson, Martina - C - Södermanlands län
+- Jörgensen, Ulrika - M - Hallands län
+- Karlsson, Mattias i Luleå - M - Norrbottens län
+- Kayhan, Sultan - S - Stockholms kommun
+- Köse, Serkan - S - Stockholms län
+- Lantz, Gustaf - S - Uppsala län
+- Larsson, Dag - S - Stockholms kommun
+- Larsson, Rikard - S - Skåne läns södra
+- Lennström, Sanne - S - Uppsala län
+- Lindberg, Teres - S - Stockholms kommun
+- Lodenius, Per - C - Stockholms län
+- Lundgren, Kerstin - C - Stockholms län
+- Modig, Linda - C - Norrbottens län
+- Nilsson, Maria - L - Göteborgs kommun
+- Nordquist, Lina - L - Uppsala län
+- Nysmed, Leif - S - Stockholms län
+- Püss, Lars - M - Hallands län
+- Quicklund, Saila - M - Jämtlands län
+- Riedl, Edward - M - Västerbottens län
+- Rojhan Gustafsson, Azadeh - S - Stockholms län
+- Rågsjö, Karin - V - Stockholms kommun
+- Schröder, Magdalena - M - Stockholms län
+- Strömkvist, Maria - S - Dalarnas län
+- Stålhammar, Pernilla - MP - Stockholms kommun
+- Sydow Mölleby, Mia - V - Örebro län
+- Szatmari Waldau, Ilona - V - Uppsala län
+- Tovatt, Lorentz - MP - Stockholms kommun
+- Vepsä, Mattias - S - Stockholms kommun
+- Vikström, Anna - S - Stockholms län
+- Westlund, Åsa - S - Stockholms län
+- Österberg, Anders - S - Stockholms kommun
 
 ## Referenser
 
