@@ -2,7 +2,7 @@
 
 This text is licenced under [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0/legalcode)
 
-Jag är en vanlig medborgare som har blivit orolig över hälsan i den svenska demokratin. Det är därför jag har skrivit denna artikel. Sverige lever nu under ett antidemokratisk styre, i alla fall om man ska tro på vad våra politiker brukar säga i kritik av andra länder. Pandemilagen ger bl.a. regeringen möjlighet att inskränka mötesfriheten och förbjuda demonstrationer, vilket kännetecknar odemokratiska länder.
+Jag är en vanlig medborgare som har blivit orolig över hälsan i den svenska demokratin. Det är därför jag har skrivit denna artikel. Sverige lever nu under ett antidemokratiskt styre, i alla fall om man ska tro på vad våra politiker brukar säga i kritik av andra länder. Pandemilagen ger bl.a. regeringen möjlighet att inskränka mötesfriheten och förbjuda demonstrationer, vilket kännetecknar odemokratiska länder.
 
 - "Mötesfriheten är okränkbar i en demokrati", står det på centerpartiets hemsida [1].
 - "Frihet – yttrandefrihet, mötesfrihet, tryckfrihet. Det här är våra värderingar." står det på socialdemokraternas hemsida [2].
