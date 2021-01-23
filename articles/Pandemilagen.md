@@ -1,8 +1,8 @@
-# Säger Sveriges regering att pandemilagen är antidemokratisk?
+# Påstår Sveriges regering att pandemilagen är antidemokratisk?
 
 This text is licenced under [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0/legalcode)
 
-Att Sverige nu lever under ett antidemokratisk styre stämmer, i alla fall om man ska tro på vad våra politiker brukar säga i kritik av andra länder. Pandemilagen ger bl.a. regeringen möjlighet att inskränka mötesfriheten och förbjuda demonstrationer.
+Jag är en vanlig medborgare som har blivit orolig över hälsan i den svenska demokratin. Det är därför jag har skrivit denna artikel. Sverige lever nu under ett antidemokratisk styre, i alla fall om man ska tro på vad våra politiker brukar säga i kritik av andra länder. Pandemilagen ger bl.a. regeringen möjlighet att inskränka mötesfriheten och förbjuda demonstrationer, vilket kännetecknar odemokratiska länder.
 
 - "Mötesfriheten är okränkbar i en demokrati", står det på centerpartiets hemsida [1].
 - "Frihet – yttrandefrihet, mötesfrihet, tryckfrihet. Det här är våra värderingar." står det på socialdemokraternas hemsida [2].
@@ -52,7 +52,7 @@ Ett urskuldande argument för lagen som kommer dyka upp är att den bara är tem
 ## En varning
 Ni som är ansvariga eller medhjälpare i att kränka våra mänskliga rättigheter, ni som begår handlingar som kanske är brott mot mänskligheten, ni som kränker våra friheter, ni som kränker våra grundlagar, ni bör tänka på att en dag kanske dessa handlingar kommer prövas i domstol. Då är det kanske ni som är de nya "nazisterna" i denna "Nürnbergrättegången 2.0". Ingen av er kommer förhoppningsvis komma undan i en rättsprocess med att "ni bara följde order".
 
-Till er andra vill jag säga att det inte är något oövervinnligt vi står inför, men trycker vi inte tillbaka nu då är jag orolig för framtiden för oss svenskar. Det är ingen diffus grupp människor som har röstat igenom den här lagen. Det är 45 människor av kött och blod precis som dig och mig som har tagit vår demokrati ifrån oss. Låt dom inte göra det.
+Till er andra vill jag säga att det inte är något oövervinnligt vi står inför, men trycker vi inte tillbaka nu då är jag orolig för framtiden för oss svenskar. Det är ingen diffus grupp människor som har röstat igenom den här lagen. De som har röstat för, emot eller avstått att rösta står tydligt i protokollen. Det är 45 människor av kött och blod precis som dig och mig, vars enda jobb är att representera oss. De har tagit vår demokrati ifrån oss. Låt dom inte göra det.
 
 Författare: Jonas Claesson  
 jonas.cl@protonmail.com  
