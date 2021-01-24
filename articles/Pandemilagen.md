@@ -40,8 +40,8 @@ Pandemilagen bryter även mot mänskliga rättigheter [15].
 
 Var det inte lite lättare att bli förbannad när liknande saker händer i länder som är våra "fiender"? Hur känns det nu när det händer oss i Sverige? Ska vi bli lika upprörd och göra motstånd, eller finna oss i vår nya fångenskap?
 
-## Vi måste väl göra något åt smittspridningen?
-Måste vi inte göra något åt smittspridningen? Det kanske vi måste, men vad ska vi göra? Jag tycker inte att sätta demokratin ur spel är rätt väg att gå oavsett hur farlig pandemi vi drabbas av. Drabbas vi av en verkligt farlig pandemi så kommer människor naturligt vilja skydda sig och man kommer inte att behöva frihetsberöva dom. Att sätta demokratin ur spel är en helt ny väg som vi aldrig prövat förut, men det har andra länder gjort i historien med ödesdigra resultat.
+## Måste vi göra något åt smittspridningen?
+Måste vi inte göra något åt smittspridningen? Det kanske vi måste, men vad ska vi göra? Jag tycker inte att sätta demokratin ur spel är rätt väg att gå oavsett hur farlig pandemi vi drabbas av. Drabbas vi av en verkligt farlig pandemi så kommer människor naturligt vilja skydda och isolera sig och man kommer därför inte att behöva frihetsberöva dessa människor. Att sätta demokratin ur spel är en helt ny väg som vi aldrig prövat förut, men det har andra länder gjort i historien med ödesdigra resultat.
 
 Vad ska vi göra då? Det som händer nu är inget nytt om man tittar tillbaka i modern historia. Liknande pandemier har drabbat välden förut. Vi kan ta Asiaten 1956-58 och Hongkonginfluensan 1968-70. Dessa influensor var värre än Covid-19 pandemin, och speciellt om man räknar dödlighet per 1000 invånare, eftersom befolkningen var betydligt mindre då. Vad gjordes då? Sjukhusen var överbelastade även då, och man valde att stänga skolorna i några dagar, gå ut med rekommendationer till allmänheten och införde besöksförbud på sjukhus [19]. Mötesfriheten inskränktes inte vid någon av dessa pandemier, och småföretagares, butikers och restaurangers möjligheter att försörja sig begränsades inte.
 
