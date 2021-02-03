@@ -165,7 +165,7 @@ getDeadliestYear country =
             else
                 ( y, maxTotal )
     in
-    T.first <| D.foldl cmp ( 0, 0 ) country.data
+    T.first <| D.foldl cmp ( 0, 0 ) <| D.remove 2020 country.data
 
 
 getDeadliestPeakYear : Country -> Int
