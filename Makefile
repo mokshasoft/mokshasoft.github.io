@@ -16,7 +16,7 @@ APP_FILES=\
   ./app/src/DataTypes.elm\
   ./app/src/Analysis.elm
 
-app/elm.min.js: $(APP_FILES)
+app/elm.min.js: $(APP_FILES) preprocess
 	(cd app && \
 	./optimize.sh src/Main.elm)
 
