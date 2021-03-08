@@ -14,5 +14,5 @@ Vad kan vi göra för att återställa demokrati och mänskliga rättigheter [2]
 
 Författare: Jonas Claesson
 
-[1] https://www.riksdagen.se/sv/Sa-funkar-riksdagen/Demokrati/Grundlagarna/
-[2] https://www.un.org/en/universal-declaration-human-rights/index.html
+- [1] https://www.riksdagen.se/sv/Sa-funkar-riksdagen/Demokrati/Grundlagarna/
+- [2] https://www.un.org/en/universal-declaration-human-rights/index.html
