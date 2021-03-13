@@ -16,7 +16,12 @@ import LineChart
 import LineChart.Area as Area
 import LineChart.Axis as Axis
 import LineChart.Axis.Intersection as Intersection
+import LineChart.Axis.Line as AxisLine
+import LineChart.Axis.Range as Range
+import LineChart.Axis.Ticks as Ticks
+import LineChart.Axis.Title as Title
 import LineChart.Container as Container
+import LineChart.Coordinate as Coordinate
 import LineChart.Dots as Dots
 import LineChart.Events as Events
 import LineChart.Grid as Grid
@@ -31,8 +36,13 @@ import List as L
 -- FUNCTIONS
 
 
-chart : String -> A.Analysis -> Html.Html msg
-chart country analysisType =
+specialRange : Coordinate.Range -> Coordinate.Range
+specialRange { min, max } =
+    { min = 0, max = max * 1.1 }
+
+
+chart : String -> A.Analysis -> Bool -> Html.Html msg
+chart country analysisType fullRange =
     let
         analysis : A.GraphData
         analysis =
@@ -51,7 +61,20 @@ chart country analysisType =
             [ text "General mortality rate per year per 1000 individuals" ]
         , LineChart.viewCustom
             { x = Axis.full 1000 analysis.captionX .x
-            , y = Axis.full 500 "Mort. rate" .y
+            , y =
+                Axis.custom
+                    { title = Title.default "Mort. rate"
+                    , variable = Just << .y
+                    , pixels = 500
+                    , range =
+                        if fullRange then
+                            Range.custom specialRange
+
+                        else
+                            Range.default
+                    , axisLine = AxisLine.default
+                    , ticks = Ticks.float 1
+                    }
             , container = Container.responsive "line-chart-1"
             , interpolation = Interpolation.monotone
             , intersection = Intersection.default

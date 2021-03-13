@@ -67,6 +67,7 @@ type alias Model =
     , likeItAccordionState : Accordion.State
     , faqVisibility : Modal.Visibility
     , faqAccordionState : Accordion.State
+    , fullRange : Bool
     }
 
 
@@ -77,6 +78,7 @@ init _ =
       , likeItAccordionState = Accordion.initialState
       , faqVisibility = Modal.hidden
       , faqAccordionState = Accordion.initialState
+      , fullRange = True
       }
     , Cmd.none
     )
@@ -586,7 +588,7 @@ view model =
             ]
         , Grid.row []
             [ Grid.col []
-                [ div [] [ Lines.chart model.selection.country model.selection.analysis ]
+                [ div [] [ Lines.chart model.selection.country model.selection.analysis model.fullRange ]
                 ]
             ]
         , Grid.row []
