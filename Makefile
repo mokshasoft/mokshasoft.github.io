@@ -18,7 +18,7 @@ APP_FILES=\
 
 app/elm.min.js: $(APP_FILES) preprocess
 	(cd app && \
-	./optimize.sh src/Main.elm)
+	./build.sh)
 
 #
 # Targets for preprocessing data

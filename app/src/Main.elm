@@ -262,20 +262,6 @@ viewLikeItOptions accordionState =
                     { id = "option2"
                     , options = []
                     , header =
-                        Accordion.header [] <| Accordion.toggle [] [ text "Bitcoin" ]
-                    , blocks =
-                        [ Accordion.block []
-                            [ Block.text []
-                                [ text <| "Send to Bitcoin wallet " ++ toCode bitCode ++ " -> "
-                                , qrCodeView <| toCode bitCode
-                                ]
-                            ]
-                        ]
-                    }
-                , Accordion.card
-                    { id = "option3"
-                    , options = []
-                    , header =
                         Accordion.header [] <| Accordion.toggle [] [ text "Swish (Sweden only)" ]
                     , blocks =
                         [ Accordion.block []
